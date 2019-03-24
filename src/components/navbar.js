@@ -8,7 +8,6 @@ import {
     NavItem,
     NavLink
 } from 'reactstrap';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import Brand from "../images/logo.png"
 
 export default class Example extends React.Component {
@@ -37,9 +36,6 @@ export default class Example extends React.Component {
                         <Nav className="ml-auto" navbar>
                             <NavItem>
                                 <NavLink href="/">Home</NavLink>
-                            </NavItem>
-                            <NavItem>
-                                <NavLink href="/gallery">Gallery</NavLink>
                             </NavItem>
                             <NavItem>
                                 <NavLink href="/pricing">Pricing</NavLink>

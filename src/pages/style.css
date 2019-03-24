@@ -1,0 +1,24 @@
+body {
+    text-align: center;
+}
+
+h2 {
+    margin-top: 25px;
+    text-decoration: underline;
+    margin-bottom: 25px;
+}
+
+.box {
+    margin-bottom: 5px;
+}
+
+input {
+    margin: 3px;
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+}
+
+.social {
+    padding: 5px;
+}
