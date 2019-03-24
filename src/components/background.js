@@ -30,8 +30,7 @@ const BackgroundSection = ({ className, height }) => (
           >
             <h1 style={{ color:`white`, fontSize:`7rem`}}>Learn To Ride</h1>
             <Button
-            style={{ margin: `5px`}}
-            />
+    />
           </BackgroundImage>
        )
      }
