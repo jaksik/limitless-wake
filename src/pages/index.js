@@ -1,20 +1,26 @@
 import React from "react"
-import { Link } from "gatsby"
 
 import Layout from "../components/layout"
-import Image from "../components/image"
+import Background from "../components/background"
+import BackgroundTwo from "../components/backgroundTwo"
+import DivOne from "../components/divOne"
+import Form from "../components/form"
 import SEO from "../components/seo"
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
+    <Background 
+    className="backgroundImage"
+    height="300px"
+    />
+    <DivOne />
+    <BackgroundTwo />
+    <DivOne />
+    <div style={{ height: `400px`, backgroundColor: `royalblue`}}>
+      <Form style={{ margin: `0px auto` }} />
     </div>
-    <Link to="/page-2/">Go to page 2</Link>
   </Layout>
 )
 
