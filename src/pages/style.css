@@ -23,6 +23,10 @@ h2 {
     border: 1px solid black;
 } */
 
+input, select {
+    max-width: 100%;
+}
+
 .social {
     padding: 5px;
 }

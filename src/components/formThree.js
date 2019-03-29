@@ -9,7 +9,7 @@ class Form extends Component {
                 method="post"
                 data-netlify="true"
                 data-netlify-honeypot="bot-field"
-                style={{ width: `80%`, margin: `10px auto` }}
+                style={{ width: `80%`, margin: `10px auto`, borderStyle: `ridge`, borderRadius: `25px` }}
             >
                 <input name="name" placeholder="Your First and Last Name" type="text" /><br />
                 <input name="email" placeholder="Your Email" type="email" /><br />

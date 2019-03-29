@@ -3,14 +3,14 @@ import Form from "../components/formThree"
 import Layout from "../components/layout"
 import FormOne from "../components/form"
 import SEO from "../components/seo"
-
+import "./style.css"
 const Contact = () => (
   <Layout>
     <div
       style={{
         margin: `0 auto`,
         maxWidth: `960px`,
-        // padding: `0px 1.0875rem 1.45rem`,
+        padding: `0px 1.0875rem 1.45rem`,
         paddingTop: 0,
       }}
     >
