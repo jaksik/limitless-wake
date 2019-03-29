@@ -1,9 +1,8 @@
 import React from "react"
 import Form from "../components/formThree"
 import Layout from "../components/layout"
-import FormOne from "../components/form"
 import SEO from "../components/seo"
-// import "./style.css"
+
 const Contact = () => (
   <Layout>
     <div
@@ -16,7 +15,8 @@ const Contact = () => (
     >
       <SEO title="Contact" keywords={[`contact`, `book`, `lesson`, `wake`, `austin`, `texas`, `surf`]} />
      
-      <h1>Book A Lesson</h1>
+      <h1 style={{ marginBottom:`0px`}}>Book A Lesson</h1>
+      <h5 style={{ marginBottom:`40px` }}>with Limitless Wake Tech</h5>
       <div className="container" id="form" style={{ maxWidth: `650px`}}>
         <Form/>
       </div>

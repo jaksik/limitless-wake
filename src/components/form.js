@@ -10,8 +10,8 @@ class Form extends Component {
         data-netlify-honeypot="bot-field"
         style={{ width: `80%`, margin: `10px auto` }}
       >
-        <label for="exampleEmail">Your Name:</label>
-        <input name="name" placeholder="Your First and Last Name" type="text" /><br />
+        <label for="name">Your Name:</label>
+        <input name="name" placeholder="First and Last Name" type="text" /><br />
         <label for="exampleEmail">Email:</label>
         <input name="email" placeholder="Your Email" type="email" /><br />
         <label for="phone">Phone Number:</label>
