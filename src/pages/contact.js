@@ -18,9 +18,8 @@ const Contact = () => (
      
       <h1>Book A Lesson</h1>
       <div className="container" id="form" style={{ maxWidth: `650px`}}>
-        <Form />
+        <FormOne/>
       </div>
-      <FormOne/>
       <br/>
       <h5>Have Questions?</h5>
       <p>Always feel free to give us a call or send us an email.</p>
