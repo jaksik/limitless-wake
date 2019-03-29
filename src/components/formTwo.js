@@ -20,7 +20,7 @@ export default class Example extends React.Component {
 
   render() {
     return (
-      <Form
+      <form
         name="contact"
         method="post"
         data-netlify="true"
@@ -83,7 +83,7 @@ export default class Example extends React.Component {
             <Button color="primary" onClick={this.toggle}>Okay</Button>{' '}
           </ModalFooter>
         </Modal>
-      </Form>
+      </form>
     );
   }
 }
