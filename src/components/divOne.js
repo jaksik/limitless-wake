@@ -9,7 +9,7 @@ export default class DivOne extends React.Component {
             >
                 <Row>
                     <Col xs="12">
-                        <h2 style={{ marginBottom: `15%`}}>How It Works</h2>
+                        <h2 style={{ color: `white` }}>How It Works</h2>
                     </Col>
                 </Row>
                 <Row>
@@ -21,7 +21,7 @@ export default class DivOne extends React.Component {
                         <h4>2. Fill Out The Evaluation</h4>
                         <p>Fill out the quick evaluation form so we can know how to make the most of your lesson.</p>
                     </Col>
-                    <Col xs="12" sm="4" className="box" style={{ marginBottom: `20%`}}>
+                    <Col xs="12" sm="4" className="box">
                         <h4>3. We Come To You</h4>
                         <p>The instructor comes to you. Lessons are on your boat with your friends </p>
                     </Col>

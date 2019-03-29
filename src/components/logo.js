@@ -26,7 +26,7 @@ const Image = () => (
         }
       }
     `}
-    render={data => <Img style={{margin: `10px auto`, width: `30%`}} fluid={data.placeholderImage.childImageSharp.fluid} />}
+    render={data => <Img id="logo" style={{margin: `10px auto`, width: `30%`, maxWidth:`200px`}} fluid={data.placeholderImage.childImageSharp.fluid} />}
   />
 )
 export default Image

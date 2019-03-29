@@ -6,7 +6,11 @@ import {
     NavbarBrand,
     Nav,
     NavItem,
-    NavLink
+    NavLink,
+    UncontrolledDropdown,
+    DropdownToggle,
+    DropdownMenu,
+    DropdownItem
 } from 'reactstrap';
 import Brand from "../images/logo.png"
 
@@ -37,8 +41,35 @@ export default class Example extends React.Component {
                             <NavItem>
                                 <NavLink href="/">Home</NavLink>
                             </NavItem>
+                            <UncontrolledDropdown nav inNavbar>
+                                <DropdownToggle nav caret>
+                                    Resources
+                                </DropdownToggle>
+                                <DropdownMenu>
+                                    <a href="/pricing">
+                                        <DropdownItem>
+                                            Pricing
+                                        </DropdownItem>
+                                    </a>
+                                    <a href="/locations">
+                                        <DropdownItem>
+                                            Locations
+                                        </DropdownItem>
+                                    </a>
+                                    <a href="/boat-rentals">
+                                        <DropdownItem>
+                                            Boat Rentals
+                                        </DropdownItem>
+                                    </a>
+                                    <a href="/faq">
+                                        <DropdownItem>
+                                            FAQ
+                                        </DropdownItem>
+                                    </a>
+                                </DropdownMenu>
+                            </UncontrolledDropdown>
                             <NavItem>
-                                <NavLink href="/pricing">Pricing</NavLink>
+                                <NavLink href="/gallery">Gallery</NavLink>
                             </NavItem>
                             <NavItem>
                                 <NavLink href="/about">About</NavLink>

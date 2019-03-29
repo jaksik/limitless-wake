@@ -43,12 +43,15 @@ const Layout = ({ children }) => (
             <a href="/contact" className="instagram social"><i className="fa fa-instagram"></i></a>
             <br />
             <Logo />
-            © {new Date().getFullYear()}, Limitless Wake
-          <br></br>
-            Web Site Built By
+            © {new Date().getFullYear()}, Limitless Wake Technologies LLC
+          <br/>
+          <div style={{ fontSize: `10px`}} >
+          Web Site Built By
             {` `}
-            <a href="https://connorjaksik.com">Jaksik Web Development</a>
-          </footer>
+            <a  href="https://connorjaksik.com">Jaksik Web Development</a>
+         
+          </div>
+            </footer>
         </div>
       </>
     )}

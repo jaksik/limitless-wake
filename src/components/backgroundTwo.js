@@ -6,7 +6,7 @@ import BackgroundImage from 'gatsby-background-image'
 const BackgroundSection = ({ className, height }) => (
   <StaticQuery query={graphql`
       query {
-        desktop: file(relativePath: { eq: "mobile-back-one.jpg" }) {
+        desktop: file(relativePath: { eq: "cover-img.jpg" }) {
           childImageSharp {
             fluid(quality: 100, maxWidth: 4160) {
               ...GatsbyImageSharpFluid_withWebp
@@ -24,9 +24,9 @@ const BackgroundSection = ({ className, height }) => (
           fluid={imageData}
           backgroundColor={`#040e18`}
           position={`fixed`}
-          style={{ minHeight: `600px` }}
+          // style={{ minHeight: `600px` }}
         >
-          <h1 style={{ color: `white`, marginTop: `20%`, fontSize: `3rem` }}>Learn On Your Boat With Your Friends</h1>
+                  <h1 id="backTwoHeading" style={{ color: `white`, marginTop: `20px`}}>Learn<br/> On Your Boat With Your Friends</h1>
         </BackgroundImage>
       )
     }

@@ -10,16 +10,18 @@ const IndexPage = () => (
       style={{
         margin: `0 auto`,
         maxWidth: 960,
-        padding: `0px 1.0875rem 1.45rem`,
+        // padding: `0px 1.0875rem 1.45rem`,
         paddingTop: 0,
       }}
     >
     <SEO title="Abput" keywords={[`about`, `limitless`, `wake`, `lessons`, `austin`, `texas`]} />
     <h1>About Limitless Wake</h1>
-    <h3>Founded By Chandler Crouch</h3>
+    <h5>Founded By Chandler Crouch</h5>
       <div style={{ marginBottom: `1.45rem` }}>
         <Image />
       </div>
+        <div className="container">
+        
         <p>
           Born on Lake Travis in Austin, Texas, Limitless Wake Owner, Chandler, knows the value of time spent out on the lake. Since junior high Chandler was volunteering to coach and teach youths at local wakeboard camps like One Wakeboard camp in Austin, TX.
           In college at Texas A&M University, Chandler helped organize and manage a competitive boat wakeboard team that now has finished among the top teams in the nation for the last several years.
@@ -32,7 +34,7 @@ const IndexPage = () => (
           Working with Cobe and Tarah helped Chandler to hone his skills while training elite wakeboarders riding on the Pro Series Tour.
           With Limitless Wake, Chandler will continue to share his passion while coaching wakeboard and wakesurf in the Austin area. From beginner to advanced, Chandler’s ability to tailor his
           instruction to the needs of the individual will ensure that all riders progress and keep having fun. His passion for coaching and attitude towards safety and make Chandler a natural fit for water sports.
-        </p>
+        </p></div>
     </div>
     <Button/>
   </Layout>
