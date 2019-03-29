@@ -1,5 +1,5 @@
 import React from "react"
-import Form from "../components/formTwo"
+import Form from "../components/formThree"
 import Layout from "../components/layout"
 import FormOne from "../components/form"
 import SEO from "../components/seo"
@@ -18,7 +18,7 @@ const Contact = () => (
      
       <h1>Book A Lesson</h1>
       <div className="container" id="form" style={{ maxWidth: `650px`}}>
-        <FormOne/>
+        <Form/>
       </div>
       <br/>
       <h5>Have Questions?</h5>
