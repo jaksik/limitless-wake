@@ -3,7 +3,7 @@ import Form from "../components/formThree"
 import Layout from "../components/layout"
 import FormOne from "../components/form"
 import SEO from "../components/seo"
-import "./style.css"
+// import "./style.css"
 const Contact = () => (
   <Layout>
     <div
