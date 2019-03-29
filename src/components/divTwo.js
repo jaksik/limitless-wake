@@ -15,16 +15,16 @@ export default class DivOne extends React.Component {
                 </Row>
                 <Row>
                     <Col xs="12" sm="4" className="box">
-                        <h5>4 Year A&M Wake Team Member</h5>
-                        <p>Chandler was an 4 active team member on the Texas A&M Wake Boarding Team</p>
+                        <h5>Texas A&M Wake Team Member</h5>
+                        <p>Chandler was an active member of the Texas A&M Wake team for 4 years</p>
                     </Col>
                     <Col xs="12" sm="4" className="box">
-                        <h5>Orlando Wake Accademy Former Graduate</h5>
-                        <p>Renounded as one of the top wake boarding accademies in the world, Chandler completed the program in 2016</p>
+                        <h5>Collegiate National Champion</h5>
+                        <p>Champion of one of the largest wake competitions in the country</p>
                     </Col>
                     <Col xs="12" sm="4" className="box">
-                        <h5>2 Time League Champion</h5>
-                        <p>Known for being a very competitive league</p>
+                        <h5>Freedom Wake Park former Student</h5>
+                        <p>Known for being one of the most prestigious wake academies in the country</p>
                     </Col>
                 </Row>
             </Container>

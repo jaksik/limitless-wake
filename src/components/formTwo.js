@@ -1,7 +1,23 @@
 import React from 'react';
 import { Button, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
+import { Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 
 export default class Example extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      modal: false
+    };
+
+    this.toggle = this.toggle.bind(this);
+  }
+
+  toggle() {
+    this.setState(prevState => ({
+      modal: !prevState.modal
+    }));
+  }
+
   render() {
     return (
       <Form
@@ -11,11 +27,11 @@ export default class Example extends React.Component {
         data-netlify-honeypot="bot-field"
         style={{ borderStyle: `ridge`, borderRadius: `25px` }}
       >
-        <h5>Evaluation Form</h5>
+        <h5>Lesson Booking Form</h5>
         <div style={{ padding: `5px`, textAlign: `left` }}>
           <FormGroup>
             <Label for="exampleEmail">Your Name:</Label>
-            <Input type="email" name="email" id="exampleEmail" placeholder="First and Last" />
+            <Input type="text" name="email" id="exampleEmail" placeholder="First and Last" />
           </FormGroup>
           <FormGroup>
             <Label for="exampleEmail">Email:</Label>
@@ -37,11 +53,11 @@ export default class Example extends React.Component {
           </FormGroup>
           <FormGroup>
             <Label for="meeting-time">Preffered lesson day and time:</Label>
-            <Input type="datetime-local"
+            <Input 
+              type="datetime-local"
               id="meeting-time"
-              name="meeting-time" value=""
-              min="2019-01-03T00:00"
-              max="2020-31-31T00:00" />
+              name="meeting-time"
+              />
           </FormGroup>
           <FormGroup>
             <Label for="exampleSelect">Your current experience level:</Label>
@@ -57,7 +73,16 @@ export default class Example extends React.Component {
             <Input type="textarea" name="text" id="exampleText" placeholder="Any thing else we should know before your lesson?" />
           </FormGroup>
         </div>
-        <Button>Submit</Button>
+        <Button onClick={this.toggle}>Submit</Button>
+        <Modal isOpen={this.state.modal} toggle={this.toggle} className={this.props.className}>
+          <ModalHeader style={{ textAlign:`center`}} toggle={this.toggle}>Thank You</ModalHeader>
+          <ModalBody>
+          Thank you for contacting Limitless Wake. We are reviewing your submission and will get back to you as soon as possible.
+          </ModalBody>
+          <ModalFooter>
+            <Button color="primary" onClick={this.toggle}>Okay</Button>{' '}
+          </ModalFooter>
+        </Modal>
       </Form>
     );
   }

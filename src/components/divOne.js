@@ -14,16 +14,16 @@ export default class DivOne extends React.Component {
                 </Row>
                 <Row>
                     <Col xs="12" sm="4" className="box">
-                        <h4>1. Book A Lesson</h4>
-                        <p>Lessons are by the hour and can be private or with your friends.</p>
+                        <h4>1. Fill Out The Evaluation Form</h4>
+                        <p>Tell us a little about your self as well as your preferred lesson day, time, and location.</p>
                     </Col>
                     <Col xs="12" sm="4" className="box">
-                        <h4>2. Fill Out The Evaluation</h4>
-                        <p>Fill out the quick evaluation form so we can know how to make the most of your lesson.</p>
+                        <h4>2. Lesson Confirmation</h4>
+                        <p>After filling out the evaluation, we'll get in contact with you through phone or email to confirm your lesson.</p>
                     </Col>
                     <Col xs="12" sm="4" className="box">
                         <h4>3. We Come To You</h4>
-                        <p>The instructor comes to you. Lessons are on your boat with your friends </p>
+                        <p>We'll meet you any where in the Austin Texas area. If you don't have a boat, <a href="/boat-rentals">click here</a> to check out popular rental locations</p>
                     </Col>
                 </Row>
             </Container>
