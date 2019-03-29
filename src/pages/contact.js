@@ -1,7 +1,7 @@
 import React from "react"
 import Form from "../components/formTwo"
 import Layout from "../components/layout"
-import Image from "../components/image"
+import FormOne from "../components/form"
 import SEO from "../components/seo"
 
 const Contact = () => (
@@ -20,6 +20,7 @@ const Contact = () => (
       <div className="container" id="form" style={{ maxWidth: `650px`}}>
         <Form />
       </div>
+      <FormOne/>
       <br/>
       <h5>Have Questions?</h5>
       <p>Always feel free to give us a call or send us an email.</p>

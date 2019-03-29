@@ -73,7 +73,7 @@ export default class Example extends React.Component {
             <Input type="textarea" name="text" id="exampleText" placeholder="Any thing else we should know before your lesson?" />
           </FormGroup>
         </div>
-        <Button onClick={this.toggle}>Submit</Button>
+        <Button type="submit" onClick={this.toggle}>Submit</Button>
         <Modal isOpen={this.state.modal} toggle={this.toggle} className={this.props.className}>
           <ModalHeader style={{ textAlign:`center`}} toggle={this.toggle}>Thank You</ModalHeader>
           <ModalBody>
