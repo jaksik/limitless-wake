@@ -23,7 +23,7 @@ h2 {
     border: 1px solid black;
 } */
 
-input, select, label {
+input, select, label, textarea {
     max-width: 100%;
     width: 90%;
     text-align: left;
@@ -32,6 +32,10 @@ input, select, label {
 
 input, select {
     margin-bottom: 10px;
+}
+
+label {
+    color: white;
 }
 
 .social {
@@ -49,6 +53,7 @@ input, select {
 
 .form {
     max-width: 650px;
+    margin: 0 auto;
 }
 
 #submit {

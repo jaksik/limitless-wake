@@ -8,15 +8,16 @@ class Form extends Component {
                 method="post"
                 data-netlify="true"
                 data-netlify-honeypot="bot-field"
-                style={{ width: `80%`, margin: `10px auto`, borderStyle: `ridge`, borderRadius: `25px` }}
+                style={{ width: `80%`, margin: `10px auto`, borderStyle: `ridge`, borderRadius: `25px`, backgroundColor: `#343a40` }}
             >
-                <input type="text"/><br/>
+                <input style={{ display: `none` }} type="text"/><br/>
+                <h4 style={{ color: `white` }}>Lesson Booking Form</h4>
                 <label for="name">Name: *</label>
-                <input name="name" placeholder="First and Last Name" type="text" /><br />
+                <input name="name" placeholder="  First and Last Name" type="text" /><br />
                 <label for="email">Email: *</label>
-                <input name="email" placeholder="Email" type="email" /><br />
+                <input name="email" placeholder="  Email" type="email" /><br />
                 <label for="phone">Phone: *</label>
-                <input name="phone" placeholder="Phone Number" type="number" /><br />
+                <input name="phone" placeholder="  Phone Number" type="number" /><br />
                 <label for="preffered-lake">Sellect a lake for your lesson:</label><br/>
                 <select name="preffered-lake">
                     <option> </option>
@@ -40,8 +41,8 @@ class Form extends Component {
                     <option value="3. ready for advanced">3. Comfortable manurvering, ready for advanced practice</option>
                 </select>
                 <label for="message">Additional Notes:</label>
-                <input name="message" placeholder="Any thing else we should know before your lesson?" type="textarea" /><br />
-                <button>Submit</button>
+                <textarea name="message" placeholder="  Any thing else we should know before your lesson?" type="textarea" /><br />
+                <button style={{ margin: `15px auto`, borderRadius: `10px`}}>Submit</button>
             </form>
         )
     }

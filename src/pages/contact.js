@@ -9,7 +9,7 @@ const Contact = () => (
       style={{
         margin: `0 auto`,
         maxWidth: `960px`,
-        padding: `0px 1.0875rem 1.45rem`,
+        // padding: `0px 1.0875rem 1.45rem`,
         paddingTop: 0,
       }}
     >
@@ -17,7 +17,7 @@ const Contact = () => (
      
       <h1 style={{ marginBottom:`0px`}}>Book A Lesson</h1>
       <h5 style={{ marginBottom:`40px` }}>with Limitless Wake Tech</h5>
-      <div className="container" id="form" style={{ maxWidth: `650px`}}>
+      <div className="" id="form" style={{ maxWidth: `650px`, margin: `0 auto`}}>
         <Form/>
       </div>
       <br/>
