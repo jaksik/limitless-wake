@@ -1,3 +1,4 @@
+
 import React, { Component } from "react";
 
 class Form extends Component {
@@ -10,10 +11,13 @@ class Form extends Component {
                 data-netlify-honeypot="bot-field"
                 style={{ width: `80%`, margin: `10px auto`, borderStyle: `ridge`, borderRadius: `25px` }}
             >
-                <label for="name">Your Name:</label>
-                <input name="name" placeholder="First and Last Name" type="text" /><br />
-                <input name="email" placeholder="Your Email" type="email" /><br />
-                <input name="phone" placeholder="Your Phone Number" type="number" /><br />
+                <h5>Lesson Booking Form</h5>
+                <label for="student-name">Your Name:  </label><br/>
+                <input name="student-name" placeholder="First and Last Name" type="text"/><br />
+                <label for="student-email">Email:  </label><br/>
+                <input name="student-email" placeholder="Email" type="email"/><br/>
+                <label for="student-phone">Phone Number:  </label>
+                <input name="student-phone" placeholder="Phone Number" type="number"/><br/>
                 <label for="preffered-lake">Sellect a lake for your lesson:</label>
                 <select name="preffered-lake">
                     <option> </option>
