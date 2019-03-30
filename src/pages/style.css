@@ -23,8 +23,15 @@ h2 {
     border: 1px solid black;
 } */
 
-input, select {
+input, select, label {
     max-width: 100%;
+    width: 90%;
+    text-align: left;
+    border-radius: 10px;
+}
+
+input, select {
+    margin-bottom: 10px;
 }
 
 .social {

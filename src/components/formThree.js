@@ -8,16 +8,16 @@ class Form extends Component {
                 method="post"
                 data-netlify="true"
                 data-netlify-honeypot="bot-field"
-                // style={{ width: `80%`, margin: `10px auto`, borderStyle: `ridge`, borderRadius: `25px` }}
+                style={{ width: `80%`, margin: `10px auto`, borderStyle: `ridge`, borderRadius: `25px` }}
             >
-                <input type="text"/>
-                <label for="name">Name:</label>
+                <input type="text"/><br/>
+                <label for="name">Name: *</label>
                 <input name="name" placeholder="First and Last Name" type="text" /><br />
-                <label for="email">Email:</label>
-                <input name="email" placeholder="Your Email" type="email" /><br />
-                <label for="phone">Phone:</label>
+                <label for="email">Email: *</label>
+                <input name="email" placeholder="Email" type="email" /><br />
+                <label for="phone">Phone: *</label>
                 <input name="phone" placeholder="Phone Number" type="number" /><br />
-                <label for="preffered-lake">Sellect a lake for your lesson:</label>
+                <label for="preffered-lake">Sellect a lake for your lesson:</label><br/>
                 <select name="preffered-lake">
                     <option> </option>
                     <option value="Lake-Austin">Lake Austin</option>
