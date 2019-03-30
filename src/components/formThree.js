@@ -13,8 +13,10 @@ class Form extends Component {
                 <input type="text"/>
                 <label for="name">Name:</label>
                 <input name="name" placeholder="First and Last Name" type="text" /><br />
+                <label for="email">Email:</label>
                 <input name="email" placeholder="Your Email" type="email" /><br />
-                <input name="phone" placeholder="Your Phone Number" type="number" /><br />
+                <label for="phone">Phone:</label>
+                <input name="phone" placeholder="Phone Number" type="number" /><br />
                 <label for="preffered-lake">Sellect a lake for your lesson:</label>
                 <select name="preffered-lake">
                     <option> </option>
@@ -22,7 +24,7 @@ class Form extends Component {
                     <option value="Lake-Travis">Lake Travis</option>
                     <option value="Lake-LBJ">Lake LBJ</option>
                     <option value="Canyon-Lake">Canyon Lake</option>
-                </select>
+                </select><br/>
                 <label for="meeting-time">Preffered lesson day and time:</label>
                 <input type="datetime-local"
                     id="meeting-time"
@@ -37,7 +39,8 @@ class Form extends Component {
                     <option value="2. can stand up, little maneuvering">2. Can stand up, little or basic maneuvering</option>
                     <option value="3. ready for advanced">3. Comfortable manurvering, ready for advanced practice</option>
                 </select>
-                <input name="message" placeholder="Your Message" type="textarea" /><br />
+                <label for="message">Additional Notes:</label>
+                <input name="message" placeholder="Any thing else we should know before your lesson?" type="textarea" /><br />
                 <button>Submit</button>
             </form>
         )
