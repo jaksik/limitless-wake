@@ -1,7 +1,7 @@
 import React from "react"
 import Layout from "../components/layout"
 import Button from "../components/button"
-import Image from "../components/image-chandler"
+import { Container, Row, Col } from 'reactstrap';
 import SEO from "../components/seo"
 
 const IndexPage = () => (
@@ -14,11 +14,28 @@ const IndexPage = () => (
         paddingTop: 0,
       }}
     >
-    <SEO title="Abput" keywords={[`about`, `limitless`, `wake`, `lessons`, `austin`, `texas`]} />
-    <h1>Lesson Locations</h1>
-      <h4>***Map will go here***</h4>
+      <SEO title="Abput" keywords={[`about`, `strongmitless`, `wake`, `lessons`, `austin`, `texas`]} />
+      <h1>Lesson Locations</h1>
+      <Container>
+        <Row>
+          <Col xs="12" md="4" style={{ margin: `auto`}}>
+        <strong>Lake Travis</strong><br/>
+        <strong>Lake Austin</strong><br/>
+        <strong>Lake LBJ</strong><br/>
+        <strong>Canyon Lake</strong><br/>
+        <br/>
+        <p>**Specific meeting locations are flexible</p>
+        <br/>
+          </Col>
+          <Col xs="12" md="8">
+          <iframe style={{ maxWidth: `100%`, maxHeight: `60%` }} src="https://www.google.com/maps/d/embed?mid=1JJfYAg2K--y6U6e0bfiHRSPSH_x6yHg9&hl=en" width="640" height="480"></iframe>
+
+          </Col>
+        </Row>
+      </Container>
+     
     </div>
-    <Button/>
+    <Button />
   </Layout>
 )
 

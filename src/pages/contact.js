@@ -1,5 +1,5 @@
 import React from "react"
-import Form from "../components/formThree"
+import Form from "../components/form"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
