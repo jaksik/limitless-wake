@@ -62,11 +62,11 @@ label {
 }
 
 .background {
-    background-attachment: fixed;
-    background-position: inherit;
+    /* background-attachment: fixed;
+    background-position: inherit; */
     background-repeat: no-repeat;
     background-size: cover;
-    text-align: center;
+    text-align: center; 
     min-width: 80px; 
     min-height: 600px;
     color: white;
@@ -90,9 +90,9 @@ label {
     #backTwoHeading {
         padding-top: 100px;
     }
-    .background {
+    /* .background {
         background-attachment: scroll;
-    }
+    } */
 }
 
 @media only screen and (max-width: 576px) {
