@@ -17,19 +17,30 @@ h2 {
 }
 
 #backgroundOne {
-    background-image: url('../images/wakegif.gif');
+    background-image: url('../images/air.jpg');
+    background-position: inherit;
+    padding-bottom: 50px;
 }
 
 #backgroundTwo {
     background-image: url('../images/cover-img.jpg');
+    background-position: center; 
 }
 
-/* input {
-    margin: 3px;
-    width: 100%;
+#backgroundThree {
+    background-image: url('../images/sunset.jpg');
+    background-position: center; 
+}
+
+.overlay {
+    z-index: 1;
     height: 100%;
-    border: 1px solid black;
-} */
+    width: 100%;
+    overflow: auto;
+    top: 0px;
+    left: 0px;    background: rgba(128, 128, 128, 0.6);
+    padding-bottom: 50px;
+}
 
 input, select, label, textarea {
     max-width: 100%;
@@ -77,7 +88,7 @@ label {
 
 @media only screen and (max-width: 768px) {
     #backTwoHeading {
-        padding: 0;
+        padding-top: 100px;
     }
 }
 

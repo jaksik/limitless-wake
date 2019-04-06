@@ -10,7 +10,6 @@ export default class DivOne extends React.Component {
                 <Row>
                     <Col xs="12">
                         <h2>Lessons by Chandler Crouch</h2>
-                        <h3 style={{ marginBottom: `40px`}}></h3>
                     </Col>
                 </Row>
                 <Row>

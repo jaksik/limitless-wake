@@ -9,12 +9,10 @@ const Contact = () => (
       style={{
         margin: `0 auto`,
         maxWidth: `960px`,
-        // padding: `0px 1.0875rem 1.45rem`,
         paddingTop: 0,
       }}
     >
-      <SEO title="Contact" keywords={[`contact`, `book`, `lesson`, `wake`, `austin`, `texas`, `surf`]} />
-     
+      <SEO title="Contact" keywords={[`contact`, `book`, `lesson`, `limitless`, `wake`, `austin`, `texas`, `surf`]} />
       <h1 style={{ marginBottom:`0px`}}>Book A Lesson</h1>
       <h5 style={{ marginBottom:`40px` }}>with Limitless Wake Tech</h5>
       <div className="" id="form" style={{ maxWidth: `650px`, margin: `0 auto`}}>

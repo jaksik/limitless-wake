@@ -16,12 +16,12 @@ const IndexPage = () => (
     >
     <SEO title="Abput" keywords={[`about`, `limitless`, `wake`, `lessons`, `austin`, `texas`]} />
     <h1>About Limitless Wake</h1>
-    <h5>Founded By Chandler Crouch</h5>
-      <div style={{ marginBottom: `1.45rem` }}>
+    <h5 style={{ marginBottom: `30px`}}>Founded By Chandler Crouch</h5>
+     
+        <div className="container">
+        <div style={{ marginBottom: `1.45rem` }}>
         <Image />
       </div>
-        <div className="container">
-        
         <p>
           Born on Lake Travis in Austin, Texas, Limitless Wake Owner, Chandler, knows the value of time spent out on the lake. Since junior high Chandler was volunteering to coach and teach youths at local wakeboard camps like One Wakeboard camp in Austin, TX.
           In college at Texas A&M University, Chandler helped organize and manage a competitive boat wakeboard team that now has finished among the top teams in the nation for the last several years.

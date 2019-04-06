@@ -1,7 +1,6 @@
 import React from "react"
 import Layout from "../components/layout"
 import Button from "../components/button"
-import Image from "../components/image-chandler"
 import SEO from "../components/seo"
 
 const IndexPage = () => (
@@ -14,13 +13,11 @@ const IndexPage = () => (
         paddingTop: 0,
       }}
     >
-    <SEO title="Abput" keywords={[`about`, `limitless`, `wake`, `lessons`, `austin`, `texas`]} />
-    <h1>Coming Soon</h1>
-    <h4>***Map will go here***</h4>
-
-       
+      <SEO title="About" keywords={[`about`, `limitless`, `wake`, `lessons`, `austin`, `texas`]} />
+      <h1>Coming Soon</h1>
+      <h4>***Map will go here***</h4>
     </div>
-    <Button/>
+    <Button />
   </Layout>
 )
 

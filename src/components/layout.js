@@ -31,14 +31,11 @@ const Layout = ({ children }) => (
         <div
           style={{
             width: `100%`,
-            margin: `0 auto`,
-            // maxWidth: 960,
-            // padding: `0px 1.0875rem 1.45rem`,
             paddingTop: 0,
           }}
         >
           <main>{children}</main>
-          <footer style={{ marginTop: `50px`}}>
+          <footer style={{ margin: `15px auto` }}>
             <a href="/contact" className="facebook social"><i className="fa fa-facebook"></i></a>
             <a href="/contact" className="instagram social"><i className="fa fa-instagram"></i></a>
             <br />
