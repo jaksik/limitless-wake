@@ -90,6 +90,9 @@ label {
     #backTwoHeading {
         padding-top: 100px;
     }
+    .background {
+        background-attachment: scroll;
+    }
 }
 
 @media only screen and (max-width: 576px) {
