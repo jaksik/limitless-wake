@@ -12,7 +12,7 @@ export default class Example extends React.Component {
     render() {
         return (
             <div>
-                <Button color="primary" size="lg" style={{width: `80%`, margin: `50px auto 15%`}} block onClick={() => this.contactPage()}>Book A Lesson</Button>
+                <Button color="primary" size="lg" style={{width: `50%`, margin: `50px auto 0px`}} block onClick={() => this.contactPage()}>Book A Lesson</Button>
             </div>
         );
     }

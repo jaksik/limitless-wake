@@ -9,7 +9,7 @@ export default class DivOne extends React.Component {
             >
                 <Row>
                     <Col xs="12">
-                        <h2 style={{ color: `white` }}>How It Works</h2>
+                        <h2 style={{ color: `343a4` }}>How It Works</h2>
                     </Col>
                 </Row>
                 <Row>

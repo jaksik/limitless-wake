@@ -9,22 +9,22 @@ export default class DivOne extends React.Component {
             >
                 <Row>
                     <Col xs="12">
-                        <h2 style={{ color: `white` }}>Lessons by:</h2>
-                        <h3 style={{ marginBottom: `40px`, color: `white`}}>Chandler Crouch</h3>
+                        <h2>Lessons by Chandler Crouch</h2>
+                        <h3 style={{ marginBottom: `40px`}}></h3>
                     </Col>
                 </Row>
                 <Row>
                     <Col xs="12" sm="4" className="box">
-                        <h5>Texas A&M Wake Team Member</h5>
-                        <p>Chandler was an active member of the Texas A&M Wake team for 4 years</p>
+                        <h5> Former Texas A&M Wake Team Member</h5>
+                        <p>Chandler was an active member and officer of the Texas A&M Wake team for 4 years</p>
                     </Col>
                     <Col xs="12" sm="4" className="box">
                         <h5>Collegiate National Champion</h5>
-                        <p>Champion of one of the largest wake competitions in the country</p>
+                        <p>Intermediate Division Champion at the 2016 Collegiate National Championships</p>
                     </Col>
                     <Col xs="12" sm="4" className="box">
-                        <h5>Freedom Wake Park former Student</h5>
-                        <p>Known for being one of the most prestigious wake academies in the country</p>
+                        <h5>Former Freedom Wake Park Instructor</h5>
+                        <p>Awarded 2018 Wake School of the year by the WSIA</p>
                     </Col>
                 </Row>
             </Container>

@@ -18,7 +18,7 @@ class Form extends Component {
                 <input name="email" placeholder="  Email" type="email" /><br />
                 <label for="phone">Phone: *</label>
                 <input name="phone" placeholder="  Phone Number" type="number" /><br />
-                <label for="preffered-lake">Sellect a lake for your lesson:</label><br/>
+                <label for="preffered-lake">Select a lake for your lesson:</label><br/>
                 <select name="preffered-lake">
                     <option> </option>
                     <option value="Lake-Austin">Lake Austin</option>
@@ -26,7 +26,7 @@ class Form extends Component {
                     <option value="Lake-LBJ">Lake LBJ</option>
                     <option value="Canyon-Lake">Canyon Lake</option>
                 </select><br/>
-                <label for="meeting-time">Preffered lesson day and time:</label>
+                <label for="meeting-time">Preferred lesson day and time:</label>
                 <input type="datetime-local"
                     id="meeting-time"
                     name="meeting-time"
@@ -41,7 +41,7 @@ class Form extends Component {
                     <option value="3. ready for advanced">3. Comfortable manurvering, ready for advanced practice</option>
                 </select>
                 <label for="message">Additional Notes:</label>
-                <textarea name="message" placeholder="  Any thing else we should know before your lesson?" type="textarea" /><br />
+                <textarea name="message" placeholder="  Anything else we should know before your lesson?" type="textarea" /><br />
                 <button style={{ margin: `15px auto`, borderRadius: `10px`}}>Submit</button>
             </form>
         )
