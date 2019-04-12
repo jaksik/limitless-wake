@@ -16,7 +16,7 @@ const IndexPage = () => (
       id="backgroundOne"
       className="background">
       <h1 style={{ color: `white`, fontSize: `7rem`, margin: `0px` }}>Learn<br />To<br />Ride</h1>
-      <p style={{ color: `white`, fontSize: `1rem` }}>Wake board and wake surf lessons by<br />Chandler Crouch in Austin Texas</p>
+      <p style={{ color: `white`, fontSize: `1rem` }}>Wakeboard and Wakesurf lessons by<br />Chandler Crouch in Austin, Texas</p>
       <Button />
     </div>
     <DivOne />

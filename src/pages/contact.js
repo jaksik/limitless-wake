@@ -14,7 +14,7 @@ const Contact = () => (
     >
       <SEO title="Contact" keywords={[`contact`, `book`, `lesson`, `limitless`, `wake`, `austin`, `texas`, `surf`]} />
       <h1 style={{ marginBottom:`0px`}}>Book A Lesson</h1>
-      <h5 style={{ marginBottom:`40px` }}>with Limitless Wake Tech</h5>
+      <h5 style={{ marginBottom:`40px` }}>with Limitless Wake</h5>
       <div className="" id="form" style={{ maxWidth: `650px`, margin: `0 auto`}}>
         <Form/>
       </div>

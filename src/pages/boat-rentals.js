@@ -14,8 +14,7 @@ const IndexPage = () => (
       }}
     >
       <SEO title="About" keywords={[`about`, `limitless`, `wake`, `lessons`, `austin`, `texas`]} />
-      <h1>Coming Soon</h1>
-      <h4>***Map will go here***</h4>
+      <h1>Local Affiliates Coming Soon</h1>
     </div>
     <Button />
   </Layout>
