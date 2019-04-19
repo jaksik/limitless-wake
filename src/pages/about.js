@@ -14,7 +14,7 @@ const IndexPage = () => (
         paddingTop: 0,
       }}
     >
-      <SEO title="Abput" keywords={[`about`, `limitless`, `wake`, `lessons`, `austin`, `texas`]} />
+      <SEO title="About" keywords={[`about`, `limitless`, `wake`, `lessons`, `austin`, `texas`]} />
       <h1>About Limitless Wake</h1>
       <h5 style={{ marginBottom: `30px` }}>Founded By Chandler Crouch</h5>
 

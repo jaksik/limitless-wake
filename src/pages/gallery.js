@@ -1,6 +1,7 @@
 import React from "react"
 import Layout from "../components/layout"
 import Button from "../components/button"
+import Gallery from "../components/gallery"
 import SEO from "../components/seo"
 
 const IndexPage = () => (
@@ -13,8 +14,9 @@ const IndexPage = () => (
                 paddingTop: 0,
             }}
         >
-            <SEO title="Abput" keywords={[`about`, `limitless`, `wake`, `lessons`, `austin`, `texas`]} />
+            <SEO title="Gallery" keywords={[`about`, `limitless`, `wake`, `lessons`, `austin`, `texas`]} />
             <h1>Gallery Coming Soon</h1>
+            <Gallery/>
         </div>
         <Button />
     </Layout>

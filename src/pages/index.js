@@ -44,7 +44,7 @@ const IndexPage = () => (
           <p>Limitless will provide a voucher for your lesson if you are unable to complete it due to weather circumstances.</p>
           <br/>
           <h5>Q: “What if I have to cancel my lesson?”</h5><br />
-          <p>The cancelation policy is as follows: cancelation notice 24 hours or more before your lesson receives a 100% refund. Less than 24 hour cancelation notice receives 85% refund.</p>
+          <p>The cancelation policy is as follows: cancellation notice 24 hours or more before your lesson receives a 100% refund. Less than 24 hour cancelation notice receives 85% refund.</p>
           <br/>
           <h5>Q:  “Will limitless captain our boat?”</h5><br />
           <p>Lessons with Limitless is a per hour basis. Afterwards, if you wish for us to captain your boat while you enjoy the lake that rate is an additional $55.00 per hour.</p>

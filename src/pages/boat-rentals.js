@@ -13,7 +13,7 @@ const IndexPage = () => (
         paddingTop: 0,
       }}
     >
-      <SEO title="About" keywords={[`about`, `limitless`, `wake`, `lessons`, `austin`, `texas`]} />
+      <SEO title="Boat Rentals" keywords={[`about`, `limitless`, `wake`, `lessons`, `austin`, `texas`]} />
       <h1>Local Affiliates Coming Soon</h1>
     </div>
     <Button />
