@@ -90,6 +90,24 @@ label {
     padding: 0 200px;
 }
 
+#subHeading {
+    color: white;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-delay: 2s;
+}
+
+@keyframes example {
+    0% { opacity: 0% }
+    100% { opacity: 100% }
+}
+
+@media only screen and (max-width: 1000px) {
+    .divSection {
+        padding: 0px;
+    }
+}
+
 @media only screen and (max-width: 768px) {
     #backTwoHeading {
         padding-top: 100px;
@@ -97,9 +115,6 @@ label {
     /* .background {
         background-attachment: scroll;
     } */
-    .divSection {
-        padding: 0px;
-    }
 }
 
 @media only screen and (max-width: 576px) {

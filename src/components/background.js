@@ -25,10 +25,10 @@ const BackgroundSection = ({ className, height }) => (
             fluid={data.desktop.childImageSharp.fluid}                                  
           >
             <h1 style={{ color:`white`, fontSize:`7rem`}}>Learn<br/>To<br/>Ride</h1>
+            <br/>
+            <br/>
+            <Button/> 
             <p style={{ color: `white`, fontSize: `1.5rem`}}>Wake board and wake surf lessons by Chandler Crouch in Austin Texas</p>
-            <br/>
-            <br/>
-            <Button/>
           </BackgroundImage>
        )
      }

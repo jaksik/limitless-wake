@@ -4,14 +4,16 @@ import Questions from "../data/faq.json"
 import "./faq.css"
 
 const FaqContainer = () => (
-    <div className="faqContainer">
+    <div>
         <h3>FAQ</h3>
-        {Questions.map(data => (
-            <Faq
-                question={data.question}
-                answer={data.answer}
-            />
-        ))}
+        <div className="faqContainer">
+            {Questions.map(data => (
+                <Faq
+                    question={data.question}
+                    answer={data.answer}
+                />
+            ))}
+        </div>
     </div>
 )
 

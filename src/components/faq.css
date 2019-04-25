@@ -1,10 +1,6 @@
 .faqItem {
-    border: 1px solid  #343a40;
-    padding: .5rem;
-    box-shadow: 0 -1px 4px #343a40;
-    margin: 1rem;
-    background-color: #343a4075;
-    border-radius: 25px;
+    border-bottom: 1px solid  #343a40;
+    padding: .5rem;    
 }
 
 .faqItem:hover{
@@ -13,8 +9,10 @@
 
 .faqContainer {
     max-width: 60%;
-    margin: 0 auto;
-    padding: 40px 0px;
+    margin: 0 auto 30px;
+    border: 1px solid  #343a40;
+    background-color: #343a40ba;
+    box-shadow: 0 -1px 4px #343a40;
 }
 
 @media only screen and (max-width: 768px) {
