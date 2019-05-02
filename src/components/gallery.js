@@ -10,7 +10,7 @@ const Cars = () => (
           edges {
             node {
               childImageSharp {
-                fluid(maxWidth:600) {
+                fluid(maxWidth:300) {
                   ...GatsbyImageSharpFluid
                 }
               }
