@@ -5,7 +5,7 @@ const pagediv = (props) => (
     <Container style={{ backgroundColor: `#343a40`, color: `darkgrey`, margin: `0px`, minWidth: `100%` }}>
         <Row>
             <Col xs="12">
-                <h2 style={{ color: `343a4` }}>{props.data.title}</h2>
+                <h2 style={{ color: `white` }}>{props.data.title}</h2>
             </Col>
         </Row>
         <Row className="divSection">
