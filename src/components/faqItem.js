@@ -6,20 +6,20 @@ class FaqItem extends Component {
     super(props);
     this.toggle = this.toggle.bind(this);
     this.state = {
-      one: false,
+      faqItemOpen: false,
       data: this.props
     };
   }
 
   toggle() {
-    this.setState(state => ({ one: !state.one }));
+    this.setState(state => ({ faqItemOpen: !state.faqItemOpen }));
   }
 
   render() {
     return (
       <div className="faqItem" onClick={this.toggle}>
         <div color="primary" style={{ marginBottom: '1rem' }}><strong>{this.state.data.question}</strong></div>
-        <Collapse isOpen={this.state.one}>
+        <Collapse isOpen={this.state.faqItemOpen}>
           <div className="container">
             <p>{this.state.data.answer}</p>
           </div>
