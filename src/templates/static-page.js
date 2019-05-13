@@ -4,7 +4,6 @@ import Layout from "../components/layout"
 import Img from 'gatsby-image';
 import SEO from "../components/seo"
 
-
 export default ({ data }) => {
   const post = data.markdownRemark
   return (
@@ -40,6 +39,7 @@ export const query = graphql`
       frontmatter {
         title
         description
+        style
         image {
           childImageSharp {
             resize(width: 1500, height: 1500) {

@@ -1,8 +1,10 @@
 ---
+templateKey: static-page
 title: "Local Affiliates Coming Soon"
-description: Hello world go code stuff introduction
-category: "Web 101"
+description: " "
+category: " "
 date: "2019-03-19"
-image: ../images/chandler.jpg
+style: "center"
+image: ../images/cover-img.jpg
 ---
 

@@ -97,6 +97,10 @@ label {
     animation-delay: 2s;
 }
 
+.faq {
+    text-align: center;
+}
+
 @keyframes example {
     0% { opacity: 0% }
     100% { opacity: 100% }
