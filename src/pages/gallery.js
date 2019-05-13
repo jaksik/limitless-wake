@@ -1,7 +1,7 @@
 import React from "react"
 import Layout from "../components/layout"
 import Button from "../components/button"
-import Gallery from "../components/gallery"
+import Gallery from "../components/galleryTwo"
 import SEO from "../components/seo"
 
 const GalleryPage = ({ data }) => {
