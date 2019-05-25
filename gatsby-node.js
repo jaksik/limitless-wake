@@ -1,26 +1,9 @@
 const path = require(`path`)
-//You want to use each markdown file name to create the page slug.
-//So pandas-and-bananas.md will become /pandas-and-bananas/.
-
 const { createFilePath } = require(`gatsby-source-filesystem`)
-
-exports.onCreateNode = ({ node, getNode, actions }) => {
-  const { createNodeField } = actions
-  if (node.internal.type === `MarkdownRemark`) {
-    const slug = createFilePath({ node, getNode, basePath: `pages` })
-    createNodeField({
-      node,
-      name: `slug`,
-      value: slug,
-    })
-  }
-}
-
-//the steps to programmatically creating pages are:
-//Query data with GraphQL & Map the query results to pages
 
 exports.createPages = ({ graphql, actions }) => {
     const { createPage } = actions
+
     // **Note:** The graphql function call returns a Promise
     // see: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise for more info
     return graphql(`
@@ -28,8 +11,12 @@ exports.createPages = ({ graphql, actions }) => {
         allMarkdownRemark {
           edges {
             node {
+              id
               fields {
                 slug
+              }
+              frontmatter {
+                  templateKey
               }
             }
           }
@@ -38,15 +25,32 @@ exports.createPages = ({ graphql, actions }) => {
     `
   ).then(result => {
     result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+      const id = node.id
         createPage({
           path: node.fields.slug,
-          component: path.resolve(`./src/templates/static-page.js`),
+          component: path.resolve(`./src/templates/${String(node.frontmatter.templateKey)}.js`),
           context: {
             // Data passed to context is available
             // in page queries as GraphQL variables.
+            id,
             slug: node.fields.slug,
           },
         })
       })
     })
   }
+
+exports.onCreateNode = ({ node, actions, getNode }) => {
+    const { createNodeField } = actions
+
+    if (node.internal.type === `MarkdownRemark`) {
+      const value = createFilePath({ node, getNode, basePath: `pages` })
+      createNodeField({
+        name: `slug`,
+        node,
+        value,
+      })
+    }
+  }
+
+  
