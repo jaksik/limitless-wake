@@ -1,6 +1,10 @@
 ---
-templateKey: 'faq'
-title: "FAQ"
+templateKey: faq
+title: FAQ
+testimonials:
+  - author: Connor Jaksik
+    quote: Hello this was awesome
+  - author: Albert
+    quote: It was reall really cool
 ---
 
-This is where I will describe the class. This is where I will describe the class. This is where I will describe the class. This is where I will describe the class. This is where I will describe the class. This is where I will describe the class. This is where I will describe the class. This is where I will describe the class. This is where I will describe the class. This is where I will describe the class. This is where I will describe the class. This is where I will describe the class. This is where I will describe the class. This is where I will describe the class. This is where I will describe the class. This is where I will describe the class. This is where I will describe the class. This is where I will describe the class. This is where I will describe the class. This is where I will describe the class. This is where I will describe the class. This is where I will describe the class. This is where I will describe the class. This is where I will describe the class. This is where I will describe the class. This is where I will describe the class. This is where I will describe the class. This is where I will describe the class. This is where I will describe the class. This is where I will describe the class. This is where I will describe the class. This is where I will describe the class. This is where I will describe the class. This is where I will describe the class. This is where I will describe the class. This is where I will describe the class. This is where I will describe the class. This is where I will describe the class. This is where I will describe the class. This is where I will describe the class. This is where I will describe the class. This is where I will describe the class. This is where I will describe the class. This is where I will describe the class. This is where I will describe the class.
