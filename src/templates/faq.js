@@ -9,7 +9,8 @@ export default ({ data }) => {
       <div>
         <h1>{data.markdownRemark.frontmatter.title}</h1>
         {/* map through FAQ list */}
-        
+        {data.markdownRemark.html}
+
       </div>
     </Layout>
   )

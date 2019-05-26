@@ -8,7 +8,7 @@ export default ({ data }) => {
     <Layout>
       <div>
         <h1>{data.markdownRemark.frontmatter.title}</h1>
-        
+        {data.markdownRemark.html}
       </div>
     </Layout>
   )
