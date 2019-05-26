@@ -41,9 +41,9 @@ collections:
         label: "Testimonials Page"
         name: "testimonials"
         fields:
-          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "faq"}
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "testimonials"}
           - {label: "Title", name: "title", widget: "string"}
-          - {label: "Body", name: "body", widget: "markdown"}
+          - {label: Testimonials, name: testimonials, widget: list, fields: [{label: Quote, name: quote, widget: string}, {label: Author, name: author, widget: string}]}
 
 
       # - file: "src/pages/gallery/index.md"
