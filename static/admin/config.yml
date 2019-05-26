@@ -22,7 +22,7 @@ collections:
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "faq"}
           - {label: "Title", name: "title", widget: "string"}
-          - {label: "Body", name: "body", widget: "markdown"}
+          - {label: Frequently Asked Question, name: faq, widget: list, fields: [{label: Question, name: question, widget: string}, {label: Answer, name: answer, widget: string}]}
       - file: "src/pages/resources/locations.md"
         label: "Locations Page"
         name: "locations"
@@ -43,7 +43,7 @@ collections:
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "testimonials"}
           - {label: "Title", name: "title", widget: "string"}
-          - {label: Testimonials, name: testimonials, widget: list, fields: [{label: Quote, name: quote, widget: string}, {label: Author, name: author, widget: string}]}
+          - {label: Testimonial, name: testimonials, widget: list, fields: [{label: Quote, name: quote, widget: string}, {label: Author, name: author, widget: string}]}
 
 
       # - file: "src/pages/gallery/index.md"
