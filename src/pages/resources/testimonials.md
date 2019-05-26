@@ -1,7 +1,6 @@
 ---
-templateKey: 'about'
-title: "Boat Rentals"
-date: "2017-08-10"
+templateKey: 'faq'
+title: "FAQ"
 ---
 
 This is where I will describe the class. This is where I will describe the class. This is where I will describe the class. This is where I will describe the class. This is where I will describe the class. This is where I will describe the class. This is where I will describe the class. This is where I will describe the class. This is where I will describe the class. This is where I will describe the class. This is where I will describe the class. This is where I will describe the class. This is where I will describe the class. This is where I will describe the class. This is where I will describe the class. This is where I will describe the class. This is where I will describe the class. This is where I will describe the class. This is where I will describe the class. This is where I will describe the class. This is where I will describe the class. This is where I will describe the class. This is where I will describe the class. This is where I will describe the class. This is where I will describe the class. This is where I will describe the class. This is where I will describe the class. This is where I will describe the class. This is where I will describe the class. This is where I will describe the class. This is where I will describe the class. This is where I will describe the class. This is where I will describe the class. This is where I will describe the class. This is where I will describe the class. This is where I will describe the class. This is where I will describe the class. This is where I will describe the class. This is where I will describe the class. This is where I will describe the class. This is where I will describe the class. This is where I will describe the class. This is where I will describe the class. This is where I will describe the class. This is where I will describe the class.
