@@ -1,5 +1,5 @@
 ---
-templateKey: 'about'
+templateKey: 'faq'
 title: "FAQ"
 ---
 
