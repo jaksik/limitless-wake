@@ -22,24 +22,23 @@ collections:
       - {label: "Tags", name: "tags", widget: "list"}
 
   - name: "pages"
-    label: "hello"
+    label: "Pages"
     files:
-      - file: "src/pages/about/index.md"
+      - file: "src/pages/about.md"
         label: "About Page"
         name: "about"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about"}
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Body", name: "body", widget: "markdown"}
+      - file: "src/pages/faq.md"
+        label: "FAQ Page"
+        name: "faq"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about"}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Body", name: "body", widget: "markdown"}
 
-      # - file: "src/pages/faq/index.md"
-      #   label: "FAQ Page"
-      #   name: "faq"
-      #   fields:
-      #     - {label: "Template Key", name: "templateKey", widget: "hidden", default: "faq-page"}
-      #     - {label: Title, name: title, widget: string}
-      #     - {label: Description, name: description, widget: string}
-      #     - {label: FAQ, name: faq, widget: list, fields: [{label: Question, name: question, widget: string}, {label: Answer, name: answer, widget: string}]}
       # - file: "src/pages/gallery/index.md"
       #   label: "Gallery Page"
       #   name: "gallery"
