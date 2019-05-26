@@ -1,6 +1,6 @@
 ---
 templateKey: faq
-title: FAQ
+title: Testimonials
 testimonials:
   - author: Connor Jaksik
     quote: Hello this was awesome
