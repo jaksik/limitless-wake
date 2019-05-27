@@ -27,16 +27,16 @@ collections:
         label: "Locations Page"
         name: "locations"
         fields:
-          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "faq"}
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "locations"}
           - {label: "Title", name: "title", widget: "string"}
-          - {label: "Body", name: "body", widget: "markdown"}
+          - {label: Location, name: locations, widget: list, fields: [{label: Location, name: location, widget: string}]}
       - file: "src/pages/resources/rentals.md"
         label: "Rentals Page"
         name: "rentals"
         fields:
-          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "faq"}
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "rentals"}
           - {label: "Title", name: "title", widget: "string"}
-          - {label: "Body", name: "body", widget: "markdown"}
+          - {label: Rental Affiliate, name: affiliate, widget: list, fields: [{label: Name, name: name, widget: string}, {label: Web Site, name: url, widget: string}]}
       - file: "src/pages/resources/testimonials.md"
         label: "Testimonials Page"
         name: "testimonials"
@@ -44,6 +44,14 @@ collections:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "testimonials"}
           - {label: "Title", name: "title", widget: "string"}
           - {label: Testimonial, name: testimonials, widget: list, fields: [{label: Quote, name: quote, widget: string}, {label: Author, name: author, widget: string}]}
+      - file: "src/pages/gallery/index.md"
+        label: "Image Gallery"
+        name: "gallery"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "gallery"}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: Image, name: image, widget: image}
+          - {label: Image, name: image, widget: list, fields: [{label: Title, name: title, widget: string}, {label: Alt, name: alt, widget: string}, {label: Img, name: img, widget: string}]}
 
 
       # - file: "src/pages/gallery/index.md"

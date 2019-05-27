@@ -1,0 +1,21 @@
+h1 {
+    text-align: center;
+}
+
+#backgroundOne {
+    background-image: url('../../static/img/air.jpg');
+    background-position: inherit;
+    padding-bottom: 50px;
+}
+
+#subHeading {
+    color: white;
+    animation-name: example;
+    animation-duration: 5s;
+    /* animation-delay: 2s; */
+}
+
+@keyframes example {
+    0% { opacity: 0% }
+    100% { opacity: 100% }
+}
