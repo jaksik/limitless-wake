@@ -29,8 +29,8 @@ export const query = graphql`
       frontmatter {
         title  
         testimonials {
-          author
           quote
+          author
         }
       }
    }

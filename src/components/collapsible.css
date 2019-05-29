@@ -1,0 +1,43 @@
+.collapsible {
+    background-color: #777;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+  }
+  
+  .active, .collapsible:hover {
+    background-color: #555;
+  }
+  
+  .content {
+    padding: 0 18px;
+    display: none;
+    background-color: #f1f1f1;
+  }
+
+  .active {
+      display: block;
+  }
+
+  .bar1, .bar2 {
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+
+  .change .bar1 {
+    -webkit-transform: rotate(45deg) translate(-9px, 6px);
+    transform: rotate(45deg) translate(-9px, 6px);
+  }
+    
+  .change .bar2 {
+    -webkit-transform: rotate(-45deg) translate(8px, 8px);
+    transform: rotate(-45deg) translate(8px, 8px);
+  }

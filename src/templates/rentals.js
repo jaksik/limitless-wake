@@ -8,7 +8,15 @@ export default ({ data }) => {
     <Layout>
       <div>
         <h1>{data.markdownRemark.frontmatter.title}</h1>
-        
+        {/* map through FAQ list */}
+        {data.markdownRemark.frontmatter.affiliate.map((faq) => {
+          return (
+            <div style={{textAlign: `center`}}>
+              <p><strong>{faq.name},</strong>{faq.url}</p>
+              
+            </div>
+          )
+        })}
       </div>
     </Layout>
   )
@@ -19,7 +27,11 @@ export const query = graphql`
     markdownRemark(fields: { slug: { eq: $slug } }) {
       html
       frontmatter {
-        title      
+        title
+        affiliate {
+          name
+          url
+        }
       }
    }
   }

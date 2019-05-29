@@ -1,6 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
+import Collapsible from "../components/collapse-item"
 
 export default ({ data }) => {
   console.log(data.markdownRemark.frontmatter.faq)
@@ -12,8 +13,10 @@ export default ({ data }) => {
         {data.markdownRemark.frontmatter.faq.map((faq) => {
           return (
             <div style={{textAlign: `center`}}>
-              <strong>{faq.question}</strong>
-              <p>{faq.answer}</p>
+              <Collapsible
+              button={faq.question}
+              content={faq.answer}
+              />
             </div>
           )
         })}

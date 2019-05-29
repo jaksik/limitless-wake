@@ -2,9 +2,13 @@
 templateKey: testimonials
 title: Testimonials
 testimonials:
-  - author: Connor Jaksik
-    quote: Hello this was awesome
-  - author: Albert
-    quote: It was reall really cool
+  - quote: This was the funnest experience ever in my   whole life
+    author: Connor Jaksik
+  - quote: No I had the best experience ever ever ever
+    author: Mike Jones
+  - quote: This was the funnest experience ever in my   whole life
+    author: Connor Jaksik
+  - quote: No I had the best experience ever ever ever
+    author: Mike Jones
 ---
 
