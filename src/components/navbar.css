@@ -1,0 +1,13 @@
+#navbar {
+    z-index: 2;
+}
+
+Link {
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 768px) {
+    #navbar {
+        text-align: center;
+    }
+}

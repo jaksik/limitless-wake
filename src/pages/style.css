@@ -3,19 +3,41 @@ html,body {
     /* background-color: #DADDE1 */
 }
 
-h2 {
+h2, h4 {
     text-align: center;
+    padding: 30px;
 }
 
 .overlay {
     position: relative;
     height:100%;
+    background:url("../../static/img/air.jpg") no-repeat;
+}
+
+#backgroundTwo {
+  background-image: url('../images/cover-img.jpg');
+  background-position: center; 
+}
+
+.background {
+  background-attachment: fixed;
+  /* background-position: inherit; */
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center; 
+  min-width: 80px; 
+  min-height: 600px;
+  color: white;
+}
+
+#backTwoHeading {
+  font-size: 7rem;
+  padding: 80px;
 }
 
 /*===styling the video container===*/
 .video {
     backface-visibility:hidden;
-    /* background:url("../../static/img/air.jpg") no-repeat scroll 0 0 #000; */
     background-size:cover;
     bottom:0;
     height:auto;
@@ -68,36 +90,17 @@ h2 {
     animation-delay: 5.5s;
 }
 
-#cover-button {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-}
-
 .cover-items {
     /* font-size: 3.4rem; */
-    position: absolute;
+    /* position: absolute; */
     /* top: 10.5rem;
     left: 10%; */
     opacity: 0;
     color: white;
     animation-name: fadeInOut;
     animation-duration: 10000s;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.contact-button {
-    /* position: -webkit-sticky;
-    position: sticky;
-    top: 0; */
-    width: 350px;
-    height: 50px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 25px;
+    /* top: 50%;
+    left: 50%; */
 }
 
 /*Styling Background for mobile devices*/
@@ -118,5 +121,22 @@ h2 {
       right:0;
       width:auto;
       z-index:-1;
+  }
+
+  #backTwoHeading {
+    padding-top: 100px;
+}
+}
+
+@media only screen and (max-width: 576px) {
+  .backgroundImage {
+      min-width: 0px;; 
+  }
+  #backTwoHeading {
+      padding: 0;
+      font-size: 4rem;
+  }
+  .box {
+      margin-bottom: 30px;
   }
 }

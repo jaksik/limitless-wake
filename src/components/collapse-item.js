@@ -4,7 +4,7 @@ import './collapsible.css'
 class Photography extends Component {
     constructor(props) {
         super(props);
-        this.props = this.props;
+        this.props = props;
         this.toggle = this.toggle.bind(this);
         this.state = {
             open: false

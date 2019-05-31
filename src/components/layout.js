@@ -9,8 +9,8 @@ import React from "react"
 import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
 
-import Header from "./head"
-// import Logo from "./logo"
+import Header from "./navbar"
+import Brand from "../images/logo.png"
 import "./layout.css"
 
 const Layout = ({ children }) => (
@@ -46,8 +46,7 @@ const Layout = ({ children }) => (
             <a href="/contact" className="facebook social"><i className="fa fa-facebook"></i></a>
             <a href="/contact" className="instagram social"><i className="fa fa-instagram"></i></a>
             <br />
-            {/* <Logo /> */}
-            © {new Date().getFullYear()}, Limitless Wake Technologies LLC
+            <img src={Brand} width="100%" height="100%" className="navBrand d-inline-block align-top" style={{ maxWidth: `100px`, marginBottom: `0px` }}alt="Limitless Wake Logo" />            © {new Date().getFullYear()}, Limitless Wake Technologies LLC
           <br/>
           <div style={{ fontSize: `10px`}} >
           Web Site Built By

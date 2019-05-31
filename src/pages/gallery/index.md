@@ -1,7 +1,14 @@
 ---
-templateKey: 'about'
+templateKey: 'gallery'
 title: "Image Gallery"
-date: "2017-08-10"
+images:
+    - image: ../images/chandler.jpg
+    - image: ../images/chandler.jpg
+    - image: ../images/chandler.jpg
+    - image: ../images/chandler.jpg
+    - image: ../images/chandler.jpg
+    - image: ../images/chandler.jpg
+    - image: ../images/chandler.jpg
+    - image: ../images/chandler.jpg
+    - image: ../images/chandler.jpg
 ---
-
-This is where I will describe the class. This is where I will describe the class. This is where I will describe the class. This is where I will describe the class. This is where I will describe the class. This is where I will describe the class. This is where I will describe the class. This is where I will describe the class. This is where I will describe the class. This is where I will describe the class. This is where I will describe the class. This is where I will describe the class. This is where I will describe the class. This is where I will describe the class. This is where I will describe the class. This is where I will describe the class. This is where I will describe the class. This is where I will describe the class. This is where I will describe the class. This is where I will describe the class. This is where I will describe the class. This is where I will describe the class. This is where I will describe the class. This is where I will describe the class. This is where I will describe the class. This is where I will describe the class. This is where I will describe the class. This is where I will describe the class. This is where I will describe the class. This is where I will describe the class. This is where I will describe the class. This is where I will describe the class. This is where I will describe the class. This is where I will describe the class. This is where I will describe the class. This is where I will describe the class. This is where I will describe the class. This is where I will describe the class. This is where I will describe the class. This is where I will describe the class. This is where I will describe the class. This is where I will describe the class. This is where I will describe the class. This is where I will describe the class. This is where I will describe the class.

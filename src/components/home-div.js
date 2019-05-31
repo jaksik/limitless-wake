@@ -1,16 +1,27 @@
 import React from "react"
-import data from "../data/info.json"
-import './div.css'
+import { Container, Row, Col } from 'reactstrap';
 
-const div = () => (
-    <div>
-        <h2>{data[0].title}</h2>
-        <div className="row">
-            <div className="item"><p>{data[0].data[0].info}</p></div>
-            <div className="item"><p>{data[0].data[1].info}</p></div>
-            <div className="item"><p>{data[0].data[2].info}</p></div>
+const div = (props) => {
+    const data = props.info
+    return (
+        <div style={{ zIndex: `0`}}>
+            <Row>
+                <Col xs="12">
+                    <h2>{data.title}</h2>
+                </Col>
+            </Row>
+            <Row>
+                {data.data.map((item) => {
+                    return (
+                        <Col xs="12" sm="4" className="box">
+                            <h4 style={{ padding: `0`}}>{item.title}</h4>
+                            <p className="home-div-item">{item.info}</p>
+                        </Col>
+                    )
+                })}
+            </Row>
         </div>
-    </div>
-)
+    )
+}
 
 export default div
