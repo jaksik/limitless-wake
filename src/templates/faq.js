@@ -2,12 +2,13 @@ import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import Collapsible from "../components/collapse-item"
+import Section from "../components/section"
 
 export default ({ data }) => {
   console.log(data.markdownRemark.frontmatter.faq)
   return (
     <Layout>
-      <div>
+      <Section>
         <h1>{data.markdownRemark.frontmatter.title}</h1>
         {/* map through FAQ list */}
         {data.markdownRemark.frontmatter.faq.map((faq) => {
@@ -21,7 +22,7 @@ export default ({ data }) => {
           )
         })}
 
-      </div>
+      </Section>
     </Layout>
   )
 }

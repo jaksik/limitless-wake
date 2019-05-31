@@ -30,11 +30,17 @@ const Header = ({ siteTitle }) => (
       </h1>
       <Link to="/contact" className="nav-item">Contact</Link>
       <Link to="/gallery" className="nav-item">Gallery</Link>
-      <Link to="/resources/faq" className="nav-item">faq</Link>
-      <Link to="/resources/locations" className="nav-item">locations</Link>
-      <Link to="/resources/rentals" className="nav-item">rentals</Link>
-      <Link to="/resources/testimonials" className="nav-item">testimonials</Link>
-      <Link to="/resources/rates" className="nav-item">Rates</Link>
+      {/* Create Dropdown Menu for Resources */}
+      <Link className="nav-item">
+        Resources
+        <div className="dropdown-content">
+          <Link to="/resources/faq" className="nav-item">faq</Link><br/>
+          <Link to="/resources/locations" className="nav-item">locations</Link><br/>
+          <Link to="/resources/rentals" className="nav-item">rentals</Link><br/>
+          <Link to="/resources/testimonials" className="nav-item">testimonials</Link><br/>
+          <Link to="/resources/rates" className="nav-item">Rates</Link><br/>
+        </div>
+      </Link>
       <Link to="/about" className="nav-item">about</Link>
     </div>
   </header>

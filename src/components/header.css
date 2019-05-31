@@ -1,0 +1,69 @@
+#header-title {
+    text-align: left;
+}
+/* normally hide mobile device nav menu */
+.menu-icon {
+    display: none;
+}
+
+Link {
+    text-decoration: none;
+}
+
+/* style the mobile device menu icon */
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.active .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.active .bar2 {opacity: 0;}
+
+.active .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+.dropdown-content {
+  background-color: #f1f1f1; 
+}
+  
+@media only screen and (max-width: 768px) {
+      .faqContainer {
+          max-width: 80%;
+      }
+/* Navbar styling for mobile devices */
+      .nav-item {
+        float: none;
+        margin: 0 auto;
+        text-align: center;
+      }
+  
+      .nav-items {
+        text-align: center;
+        margin-top: 10px;
+        display: none;
+      }
+  
+      .nav-items .active {
+        display: block;
+      }
+  
+      .menu-icon {
+        cursor: pointer;
+        float: right;
+        padding-top: -30px;
+        display: block;
+      }
+
+      h1 {
+        text-align: left;
+    }
+}

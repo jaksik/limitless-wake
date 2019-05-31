@@ -1,15 +1,16 @@
 import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
+import Section from "../components/section"
 
 export default ({ data }) => {
 
   return (
     <Layout>
-      <div>
+      <Section>
         <h1>{data.markdownRemark.frontmatter.title}</h1>
         {data.markdownRemark.html}
-      </div>
+      </Section>
     </Layout>
   )
 }

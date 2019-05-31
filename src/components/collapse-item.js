@@ -17,14 +17,8 @@ class Photography extends Component {
 
     render() {
         return (
-            <div>
-                <div>
-                    <button className="collapsible" onClick={this.toggle}>{this.props.button}</button>
-                    {/* <div className={(this.state.open ? 'change' : '')}>
-                        <div className="bar1"></div>
-                        <div className="bar2"></div>
-                    </div> */}
-                </div>
+            <div className="collapsible collapseBox" onClick={this.toggle}>
+                    <strong>{this.props.button}</strong>
                 <div className={'content ' + (this.state.open ? 'active' : '')}>
                     <p>{this.props.content}</p>
                 </div>
