@@ -13,7 +13,7 @@ import {
     DropdownMenu,
     DropdownItem
 } from 'reactstrap';
-import Brand from "../images/logo.png"
+import Brand from "../images/limitless-logo.png"
 import "./navbar.css"
 
 export default class Example extends React.Component {
@@ -41,34 +41,34 @@ export default class Example extends React.Component {
                     <Collapse isOpen={this.state.isOpen} navbar>
                         <Nav className="ml-auto" navbar>
                             <NavItem>
-                                <NavLink><Link to="/">Home</Link></NavLink>
+                                <NavLink><Link to="/" style={{ color: `lightgray`}}>Home</Link></NavLink>
                             </NavItem>
                             <UncontrolledDropdown nav inNavbar>
-                                <DropdownToggle nav caret>
+                                <DropdownToggle nav caret style={{ color: `lightgray`}}>
                                     Resources
                                 </DropdownToggle>
                                 <DropdownMenu>
-                                    <Link to="resources/pricing">
+                                    <Link to="resources/pricing" style={{ color: `lightgray`}}>
                                         <DropdownItem>
                                             Pricing
                                         </DropdownItem>
                                     </Link>
-                                    <Link to="resources/locations">
+                                    <Link to="resources/locations" style={{ color: `lightgray`}}>
                                         <DropdownItem>
                                             Locations
                                         </DropdownItem>
                                     </Link>
-                                    <Link to="resources/rentals">
+                                    <Link to="resources/rentals" style={{ color: `lightgray`}}>
                                         <DropdownItem>
                                             Boat Rentals
                                         </DropdownItem>
                                     </Link>
-                                    <Link to="resources/faq">
+                                    <Link to="resources/faq" style={{ color: `lightgray`}}>
                                         <DropdownItem>
                                             FAQ
                                         </DropdownItem>
                                     </Link>
-                                    <Link to="resources/testimonials">
+                                    <Link to="resources/testimonials" style={{ color: `lightgray`}}>
                                         <DropdownItem>
                                             Testimonials
                                         </DropdownItem>
@@ -76,13 +76,13 @@ export default class Example extends React.Component {
                                 </DropdownMenu>
                             </UncontrolledDropdown>
                             <NavItem>
-                                <NavLink><Link to="/about">About</Link></NavLink>
+                                <NavLink><Link to="/about" style={{ color: `lightgray`}}>About</Link></NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink><Link to="/gallery">Gallery</Link></NavLink>
+                                <NavLink><Link to="/gallery" style={{ color: `lightgray`}}>Gallery</Link></NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink><Link to="/contact">Contact</Link></NavLink>
+                                <NavLink><Link to="/contact" style={{ color: `lightgray`}}>Contact</Link></NavLink>
                             </NavItem>
                         </Nav>
                     </Collapse>

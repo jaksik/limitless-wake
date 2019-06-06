@@ -9,7 +9,7 @@ import "../pages/style.css"
 export default ({ data }) => {
 
   return (
-    <Layout>
+    <Layout footer="fixed">
       <Container>
         <h1>{data.markdownRemark.frontmatter.title}</h1>
         <SEO title="Pricing" keywords={[`wake`, `lessons`, `price`, `austin`, `texas`]} />

@@ -1,12 +1,16 @@
 import React from "react"
 import { graphql } from "gatsby"
+import Img from 'gatsby-image';
+import Image from "../components/image"
 import Layout from "../components/layout"
 import Container from "../components/container"
-import Image from "../components/image"
 import SEO from "../components/seo"
 import "../pages/style.css"
 
 export default ({ data }) => {
+  // const thumbnail =
+  // data.markdownRemark.frontmatter.image &&
+  // data.markdownRemark.frontmatter.image.childImageSharp.resize.src
 
   return (
     <Layout>
@@ -14,9 +18,10 @@ export default ({ data }) => {
       <Container>
         <h1>{data.markdownRemark.frontmatter.title}</h1>
         <div style={{ maxWidth: `50%`, margin: `0 auto`}}>
-          <Image/>
+        {/* {thumbnail && <Img fluid={data.markdownRemark.frontmatter.image.childImageSharp.fluid} />} */}
+        <Image/>
         </div>
-        {data.markdownRemark.html}
+        <div dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }} />
       </Container>
     </Layout>
   )

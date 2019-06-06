@@ -1,6 +1,5 @@
 html,body {
     height:100%;
-    /* background-color: #DADDE1 */
 }
 
 h2, h4 {
@@ -14,6 +13,69 @@ h2, h4 {
     background:url("../../static/img/air.jpg") no-repeat;
 }
 
+/*===styling the video container===*/
+.video {
+  backface-visibility:hidden;
+  background-size:cover;
+  bottom:0;
+  height:auto;
+  min-height:100%;
+  min-width:100%;
+  perspective:1000;
+  position:fixed;
+  right:0;
+  width:auto;
+  z-index:-1;
+}
+
+/*===Styling the actual video===*/
+#myVid {
+  /* Make video to at least 100% wide and tall */
+  min-width: 100%;
+  min-height: 100%;
+
+  /* Setting width & height to auto prevents the browser from stretching or squishing the video */
+  width: auto;
+  height: auto;
+
+  /* Center the video */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/*===Animations and styling for cover items===*/
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+
+  .05% {
+      opacity: 1;
+    }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+#cover-title {
+  animation-delay: 1.5s;
+}
+
+#cover-text #cover-button {
+  animation-delay: 5.5s;
+}
+
+.cover-items {
+  opacity: 0;
+  color: white;
+  animation-name: fadeInOut;
+  animation-duration: 10000s;
+}
+
+/* Second Background Styling */
 #backgroundTwo {
   background-image: url('../images/cover-img.jpg');
   background-position: center; 
@@ -35,73 +97,10 @@ h2, h4 {
   padding: 80px;
 }
 
-/*===styling the video container===*/
-.video {
-    backface-visibility:hidden;
-    background-size:cover;
-    bottom:0;
-    height:auto;
-    min-height:100%;
-    min-width:100%;
-    perspective:1000;
-    position:fixed;
-    right:0;
-    width:auto;
-    z-index:-1;
+.collapse-container {
+  /* border: 2px solid black; */
 }
 
-/*===Styling the actual video===*/
-#myVid {
-    /* Make video to at least 100% wide and tall */
-    min-width: 100%;
-    min-height: 100%;
-
-    /* Setting width & height to auto prevents the browser from stretching or squishing the video */
-    width: auto;
-    height: auto;
-
-    /* Center the video */
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-/*===Animations and styling for cover items===*/
-@keyframes fadeInOut {
-    0% {
-      opacity: 0;
-    }
-
-    .05% {
-        opacity: 1;
-      }
-  
-    100% {
-      opacity: 1;
-    }
-}
-
-#cover-title {
-    animation-delay: 1.5s;
-}
-
-#cover-text #cover-button {
-    animation-delay: 5.5s;
-}
-
-.cover-items {
-    /* font-size: 3.4rem; */
-    /* position: absolute; */
-    /* top: 10.5rem;
-    left: 10%; */
-    opacity: 0;
-    color: white;
-    animation-name: fadeInOut;
-    animation-duration: 10000s;
-    /* top: 50%;
-    left: 50%; */
-}
 
 /*Styling Background for mobile devices*/
 @media only screen and (max-width: 768px) {

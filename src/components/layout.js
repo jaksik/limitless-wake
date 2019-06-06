@@ -10,10 +10,10 @@ import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
 
 import Header from "./navbar"
-import Brand from "../images/logo.png"
+import Brand from "../images/limitless-logo.png"
 import "./layout.css"
 
-const Layout = ({ children }) => (
+const Layout = ({ children, ...props }) => (
   <StaticQuery
     query={graphql`
       query SiteTitleQuery {
@@ -38,10 +38,14 @@ const Layout = ({ children }) => (
          
         </div>
         <footer style={{ 
+                  position: (props.footer ? `fixed` : `none` ),
+                  left: `0`,
+                  bottom: `0`,
                   margin: `0 auto`, 
                   textAlign: `center`,
                   background: `#343a40`,
                   color: `white`,
+                  width: `100%`
                 }}>
             <a href="/contact" className="facebook social"><i className="fa fa-facebook"></i></a>
             <a href="/contact" className="instagram social"><i className="fa fa-instagram"></i></a>

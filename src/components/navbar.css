@@ -6,6 +6,17 @@ Link {
     text-decoration: none;
 }
 
+.nav-item {
+    padding: 0 5px;
+    color: white;
+    float: right;
+    text-decoration: none;
+}
+
+a {
+    color: rgba(255,255,255,.5);
+}
+
 @media only screen and (max-width: 768px) {
     #navbar {
         text-align: center;

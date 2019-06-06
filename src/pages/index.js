@@ -4,7 +4,7 @@ import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Container from "../components/container"
-import Collapsible from "../components/collapse-item"
+import Collapsible from "../components/coll"
 
 import Image from "../components/image"
 import HomeDiv from "../components/home-div"
@@ -51,7 +51,7 @@ const IndexPage = ({ data }) => {
 
       {/* Home Page Container */}
       <div style={{ marginTop: `300px` }}>
-        <Container>
+        <Container background="#343a40">
           {/* How It Works*/}
           <HomeDiv info={info[0]} />
         </Container>
@@ -64,7 +64,7 @@ const IndexPage = ({ data }) => {
         <h1 id="backTwoHeading" style={{ color: `white`, fontSize: `5rem`, margin: `0px auto` }}>Learn<br />On Your Boat<br />With<br />Your Friends</h1>
       </div>
 
-      <Container>
+      <Container background="#343a40">
         {/* Declare Authority in this industry */}
         <HomeDiv info={info[1]} />
       </Container>
@@ -74,7 +74,7 @@ const IndexPage = ({ data }) => {
         className="background">
       </div>
 
-       <Container>
+      <Container background="#f6f6f6">
           {/* FAQ preview and link to full faq page */}
         <h2>Frequently Asked Questions</h2>
         {faqData.map((faq) => {

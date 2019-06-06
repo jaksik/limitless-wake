@@ -22,7 +22,10 @@ export default ({ data }) => {
 
         <Container>
           <Row>
-          <h1>{data.markdownRemark.frontmatter.title}</h1>
+            <Col xs="12">
+            <h1 style={{textAlign: `center`}}>{data.markdownRemark.frontmatter.title}</h1>
+
+            </Col>
           </Row>
           <Row>
             <Col xs="12" md="4" style={{ margin: `auto` }}>

@@ -7,7 +7,7 @@ import "../pages/style.css"
 export default ({ data }) => {
   console.log(data.markdownRemark.frontmatter.faq)
   return (
-    <Layout>
+    <Layout footer="fixed">
       <Container>
         <h1>{data.markdownRemark.frontmatter.title}</h1>
         {/* map through FAQ list */}
