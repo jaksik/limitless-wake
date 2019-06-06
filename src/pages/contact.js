@@ -3,7 +3,7 @@ import Layout from "../components/layout"
 import Form from "../components/contact-form"
 import SEO from "../components/seo"
 
-import { Button } from 'reactstrap';
+import { Button, Row, Col } from 'reactstrap';
 import waiver from "../data/waiver.pdf"
 
 const Contact = () => (
