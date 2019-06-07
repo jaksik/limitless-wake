@@ -4,7 +4,7 @@ import Form from "../../components/contact-form"
 import SEO from "../../components/seo"
 
 import { Button } from 'reactstrap';
-import waiver from "../data/waiver.pdf"
+import waiver from "../../data/waiver.pdf"
 
 const Contact = () => (
   <Layout>
