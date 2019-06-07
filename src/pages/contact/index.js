@@ -8,30 +8,23 @@ import waiver from "../../data/waiver.pdf"
 
 const Contact = () => (
   <Layout>
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: `960px`,
-        paddingTop: 0,
-      }}
-    >
-      <SEO title="Contact" keywords={[`wakeboard`, `lessons`, `austin`, `texas`, `limitless`, `wake`, `lake`, `travis`, `surf`]} />
-      <h1 style={{ margin: `30px 0`, textAlign: `center` }}>Book A Lesson</h1>
-
-      <div className="" id="form" style={{ margin: `0 auto` }}>
-        <Form />
-      </div>
-      <br />
-      <a href={waiver} download>
-        <Button color="primary" size="lg" style={{ width: `55%`, margin: `5px auto`, zIndex: `1` }} block id="cover-button">Download The Waiver</Button>
-      </a>
-      <div style={{ textAlign: `center` }}>
-        <h5>Have Questions?</h5>
-        <p>Always feel free to give us a call or send us an email.</p>
-        <p><strong>Phone: </strong> 512-270-1735</p>
-        <p><strong>Email:</strong> limitlesswaketech@gmail.com</p>
-      </div>
-    </div>
+     <form
+                name="test"
+                method="post"
+                data-netlify="true"
+                data-netlify-honeypot="bot-field"
+              >
+                <input type="hidden" name="bot-field" />
+                <input type="hidden" name="form-name" value="contact" />                <h4 style={{ color: `white` }}>Ideas, thoughts, coffee?</h4>
+                <h4 style={{ color: `white` }}>Contact {data.site.siteMetadata.title}</h4>
+                <label for="name">Name: *</label>
+                <input name="name" placeholder="  First and Last Name" type="text" /><br />
+                <label for="email">Email: *</label>
+                <input name="email" placeholder="  Email" type="email" /><br />
+                <label for="message">Your Message:</label>
+                <textarea name="message" placeholder="  Anything else we should know before your lesson?" type="textarea" /><br />
+                <button style={{ margin: `15px auto`, borderRadius: `10px` }}>Submit</button>
+              </form>
   </Layout>
 )
 
