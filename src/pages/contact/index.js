@@ -8,7 +8,17 @@ import waiver from "../../data/waiver.pdf"
 
 const Contact = () => (
   <Layout>
-    <form
+    <div
+      style={{
+        margin: `0 auto`,
+        maxWidth: `960px`,
+        paddingTop: 0,
+      }}
+    >
+      <SEO title="Contact" keywords={[`wakeboard`, `lessons`, `austin`, `texas`, `limitless`, `wake`, `lake`, `travis`, `surf`]} />
+      <h1 style={{ margin: `30px 0`, textAlign: `center` }}>Book A Lesson</h1>
+
+      <form
                 name="contact"
                 method="post"
                 data-netlify="true"
@@ -49,6 +59,17 @@ const Contact = () => (
                 <textarea name="message" placeholder="  Anything else we should know before your lesson?" type="textarea" /><br />
                 <button style={{ margin: `15px auto`, borderRadius: `10px`}}>Submit</button>
             </form>
+      <br />
+      <a href={waiver} download>
+        <Button color="primary" size="lg" style={{ width: `55%`, margin: `5px auto`, zIndex: `1` }} block id="cover-button">Download The Waiver</Button>
+      </a>
+      <div style={{ textAlign: `center` }}>
+        <h5>Have Questions?</h5>
+        <p>Always feel free to give us a call or send us an email.</p>
+        <p><strong>Phone: </strong> 512-270-1735</p>
+        <p><strong>Email:</strong> limitlesswaketech@gmail.com</p>
+      </div>
+    </div>
   </Layout>
 )
 
