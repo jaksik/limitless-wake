@@ -3,7 +3,7 @@ import Layout from "../components/layout"
 import Form from "../components/contact-form"
 import SEO from "../components/seo"
 
-import { Button, Row, Col } from 'reactstrap';
+import { Button } from 'reactstrap';
 import waiver from "../data/waiver.pdf"
 
 const Contact = () => (
@@ -19,23 +19,8 @@ const Contact = () => (
       <h1 style={{ margin: `30px 0`, textAlign: `center` }}>Book A Lesson</h1>
 
       <div className="" id="form" style={{ margin: `0 auto` }}>
-        {/* <Form /> */}
+        <Form />
       </div>
-      <form
-                name="contact"
-                method="post"
-                data-netlify="true"
-                data-netlify-honeypot="bot-field"
-                style={{ width: `80%`, margin: `10px auto`, borderStyle: `ridge`, borderRadius: `25px`, backgroundColor: `#343a40` }}
-            >
-                {/* Personal Info */}
-               
-                        <input style={{ display: `none` }} type="text" /><br />
-                        <label style={{marginTop: `0px`}} for="name">Name: *</label>
-                        <input name="name" placeholder="  First and Last Name" type="text" /><br />
-                   
-                    <button style={{ margin: `15px auto`, borderRadius: `10px` }}>Submit</button>
-            </form>
       <br />
       <a href={waiver} download>
         <Button color="primary" size="lg" style={{ width: `55%`, margin: `5px auto`, zIndex: `1` }} block id="cover-button">Download The Waiver</Button>
