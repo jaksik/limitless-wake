@@ -3,7 +3,7 @@ import Layout from "../../components/layout"
 import Form from "../../components/contact-form"
 import SEO from "../../components/seo"
 
-import { Button, Row, Col } from 'reactstrap';
+import { Button } from 'reactstrap';
 import waiver from "../../data/waiver.pdf"
 
 const Contact = () => (
@@ -18,7 +18,6 @@ const Contact = () => (
       <SEO title="Contact" keywords={[`wakeboard`, `lessons`, `austin`, `texas`, `limitless`, `wake`, `lake`, `travis`, `surf`]} />
       <h1 style={{ margin: `30px 0`, textAlign: `center` }}>Book A Lesson</h1>
 
-      <div className="" id="form" style={{ margin: `0 auto` }}>
       <form
                 name="contact"
                 method="post"
@@ -27,13 +26,8 @@ const Contact = () => (
                 style={{ width: `80%`, margin: `10px auto`, borderStyle: `ridge`, borderRadius: `25px`, backgroundColor: `#343a40` }}
             >
                 {/* Personal Info */}
-                <Row>
-                    <Col xs="12">
+           
                     <h4 style={{ color: `white`, textAlign: `center`, paddingBottom: `0px` }}>Lesson Booking Form</h4>
-                    </Col>
-                </Row>
-                <Row>
-                    <Col xs="12" md="6" id="form-sec-one">
                         <input style={{ display: `none` }} type="text" /><br />
                         <label style={{marginTop: `0px`}} for="name">Name: *</label>
                         <input name="name" placeholder="  First and Last Name" type="text" /><br />
@@ -43,9 +37,7 @@ const Contact = () => (
                         <input name="phone" placeholder="  Phone Number" type="number" /><br />
                         <label for="message">Additional Notes:</label>
                         <textarea name="message" placeholder="  Anything else we should know before your lesson?" type="textarea" /><br />
-                    </Col>
                     {/* Lesson Information */}
-                    <Col xs="12" md="6">
                         <label for="preffered-lake">Select a lake for your lesson:</label><br />
                         <select name="preffered-lake">
                             <option> </option>
@@ -75,12 +67,9 @@ const Contact = () => (
                             <option value="2. can stand up, little maneuvering">2. Can stand up, little or basic maneuvering</option>
                             <option value="3. ready for advanced">3. Comfortable manurvering, ready for advanced practice</option>
                         </select>
-                    </Col>
-                </Row>
-                <Row>
+               
                     <button style={{ margin: `15px auto`, borderRadius: `10px` }}>Submit</button>
-                </Row>
-            </form>      </div>
+            </form>     
       <br />
       <a href={waiver} download>
         <Button color="primary" size="lg" style={{ width: `55%`, margin: `5px auto`, zIndex: `1` }} block id="cover-button">Download The Waiver</Button>
