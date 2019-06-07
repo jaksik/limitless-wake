@@ -14,10 +14,9 @@ const Contact = () => (
                 method="post"
                 data-netlify="true"
                 data-netlify-honeypot="bot-field"
-                style={{ width: `80%`, margin: `10px auto`, borderStyle: `ridge`, borderRadius: `25px`, backgroundColor: `#343a40` }}
-            >
-                {/* Personal Info */}
-           
+              >
+                <input type="hidden" name="bot-field" />
+                <input type="hidden" name="form-name" value="contact" />  
                     <h4 style={{ color: `white`, textAlign: `center`, paddingBottom: `0px` }}>Lesson Booking Form</h4>
                         <input style={{ display: `none` }} type="text" /><br />
                         <label style={{marginTop: `0px`}} for="name">Name: *</label>
