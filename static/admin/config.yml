@@ -16,7 +16,6 @@ collections:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about"}
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Body", name: "body", widget: "markdown"}
-          - {label: Imagesess, name: image, widget: image}
       - file: "src/pages/resources/faq.md"
         label: "FAQ Page"
         name: "faq"
@@ -37,7 +36,7 @@ collections:
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "rentals"}
           - {label: "Title", name: "title", widget: "string"}
-          - {label: Rental Affiliate, name: affiliate, widget: list, fields: [{label: Name, name: name, widget: string}, {label: Web Site, name: url, widget: string}]}
+          - {label: Rental Affiliate, name: affiliate, widget: list, fields: [{label: Name, name: name, widget: string}, {label: Website, name: url, widget: string}, {label: Logo URL, name: logourl, widget: string}, {label: Boats 4 Rent, name: boats, widget: string}]}
       - file: "src/pages/resources/testimonials.md"
         label: "Testimonials Page"
         name: "testimonials"
@@ -51,4 +50,3 @@ collections:
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "gallery"}
           - {label: "Title", name: "title", widget: "string"}
-          - {label: Image, name: image, widget: image}

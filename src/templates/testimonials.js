@@ -2,14 +2,19 @@ import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import Container from "../components/container"
+import SEO from "../components/seo"
 import "../pages/style.css"
 
 export default ({ data }) => {
   console.log(data.markdownRemark.frontmatter.faq)
   return (
     <Layout footer="fixed">
+      <SEO title="Limitless Wake Testimonials" keywords={[`wakeboard`, `lessons`, `austin`, `texas`, `lake`, `travis`, `limitless`, `wake`, `chandler`, `crouch`, `testimonials`]} />
       <Container>
+
+        {/* Testimonials Page Title */}
         <h1>{data.markdownRemark.frontmatter.title}</h1>
+
         {/* map through FAQ list */}
         {data.markdownRemark.frontmatter.testimonials.map((faq) => {
           return (
@@ -19,7 +24,6 @@ export default ({ data }) => {
             </div>
           )
         })}
-
       </Container>
     </Layout>
   )

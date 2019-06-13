@@ -1,13 +1,15 @@
 import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
-import Collapsible from "../components/coll"
+import Collapsible from "../components/collapsible"
 import Container from "../components/container"
+import SEO from "../components/seo"
 import "../pages/style.css"
 
 export default ({ data }) => {
   return (
     <Layout footer="fixed">
+      <SEO title="Frequently Asked Questions" keywords={[`wakeboard`, `lessons`, `austin`, `texas`, `lake`, `travis`, `limitless`, `wake`, `chandler`, `crouch`]} />
       <Container>
 
         {/* FAQ Page Title */}

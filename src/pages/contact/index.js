@@ -1,15 +1,14 @@
 import React from "react"
 import Layout from "../../components/layout"
-import Form from "../../components/contact-form"
 import SEO from "../../components/seo"
 
 import { Button } from 'reactstrap';
 import waiver from "../../data/waiver.pdf"
+import "../../components/style.css"
 
 const Contact = () => (
   <Layout>
-
-      <SEO title="Contact" keywords={[`wakeboard`, `lessons`, `austin`, `texas`, `limitless`, `wake`, `lake`, `travis`, `surf`]} />
+      <SEO title="Book A Lesson" keywords={[`wakeboard`, `lessons`, `austin`, `texas`, `lake`, `travis`, `limitless`, `wake`, `chandler`, `crouch`]} />
       <h1 style={{ margin: `30px 0`, textAlign: `center` }}>Book A Lesson</h1>
       <form
                 name="contact"

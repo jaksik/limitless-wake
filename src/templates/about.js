@@ -8,9 +8,10 @@ import "../pages/style.css"
 
 export default ({ data }) => {
   const info = data.markdownRemark
+  console.log("info: ", info)
   return (
     <Layout>
-      <SEO keywords={[`about`, `limitless`, `wake`, `board`, `lake`, `travis`, `austin`, `texas`]} />
+      <SEO title="About Limitless Wake" keywords={[`wakeboard`, `lessons`, `austin`, `texas`, `lake`, `travis`, `limitless`, `wake`, `chandler`, `crouch`]} />
       <Container>
 
         {/* About Page Title */}
@@ -20,7 +21,7 @@ export default ({ data }) => {
         <div style={{ maxWidth: `50%`, margin: `0 auto` }}>
           <Img fluid={info.frontmatter.image.childImageSharp.fluid} />
         </div>
-        
+
         {/* About Page Body Text */}
         <div dangerouslySetInnerHTML={{ __html: info.html }} />
       </Container>
@@ -42,6 +43,6 @@ export const query = graphql`
           }
         }
       }
-   }
+    }
   }
 `

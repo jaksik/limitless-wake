@@ -1,17 +1,15 @@
 import React from "react"
-import { graphql } from "gatsby"
+import { graphql, Link } from "gatsby"
+import { Button } from 'reactstrap';
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Container from "../components/container"
-import Collapsible from "../components/coll"
+import Collapsible from "../components/collapsible"
 
-import Image from "../components/image"
 import HomeDiv from "../components/home-div"
 import clip from "../images/limitless.mp4"
 import info from "../data/info.json"
-import { Button } from 'reactstrap';
-import { Link } from "gatsby"
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./style.css"
@@ -21,7 +19,7 @@ const IndexPage = ({ data }) => {
 
   return (
     <Layout>
-      <SEO title="Home" />
+      <SEO title="Wakeboard Lessons Austin Texas" keywords={[`wakeboard`, `lessons`, `austin`, `texas`, `lake`, `travis`, `limitless`, `wake`, `chandler`, `crouch`]} />
 
       {/* cover video */}
       <div className="overlay">
