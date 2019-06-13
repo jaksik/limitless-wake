@@ -8,7 +8,7 @@ import "../pages/style.css"
 export default ({ data }) => {
   console.log(data.markdownRemark.frontmatter.faq)
   return (
-    <Layout footer="fixed">
+    <Layout>
       <SEO title="Limitless Wake Testimonials" keywords={[`wakeboard`, `lessons`, `austin`, `texas`, `lake`, `travis`, `limitless`, `wake`, `chandler`, `crouch`, `testimonials`]} />
       <Container>
 

@@ -5,7 +5,7 @@
 }
 
 .faqItem:hover{
-    background-color: #343a40;
+    background-color: #c2c2c2;
 }
 
 .faqContainer {
@@ -14,10 +14,6 @@
     border: 1px solid  #343a40;
     background-color: #343a40ba;
     box-shadow: 0 -1px 4px #343a40;
-}
-
-.collapse-content {
-    border-top: 1px solid black;
 }
 
 @media only screen and (max-width: 768px) {

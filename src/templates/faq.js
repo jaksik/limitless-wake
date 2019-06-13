@@ -8,7 +8,7 @@ import "../pages/style.css"
 
 export default ({ data }) => {
   return (
-    <Layout footer="fixed">
+    <Layout>
       <SEO title="Frequently Asked Questions" keywords={[`wakeboard`, `lessons`, `austin`, `texas`, `lake`, `travis`, `limitless`, `wake`, `chandler`, `crouch`]} />
       <Container>
 
@@ -16,7 +16,7 @@ export default ({ data }) => {
         <h1>{data.markdownRemark.frontmatter.title}</h1>
 
         {/* Map Through FAQ Entries */}
-        <div className="collapse-container">
+        <div className="collapse-container"style={{ boxShadow: `0 -1px 4px #343a40` }}>
           {data.markdownRemark.frontmatter.faq.map((faq) => {
             return (
               <Collapsible

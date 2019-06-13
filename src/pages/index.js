@@ -6,11 +6,9 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Container from "../components/container"
 import Collapsible from "../components/collapsible"
-
 import HomeDiv from "../components/home-div"
-import clip from "../images/limitless.mp4"
-import info from "../data/info.json"
 
+import info from "../data/info.json"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./style.css"
 
@@ -21,71 +19,69 @@ const IndexPage = ({ data }) => {
     <Layout>
       <SEO title="Wakeboard Lessons Austin Texas" keywords={[`wakeboard`, `lessons`, `austin`, `texas`, `lake`, `travis`, `limitless`, `wake`, `chandler`, `crouch`]} />
 
-      {/* cover video */}
-      <div className="overlay">
+      {/* Cover Video, Commented Out When Under Maintenance */}
+      {/* <div className="overlay">
         <div className="video">
           <video id="myVid" autoPlay muted loop poster>
             <source src={clip} type="video/mp4" />
             Your browser does not support HTML5 video.
                   </video>
         </div>
-      </div>
+      </div> */}
 
 
-      {/* cover image for mobile devices */}
-      <div id="mobile-cover-img"></div>
+      {/* Background Image One */}
+      <div id="backgroundOne"></div>
 
-      {/* JumboTron Container */}
-      {/* Jumbotron Text*/}
+      {/* Cover Title and Description*/}
       <div className="cover-items" style={{ maxWidth: 960, textAlign: `center`, margin: `20px auto` }}>
-        <h1 id="cover-title" style={{ color: `white`, fontSize: `7rem`, textAlign: `center` }}>Learn<br />To<br />Ride</h1>
-        <p id="cover-text">Wakeboard and Wakesuft lessons by Chandler Crouch in Austin, Texas.</p>
+        <h1 className="cover-title">Learn<br />To<br />Ride</h1>
+        <p className="cover-text">Wakeboard and Wakesuft lessons by Chandler Crouch in Austin, Texas.</p>
       </div>
 
       {/* Lesson Booking Button */}
       <Link to="/contact">
-        <Button color="primary" size="lg" style={{ width: `55%`, margin: `5px auto`, zIndex: `1` }} block id="cover-button">Book A Lesson</Button>
+        <Button color="primary" size="lg" style={{ width: `55%`, margin: `0 auto`, zIndex: `1`, top: `10px` }} block id="cover-button">Book A Lesson</Button>
       </Link>
 
-      {/* Home Page Container */}
+      {/* How It Works*/}
       <div style={{ marginTop: `300px` }}>
         <Container background="#343a40">
-          {/* How It Works*/}
           <HomeDiv info={info[0]} />
         </Container>
       </div>
 
-      {/* A Few Featured Images*/}
-      <div
-        id="backgroundTwo"
-        className="background">
-        <h1 id="backTwoHeading" style={{ color: `white`, fontSize: `5rem`, margin: `0px auto` }}>Learn<br />On Your Boat<br />With<br />Your Friends</h1>
+      {/* Background Image Two*/}
+      <div id="backgroundTwo" className="background">
+        <h2 className="cover-title cover-title-two">Learn<br />On Your Boat<br />With<br />Your Friends</h2>
       </div>
 
+      {/* Another Brief Description*/}
       <Container background="#343a40">
-        {/* Declare Authority in this industry */}
         <HomeDiv info={info[1]} />
       </Container>
 
-      <div
-        id="backgroundTwo"
-        className="background">
-      </div>
+      {/* Background Image Three */}
+      <div id="backgroundThree" className="background"></div>
 
+      {/* FAQ Container */}
       <Container background="#f6f6f6">
-          {/* FAQ preview and link to full faq page */}
-        <h2>Frequently Asked Questions</h2>
-        {faqData.map((faq) => {
-          return (
-            <div>
-              <Collapsible
-                button={faq.question}
-                content={faq.answer}
-              />
-            </div>
-          )
-        })}
-       </Container>
+        <div style={{ minHeight: `90vh` }}>
+          <h2>Frequently Asked Questions</h2>
+          <div style={{ boxShadow: `0 -1px 4px #343a40` }}>
+            {faqData.map((faq) => {
+              return (
+                <div>
+                  <Collapsible
+                    button={faq.question}
+                    content={faq.answer}
+                  />
+                </div>
+              )
+            })}
+          </div>
+        </div>
+      </Container>
     </Layout>
   )
 }

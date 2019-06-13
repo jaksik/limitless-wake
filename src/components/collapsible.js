@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Collapse } from 'reactstrap';
-import './coll.css'
+import './collapsible.css'
 
 class FaqItem extends Component {
   constructor(props) {

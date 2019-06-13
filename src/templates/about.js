@@ -18,7 +18,7 @@ export default ({ data }) => {
         <h1>{info.frontmatter.title}</h1>
 
         {/* About Page Photo */}
-        <div style={{ maxWidth: `50%`, margin: `0 auto` }}>
+        <div style={{ maxWidth: `50%`, margin: `25px auto` }}>
           <Img fluid={info.frontmatter.image.childImageSharp.fluid} />
         </div>
 

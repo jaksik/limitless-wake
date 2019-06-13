@@ -2,15 +2,15 @@
 templateKey: rentals
 title: Local Boat Rentals
 affiliate:
-  - boats: 'Fast Boat, Slow Boat'
+  - boats: 'Standard Ski Boat, Premium Ski Boat'
     logourl: >-
-      https://laketravis.com/listify/wp-content/uploads/2017/02/LOGO-lake-travis-newest.png
-    name: Austin Boats
-    url: www.austinboats.com
-  - boats: 'Speed Boat, Jet Ski'
+      https://www.rivieramarina.com/wp-content/uploads/2015/06/logo.png
+    name: Riviera Marina
+    url: www.rivieramarina.com
+  - boats: 'Standard Ski Boat, Premium Ski Boat'
     logourl: >-
-      https://laketravis.com/listify/wp-content/uploads/2017/02/LOGO-lake-travis-newest.png
-    name: Texas Boats
-    url: www.texasboats.com
+      https://www.rivieramarina.com/wp-content/uploads/2015/06/logo.png
+    name: Riviera Marina
+    url: www.rivieramarina.com
 ---
 

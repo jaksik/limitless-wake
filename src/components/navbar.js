@@ -41,34 +41,34 @@ export default class Example extends React.Component {
                     <Collapse isOpen={this.state.isOpen} navbar>
                         <Nav className="ml-auto" navbar>
                             <NavItem>
-                                <NavLink><Link to="/" style={{ color: `lightgray`}}>Home</Link></NavLink>
+                                <NavLink><Link to="/" className="nav-item">Home</Link></NavLink>
                             </NavItem>
                             <UncontrolledDropdown nav inNavbar>
-                                <DropdownToggle nav caret style={{ color: `lightgray`}}>
+                                <DropdownToggle nav caret className="nav-item">
                                     Resources
                                 </DropdownToggle>
                                 <DropdownMenu>
-                                    <Link to="resources/pricing" style={{ color: `lightgray`}}>
+                                    <Link to="resources/pricing" className="nav-item">
                                         <DropdownItem>
                                             Pricing
                                         </DropdownItem>
                                     </Link>
-                                    <Link to="resources/locations" style={{ color: `lightgray`}}>
+                                    <Link to="resources/locations" className="nav-item">
                                         <DropdownItem>
                                             Locations
                                         </DropdownItem>
                                     </Link>
-                                    <Link to="resources/rentals" style={{ color: `lightgray`}}>
+                                    <Link to="resources/rentals" className="nav-item">
                                         <DropdownItem>
                                             Boat Rentals
                                         </DropdownItem>
                                     </Link>
-                                    <Link to="resources/faq" style={{ color: `lightgray`}}>
+                                    <Link to="resources/faq" className="nav-item">
                                         <DropdownItem>
                                             FAQ
                                         </DropdownItem>
                                     </Link>
-                                    <Link to="resources/testimonials" style={{ color: `lightgray`}}>
+                                    <Link to="resources/testimonials" className="nav-item">
                                         <DropdownItem>
                                             Testimonials
                                         </DropdownItem>
@@ -76,13 +76,13 @@ export default class Example extends React.Component {
                                 </DropdownMenu>
                             </UncontrolledDropdown>
                             <NavItem>
-                                <NavLink><Link to="/about" style={{ color: `lightgray`}}>About</Link></NavLink>
+                                <NavLink><Link to="/gallery" className="nav-item">Gallery</Link></NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink><Link to="/gallery" style={{ color: `lightgray`}}>Gallery</Link></NavLink>
+                                <NavLink><Link to="/about" className="nav-item">About</Link></NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink><Link to="/contact" style={{ color: `lightgray`}}>Contact</Link></NavLink>
+                                <NavLink><Link to="/contact" className="nav-item">Contact</Link></NavLink>
                             </NavItem>
                         </Nav>
                     </Collapse>

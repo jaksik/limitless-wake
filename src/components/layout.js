@@ -37,24 +37,20 @@ const Layout = ({ children, ...props }) => (
          
         </div>
         <footer style={{ 
-                  position: (props.footer ? `fixed` : `none` ),
-                  left: `0`,
-                  bottom: `0`,
-                  margin: `0 auto`, 
                   textAlign: `center`,
                   background: `#343a40`,
                   color: `white`,
-                  width: `100%`
+                  width: `100%`,
+                  padding: `15px`
                 }}>
             <a href="/contact" className="facebook social"><i className="fa fa-facebook"></i></a>
             <a href="/contact" className="instagram social"><i className="fa fa-instagram"></i></a>
-            <br />
-            <img src={Brand} width="100%" height="100%" className="navBrand d-inline-block align-top" style={{ maxWidth: `100px`, marginBottom: `0px` }}alt="Limitless Wake Logo" />            © {new Date().getFullYear()}, Limitless Wake Technologies LLC
-          <br/>
+            <img src={Brand} width="100%" height="100%" className="navBrand d-inline-block align-top" style={{ maxWidth: `100px`, marginBottom: `0px` }}alt="Limitless Wake Logo" /> 
+            © {new Date().getFullYear()}, Limitless Wake Technologies LLC
           <div style={{ fontSize: `10px`}} >
           Web Site Built By
             {` `}
-            <a  href="https://connorjaksik.com">Jaksik Web Development</a>
+            <a  href="https://connorjaksik.com">Connor Jaksik</a>
          
           </div>
             </footer>
