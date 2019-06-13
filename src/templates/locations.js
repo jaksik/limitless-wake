@@ -23,10 +23,10 @@ export default ({ data }) => {
         {/* Mapping Through and Rendering The Locations */}
         <Row>
           <Col xs="12" md="4" style={{ margin: `auto` }}>
-            {data.markdownRemark.frontmatter.locations.map((faq) => {
+            {data.markdownRemark.frontmatter.locations.map((location) => {
               return (
                 <div style={{ textAlign: `center` }}>
-                  <strong>{faq.location}</strong>
+                  <strong>{location.location}</strong>
                 </div>
               )
             })}
@@ -34,7 +34,7 @@ export default ({ data }) => {
 
           {/* Rendering the Locations iFrame map */}
           <Col xs="12" md="8">
-            <iframe title="lesson locations map" style={{ maxWidth: `100%`, maxHeight: `60%` }} src="https://www.google.com/maps/d/embed?mid=1JJfYAg2K--y6U6e0bfiHRSPSH_x6yHg9&hl=en" width="640" height="480"></iframe>
+            <iframe title="lesson locations map" style={{ maxWidth: `100%`, maxHeight: `60%` }} src={data.markdownRemark.frontmatter.mapurl} width="640" height="480"></iframe>
           </Col>
         </Row>
       </Container>
@@ -48,6 +48,7 @@ export const query = graphql`
       html
       frontmatter {
         title
+        mapurl
         locations {
           location
         }    

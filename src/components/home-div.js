@@ -1,5 +1,5 @@
 import React from "react"
-import { Container, Row, Col } from 'reactstrap';
+import {Row, Col } from 'reactstrap';
 
 const div = (props) => {
     const data = props.info

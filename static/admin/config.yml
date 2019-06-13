@@ -29,6 +29,7 @@ collections:
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "locations"}
           - {label: "Title", name: "title", widget: "string"}
+          - {label: "Map URL", name: "mapurl", widget: "string"}
           - {label: Location, name: locations, widget: list, fields: [{label: Location, name: location, widget: string}]}
       - file: "src/pages/resources/rentals.md"
         label: "Rentals Page"

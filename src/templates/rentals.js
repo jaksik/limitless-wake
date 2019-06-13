@@ -1,5 +1,5 @@
 import React from "react"
-import { graphql, Link } from "gatsby"
+import { graphql } from "gatsby"
 import { Row, Col } from 'reactstrap'
 import Layout from "../components/layout"
 import Container from "../components/container"
@@ -23,7 +23,7 @@ export default ({ data }) => {
               <div style={{ borderBottom: `1px solid black`, marginBottom: `15px`}}>
                 <Row>
                   <Col xs="2" style={{ padding: 0}}>
-                    <img style={{ marginBottom: `0px` }} src={affiliate.logourl} />
+                    <img style={{ marginBottom: `0px` }} src={affiliate.logourl} alt="Boat rental company logo"/>
                   </Col>
                   <Col xs="10">
                     <p><strong>{affiliate.name}, </strong><a href={affiliate.url}>{affiliate.url}</a></p>
