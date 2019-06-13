@@ -6,25 +6,24 @@ import Container from "../components/container"
 import "../pages/style.css"
 
 export default ({ data }) => {
-  console.log(data.markdownRemark.frontmatter.faq)
   return (
     <Layout footer="fixed">
       <Container>
+
+        {/* FAQ Page Title */}
         <h1>{data.markdownRemark.frontmatter.title}</h1>
-        {/* map through FAQ list */}
+
+        {/* Map Through FAQ Entries */}
         <div className="collapse-container">
           {data.markdownRemark.frontmatter.faq.map((faq) => {
             return (
-              <div style={{ textAlign: `center` }}>
-                <Collapsible
-                  button={faq.question}
-                  content={faq.answer}
-                />
-              </div>
+              <Collapsible
+                button={faq.question}
+                content={faq.answer}
+              />
             )
           })}
         </div>
-
       </Container>
     </Layout>
   )

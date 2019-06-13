@@ -1,6 +1,7 @@
 .faqItem {
     border-bottom: 1px solid  #343a40;
-    padding: .5rem;    
+    padding: .5rem;   
+    text-align: center;
 }
 
 .faqItem:hover{

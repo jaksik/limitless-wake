@@ -9,7 +9,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
 
-import Header from "./navbar"
+import Navbar from "./navbar"
 import Brand from "../images/limitless-logo.png"
 import "./layout.css"
 
@@ -26,11 +26,10 @@ const Layout = ({ children, ...props }) => (
     `}
     render={data => (
       <>
-        <Header siteTitle={data.site.siteMetadata.title} />
+        <Navbar siteTitle={data.site.siteMetadata.title} />
         <div
           style={{
             margin: `0 auto`,
-            // padding: `0px 1.0875rem 1.45rem`,
             paddingTop: 0,
           }}
         >

@@ -16,6 +16,7 @@ collections:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about"}
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Body", name: "body", widget: "markdown"}
+          - {label: Imagesess, name: image, widget: image}
       - file: "src/pages/resources/faq.md"
         label: "FAQ Page"
         name: "faq"
@@ -51,4 +52,3 @@ collections:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "gallery"}
           - {label: "Title", name: "title", widget: "string"}
           - {label: Image, name: image, widget: image}
-          - {label: Image, name: image, widget: list, fields: [{label: Title, name: title, widget: string}, {label: Alt, name: alt, widget: string}, {label: Img, name: img, widget: string}]}

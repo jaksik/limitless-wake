@@ -6,10 +6,11 @@ import Gallery from "../components/gallery"
 import "../pages/style.css"
 
 export default ({ data }) => {
-  console.log(data.markdownRemark.frontmatter.images)
   return (
     <Layout>
       <Container>
+
+        {/* Gallery Page Title */}
         <h1>{data.markdownRemark.frontmatter.title}</h1>
         
         <Gallery/>
