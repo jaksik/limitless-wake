@@ -64,10 +64,10 @@ const Contact = () => (
             </form>  
    
       <br />
-      <a href={waiver} download>
-        <Button color="primary" size="lg" style={{ width: `55%`, margin: `5px auto`, zIndex: `1` }} block id="cover-button">Download The Waiver</Button>
+      <a style={{ textDecoration: `none`}}href={waiver} download>
+        <Button color="success" size="lg" style={{ margin: `25px auto`, maxWidth: `80%` }} block outline id="waiver-button">Download The Waiver</Button>
       </a>
-      <div style={{ textAlign: `center` }}>
+      <div style={{ textAlign: `center`, margin: `100px auto` }}>
         <h5>Have Questions?</h5>
         <p>Always feel free to give us a call or send us an email.</p>
         <p><strong>Phone: </strong> 512-270-1735</p>

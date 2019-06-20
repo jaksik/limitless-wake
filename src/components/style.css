@@ -23,6 +23,10 @@ label {
     color: white;
 }
 
+#waiver-button {
+    width: 400px;
+}
+
 #submit {
     text-align: center;
 }
@@ -36,7 +40,11 @@ label {
 
 @media only screen and (min-width: 768px) {
 
-#form-sec-one {
-    border-right: 2px solid lightgray;
-}
+    #form-sec-one {
+        border-right: 2px solid lightgray;
+    }
+
+    #waiver-button {
+        width: 100px;
+    }
 }
