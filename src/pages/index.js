@@ -58,15 +58,20 @@ const IndexPage = ({ data }) => {
 
       {/* Another Brief Description*/}
       <Container background="#343a40">
-        <HomeDiv info={info[1]} />
+        <div style={{ paddingBottom: `50px` }}>
+          <HomeDiv info={info[1]} />
+        </div>
       </Container>
 
-      {/* Background Image Three */}
-      <div id="backgroundThree" className="background"></div>
 
+      {/* Background Image Three */}
+      {/* <div id="backgroundThree" className="background"></div> */}
+      <div className="google-maps" >
+        <iframe title="lesson locations map" style={{ maxWidth: `` }} src="https://www.google.com/maps/d/embed?mid=1JJfYAg2K--y6U6e0bfiHRSPSH_x6yHg9&hl=en" width="100%" height="360px"></iframe>
+      </div>
       {/* FAQ Container */}
       <Container background="#f6f6f6">
-        <div style={{ minHeight: `90vh` }}>
+        <div style={{ minHeight: `` }}>
           <h2>Frequently Asked Questions</h2>
           <div style={{ boxShadow: `0 -1px 4px #343a40` }}>
             {faqData.map((faq) => {

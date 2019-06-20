@@ -41,7 +41,7 @@ const Layout = ({ children, ...props }) => (
                   background: `#343a40`,
                   color: `white`,
                   width: `100%`,
-                  padding: `15px`
+                  padding: `15px`,
                 }}>
             <a href="/contact" className="facebook social"><i className="fa fa-facebook"></i></a>
             <a href="/contact" className="instagram social"><i className="fa fa-instagram"></i></a>

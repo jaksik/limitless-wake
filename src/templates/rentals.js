@@ -26,7 +26,7 @@ export default ({ data }) => {
                     <img style={{ marginBottom: `0px` }} src={affiliate.logourl} alt="Boat rental company logo"/>
                   </Col>
                   <Col xs="10">
-                    <p><strong>{affiliate.name}, </strong><a href={affiliate.url}>{affiliate.url}</a></p>
+                    <p><strong>{affiliate.name}, </strong><a href={affiliate.url} target="_blank">{affiliate.url}</a></p>
                   </Col>
                 </Row>
                 <Row>

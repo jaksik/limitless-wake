@@ -123,6 +123,15 @@ h1, h2, h3, h4 {
   color: white;
 }
 
+.google-maps {
+  background: #f6f6f6;
+}
+
+.google-maps iframe {
+  margin-bottom: 0px;
+ 
+}
+
 /*Styling Background for mobile devices*/
 @media only screen and (max-width: 768px) {
   .overlay {
