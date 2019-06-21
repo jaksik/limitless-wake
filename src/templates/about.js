@@ -23,7 +23,9 @@ export default ({ data }) => {
         </div>
 
         {/* About Page Body Text */}
-        <div dangerouslySetInnerHTML={{ __html: info.html }} />
+        <div style={{ textIndent: `50px` }}>
+          <div dangerouslySetInnerHTML={{ __html: info.html }} />
+        </div>
       </Container>
     </Layout>
   )

@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://limitlesswake.com">
-    <img alt="Gatsby" src="./src/images/limitless-logo.png" width="60" />
+    <img alt="Gatsby" src="./src/images/limitless-logo.png" width="150" />
   </a>
 </p>
 <h1 align="center">
@@ -22,6 +22,6 @@ The official website for Limitless Wake Tech LLC, a wakeboard instructor for hir
 A preview....
 
 <p align="center">
-    <img alt="Gatsby" src="./src/images/limitless-home.JPG" width="60" />
-     <img alt="Gatsby" src="./src/images/limitless-form.JPG" width="60" />
+    <img alt="Gatsby" src="./src/images/limitless-home.JPG" width="150" />
+     <img alt="Gatsby" src="./src/images/limitless-form.JPG" width="150" />
 </p>

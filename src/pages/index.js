@@ -29,7 +29,6 @@ const IndexPage = ({ data }) => {
         </div>
       </div> */}
 
-
       {/* Background Image One */}
       <div id="backgroundOne"></div>
 
@@ -44,7 +43,7 @@ const IndexPage = ({ data }) => {
         <Button color="primary" size="lg" style={{ width: `55%`, margin: `0 auto`, zIndex: `1`, top: `10px` }} block id="cover-button">Book A Lesson</Button>
       </Link>
 
-      {/* How It Works*/}
+      {/* A section containing content about the business*/}
       <div style={{ marginTop: `300px` }}>
         <Container background="#343a40">
           <HomeDiv info={info[0]} />
@@ -56,7 +55,7 @@ const IndexPage = ({ data }) => {
         <h2 className="cover-title cover-title-two">Learn<br />On Your Boat<br />With<br />Your Friends</h2>
       </div>
 
-      {/* Another Brief Description*/}
+      {/* A section containing content about the business*/}
       <Container background="#343a40">
         <div style={{ paddingBottom: `50px` }}>
           <HomeDiv info={info[1]} />
@@ -64,27 +63,24 @@ const IndexPage = ({ data }) => {
       </Container>
 
 
-      {/* Background Image Three */}
-      {/* <div id="backgroundThree" className="background"></div> */}
+      {/* Google Map iFrame as Background Image Three */}
+      {/* <div className="disable-scroll"></div> */}
       <div className="google-maps" >
-        <iframe title="lesson locations map" style={{ maxWidth: `` }} src="https://www.google.com/maps/d/embed?mid=1JJfYAg2K--y6U6e0bfiHRSPSH_x6yHg9&hl=en" width="100%" height="360px"></iframe>
+        <iframe title="lesson locations map" src="https://www.google.com/maps/d/embed?mid=1JJfYAg2K--y6U6e0bfiHRSPSH_x6yHg9&hl=en" width="100%" height="360px" className="map-iframe" gestureHandling="none"></iframe>
       </div>
+
       {/* FAQ Container */}
       <Container background="#f6f6f6">
-        <div style={{ minHeight: `` }}>
-          <h2>Frequently Asked Questions</h2>
-          <div style={{ boxShadow: `0 -1px 4px #343a40` }}>
-            {faqData.map((faq) => {
-              return (
-                <div>
-                  <Collapsible
-                    button={faq.question}
-                    content={faq.answer}
-                  />
-                </div>
-              )
-            })}
-          </div>
+        <h2>Frequently Asked Questions</h2>
+        <div style={{ boxShadow: `0 -1px 4px #343a40` }}>
+          {faqData.map((faq) => {
+            return (
+              <Collapsible
+                button={faq.question}
+                content={faq.answer}
+              />
+            )
+          })}
         </div>
       </Container>
     </Layout>

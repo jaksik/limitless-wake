@@ -123,13 +123,25 @@ h1, h2, h3, h4 {
   color: white;
 }
 
+.disable-scroll {
+  background: transparent;
+  position: relative;
+  width: 100%; /* iframe width */
+  height: 360px; /* iframe height */
+  top: 360px; /* iframe height */
+  margin-top: -360px; /* iframe height */
+}
+
 .google-maps {
   background: #f6f6f6;
 }
 
-.google-maps iframe {
+.map-iframe {
   margin-bottom: 0px;
- 
+}
+
+a {
+  text-decoration: none;
 }
 
 /*Styling Background for mobile devices*/

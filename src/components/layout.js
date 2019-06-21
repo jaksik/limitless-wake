@@ -48,7 +48,7 @@ const Layout = ({ children, ...props }) => (
             <img src={Brand} width="100%" height="100%" className="navBrand d-inline-block align-top" style={{ maxWidth: `100px`, marginBottom: `0px` }}alt="Limitless Wake Logo" /> 
             © {new Date().getFullYear()}, Limitless Wake Technologies LLC
           <div style={{ fontSize: `10px`}} >
-          Web Site Built By
+          Website Built By
             {` `}
             <a  href="https://connorjaksik.com">Connor Jaksik</a>
          

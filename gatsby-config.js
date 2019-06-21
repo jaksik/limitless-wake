@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: `Limitless Wake`,
-    description: `Wake boarding lessons by Chandler Crouch in Austin Texas.`,
-    author: `@gatsbyjs`,
+    description: `Wake boarding lessons by Chandler Crouch in Austin, Texas.`,
+    author: `@jaksik`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
