@@ -11,7 +11,7 @@ export default ({ data }) => {
   return (
     <Layout>
       <SEO title="Wakeboard Lesson Locations" keywords={[ `locations`, `wakeboard`, `lessons`, `austin`, `texas`, `lake`, `travis`, `limitless`, `wake`, `chandler`, `crouch`]} />
-      <Container>
+      <Container className="short-page">
 
         {/* Locations Page Title */}
         <Row>

@@ -9,6 +9,7 @@ const Layout = ({ children, ...props }) => {
                 width: `100%`,
                 background: props.background
             }}
+            className={props.className}
         >
             <div
                 style={{

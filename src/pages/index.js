@@ -66,7 +66,7 @@ const IndexPage = ({ data }) => {
       {/* Google Map iFrame as Background Image Three */}
       {/* <div className="disable-scroll"></div> */}
       <div className="google-maps" >
-        <iframe title="lesson locations map" src="https://www.google.com/maps/d/embed?mid=1JJfYAg2K--y6U6e0bfiHRSPSH_x6yHg9&hl=en" width="100%" height="360px" className="map-iframe" gestureHandling="none"></iframe>
+        <iframe title="lesson locations map" src="https://www.google.com/maps/d/embed?mid=1JJfYAg2K--y6U6e0bfiHRSPSH_x6yHg9&hl=en" width="100%" height="360px" className="map-iframe"></iframe>
       </div>
 
       {/* FAQ Container */}

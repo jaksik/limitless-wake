@@ -7,6 +7,10 @@ h1, h2, h3, h4 {
     padding: 30px;
 }
 
+.short-page {
+  min-height: 80vh;
+}
+
 .overlay {
     position: relative;
     height:100%;

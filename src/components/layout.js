@@ -50,7 +50,7 @@ const Layout = ({ children, ...props }) => (
           <div style={{ fontSize: `10px`}} >
           Website Built By
             {` `}
-            <a  href="https://connorjaksik.com">Connor Jaksik</a>
+            <a  href="https://connorjaksik.com" target="_blank" rel="noopener noreferrer">Connor Jaksik</a>
          
           </div>
             </footer>
