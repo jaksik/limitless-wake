@@ -79,6 +79,9 @@ export default class Example extends React.Component {
                                 <NavLink><Link to="/gallery" className="nav-item">Gallery</Link></NavLink>
                             </NavItem>
                             <NavItem>
+                                <NavLink><Link to="/blog" className="nav-item">Blog</Link></NavLink>
+                            </NavItem>
+                            <NavItem>
                                 <NavLink><Link to="/about" className="nav-item">About</Link></NavLink>
                             </NavItem>
                             <NavItem>

@@ -2,7 +2,7 @@ import React from "react"
 import Layout from "../../components/layout"
 import SEO from "../../components/seo"
 
-import { Button, Row, Col } from 'reactstrap';
+import { Button } from 'reactstrap';
 import waiver from "../../data/waiver.pdf"
 import "../../components/style.css"
 

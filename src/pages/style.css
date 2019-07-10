@@ -7,6 +7,13 @@ h1, h2, h3, h4 {
     padding: 30px;
 }
 
+.section {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0px 1.0875rem 1.45rem;
+  padding-top: 0;
+}
+
 .short-page {
   min-height: 80vh;
 }
@@ -148,6 +155,32 @@ a {
   text-decoration: none;
 }
 
+.post-list {
+  border: 1px solid  gainsboro;
+  border-radius: 10px;
+  box-shadow: 0 -1px 4px #ede7e7;
+  height: 100%;
+  padding: 15px;
+}
+
+.post-list:hover {
+  background-color: whitesmoke;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.link{
+  text-decoration: none;
+  color: black;
+}
+
+.link:hover {
+  text-decoration: none;
+  color: black;
+}
 /*Styling Background for mobile devices*/
 @media only screen and (max-width: 768px) {
   .overlay {
