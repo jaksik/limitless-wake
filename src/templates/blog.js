@@ -18,9 +18,9 @@ export default ({ data }) => {
         <h1>{info.frontmatter.title}</h1>
         <p style={{ textAlign: `center`}}>{info.frontmatter.description}</p>
         {/* About Page Photo */}
-        <div style={{ maxWidth: `50%`, margin: `25px auto` }}>
+        {/* <div style={{ maxWidth: `50%`, margin: `25px auto` }}>
           <Img fluid={info.frontmatter.image.childImageSharp.fluid} />
-        </div>
+        </div> */}
 
         {/* About Page Body Text */}
         <div style={{ textIndent: `50px` }}>

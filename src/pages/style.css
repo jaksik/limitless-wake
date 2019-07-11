@@ -144,7 +144,24 @@ h1, h2, h3, h4 {
 }
 
 .google-maps {
-  background: #f6f6f6;
+  width: 100%;
+  padding-bottom: 10%;
+  z-index: 1;
+}
+
+#google-maps {
+  background-image: linear-gradient(#343a40, #f6f6f6);
+}
+
+.google-maps iframe{
+	width: 100%;
+	display: block;
+	pointer-events: none;
+	position: relative; /* IE needs a position other than static */
+}
+
+.google-maps iframe.clicked{
+	pointer-events: auto;
 }
 
 .map-iframe {
@@ -167,6 +184,10 @@ a {
   background-color: whitesmoke;
 }
 
+img.post-html {
+  max-width: 300px;
+}
+
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -175,6 +196,7 @@ a {
 .link{
   text-decoration: none;
   color: black;
+  width: 100%;
 }
 
 .link:hover {

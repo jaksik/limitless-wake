@@ -1,20 +1,28 @@
 import React from 'react'
 import { graphql, Link } from "gatsby"
+import Container from "../../components/container"
 import Layout from '../../components/layout'
 import "../style.css"
 
 export default ({ data }) => {
     const props = data.allMarkdownRemark
-
     return (
         <Layout>
+      <Container className="short-page">
             <section className="section">
                 <div className="container">
                     <div className="content">
 
                         <h1>Blog</h1>
 
-                        {/* <p>Total Count: {props.totalCount}</p> */}
+                        {/* If there are blog posts it will display the toal count if not it will say posts coming soon */}
+                        <div style={{display: (props.totalCount > 0 ? `block` : `none`)}}>
+                            <p>Total Count: {props.totalCount}</p>
+                        </div>
+
+                        <div style={{display: (props.totalCount > 0 ? `none` : `block`)}}>
+                            <h3>Blog posts coming soon!</h3>
+                        </div>
 
                         <div className="row">
 
@@ -43,6 +51,7 @@ export default ({ data }) => {
                     </div>
                 </div>
             </section>
+            </Container>
         </Layout>
     )
 }

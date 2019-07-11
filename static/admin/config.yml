@@ -5,6 +5,9 @@ backend:
 media_folder: static/img
 public_folder: /img
 
+logo_url: https://limitlesswake.com/static/limitless-logo-bd270c96e81e5eaf8770e1044a17aca8.png
+
+
 collections:
   - name: "pages"
     label: "Pages"
@@ -57,10 +60,10 @@ collections:
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
-      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "blog-post"}
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "blog"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Description", name: "description", widget: "text"}
-      - {label: "Featured Image", name: "image", widget: image}
+      # - {label: "Featured Image", name: "image", widget: image}
       - {label: "Tags", name: "tags", widget: "list"}
       - {label: "Body", name: "body", widget: "markdown"}

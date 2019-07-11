@@ -14,6 +14,8 @@ import "./style.css"
 
 const IndexPage = ({ data }) => {
   const faqData = data.allMarkdownRemark.edges[0].node.frontmatter.faq;
+  console.log("window: ", window.innerWidth)
+  const innerWidth = window.innerWidth;
 
   return (
     <Layout>
@@ -65,14 +67,14 @@ const IndexPage = ({ data }) => {
 
       {/* Google Map iFrame as Background Image Three */}
       {/* <div className="disable-scroll"></div> */}
-      <div className="google-maps" >
-        <iframe title="lesson locations map" src="https://www.google.com/maps/d/embed?mid=1JJfYAg2K--y6U6e0bfiHRSPSH_x6yHg9&hl=en" width="100%" height="360px" className="map-iframe"></iframe>
+      <div id="google-maps" className="google-maps" name="google-maps">
+        <iframe title="lesson locations map" frameborder="100" scrolling="no" src="https://www.google.com/maps/d/embed?mid=1JJfYAg2K--y6U6e0bfiHRSPSH_x6yHg9&hl=en" width="100%" height="360px" className="map-iframe"></iframe>
       </div>
 
       {/* FAQ Container */}
       <Container background="#f6f6f6">
         <h2>Frequently Asked Questions</h2>
-        <div style={{ boxShadow: `0 -1px 4px #343a40` }}>
+        <div style={{ boxShadow: `0 -1px 4px #343a40`, margin: `40px auto 60px` }}>
           {faqData.map((faq) => {
             return (
               <Collapsible
@@ -82,6 +84,11 @@ const IndexPage = ({ data }) => {
             )
           })}
         </div>
+
+          <Link style={{ display: (innerWidth < 700 ? `block` : `none`)}} to="/contact">
+            <Button color="primary" size="lg" style={{ width: `80%`, margin: `0 auto` }} block >Book A Lesson</Button>
+          </Link>
+
       </Container>
     </Layout>
   )

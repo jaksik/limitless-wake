@@ -7,19 +7,32 @@ form {
     max-width: 650px;
 }
 
-input, select, label, textarea {
+select, label, textarea {
     max-width: 100%;
     width: 90%;
     text-align: left;
     border-radius: 10px;
 }
 
-input, select {
+select {
     margin-bottom: 10px;
 }
 
+input {
+    margin: 30px auto; 
+    max-width: 100%;
+    width: 90%;
+    text-align: left;
+    border-radius: 10px;
+}
+
+.form-input {
+    margin: 10px auto;
+    background: #f9f9f9;
+}
+
 label {
-    margin-top: 30px;
+    margin-top: 15px;
     color: white;
 }
 

@@ -8,17 +8,18 @@ import "../pages/style.css"
 
 export default ({ data }) => {
   const info = data.markdownRemark
-  console.log("info: ", info)
+  const innerWidth = window.innerWidth;
+
   return (
     <Layout>
       <SEO title="About Limitless Wake" keywords={[`wakeboard`, `lessons`, `austin`, `texas`, `lake`, `travis`, `limitless`, `wake`, `chandler`, `crouch`]} />
       <Container>
 
         {/* About Page Title */}
-        <h1>{info.frontmatter.title}</h1>
+        <h1 style={{ margin: `50px 0`, textAlign: `center`, padding: `0` }}>{info.frontmatter.title}</h1>
 
         {/* About Page Photo */}
-        <div style={{ maxWidth: `50%`, margin: `25px auto` }}>
+        <div style={{ maxWidth: (innerWidth < 700 ? `85%` : `50%`), margin: `25px auto` }}>
           <Img fluid={info.frontmatter.image.childImageSharp.fluid} />
         </div>
 

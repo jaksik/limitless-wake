@@ -58,7 +58,7 @@ export default class Example extends React.Component {
                                             Locations
                                         </DropdownItem>
                                     </Link>
-                                    <Link to="resources/rentals" className="nav-item">
+                                    <Link to="resources/boat-rentals" className="nav-item">
                                         <DropdownItem>
                                             Boat Rentals
                                         </DropdownItem>

@@ -1,5 +1,5 @@
 ---
-templateKey: 'blog'
+templateKey: 'about'
 title: "About Limitless Wake"
 image: ../../../static/img/chandler.jpg
 ---
