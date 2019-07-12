@@ -2,7 +2,7 @@
 templateKey: blog
 title: Hello World
 date: 2019-07-10T16:06:43.434Z
-description: hello
+description: Welcome to limitlesswake.com!!!
 tags:
   - testing imae
 ---

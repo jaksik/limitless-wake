@@ -12,7 +12,7 @@ export default ({ data }) => {
   return (
     <Layout>
       <SEO title="About Limitless Wake" keywords={[`wakeboard`, `lessons`, `austin`, `texas`, `lake`, `travis`, `limitless`, `wake`, `chandler`, `crouch`]} />
-      <Container>
+      <Container className="short-page">
 
         {/* About Page Title */}
         <h1>{info.frontmatter.title}</h1>
