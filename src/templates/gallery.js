@@ -8,6 +8,7 @@ import SEO from "../components/seo"
 import "../pages/style.css"
 
 export default ({ data }) => {
+  console.log("data: ", data)
   return (
     <Layout>
       <SEO title="Wakeboard Images Lake Travis" keywords={[ `images`, `wakeboard`, `lessons`, `austin`, `texas`, `lake`, `travis`, `limitless`, `wake`, `chandler`, `crouch`]} />
