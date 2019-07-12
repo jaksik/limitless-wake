@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState, useEffect } from "react"
 import { graphql, Link } from "gatsby"
 import { Button } from 'reactstrap';
 
@@ -14,8 +14,12 @@ import "./style.css"
 
 const IndexPage = ({ data }) => {
   const faqData = data.allMarkdownRemark.edges[0].node.frontmatter.faq;
-  console.log("window: ", window.innerWidth)
-  const innerWidth = window.innerWidth;
+  const [width, setWidth] = useState(1);
+
+  useEffect(() => 
+  {
+    setWidth(window.innerWidth);
+  });
 
   return (
     <Layout>
@@ -85,7 +89,7 @@ const IndexPage = ({ data }) => {
           })}
         </div>
 
-          <Link style={{ display: (innerWidth < 700 ? `block` : `none`)}} to="/contact">
+          <Link style={{ display: (width < 700 ? `block` : `none`)}} to="/contact">
             <Button color="primary" size="lg" style={{ width: `80%`, margin: `0 auto` }} block >Book A Lesson</Button>
           </Link>
 

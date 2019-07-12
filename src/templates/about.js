@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState, useEffect } from "react"
 import { graphql } from "gatsby"
 import Img from 'gatsby-image';
 import Layout from "../components/layout"
@@ -8,8 +8,12 @@ import "../pages/style.css"
 
 export default ({ data }) => {
   const info = data.markdownRemark
-  const innerWidth = window.innerWidth;
+  const [width, setWidth] = useState(1);
 
+  useEffect(() => 
+  {
+    setWidth(window.innerWidth);
+  });
   return (
     <Layout>
       <SEO title="About Limitless Wake" keywords={[`wakeboard`, `lessons`, `austin`, `texas`, `lake`, `travis`, `limitless`, `wake`, `chandler`, `crouch`]} />
@@ -19,7 +23,7 @@ export default ({ data }) => {
         <h1 style={{ margin: `50px 0`, textAlign: `center`, padding: `0` }}>{info.frontmatter.title}</h1>
 
         {/* About Page Photo */}
-        <div style={{ maxWidth: (innerWidth < 700 ? `85%` : `50%`), margin: `25px auto` }}>
+        <div style={{ maxWidth: (width < 700 ? `85%` : `50%`), margin: `25px auto` }}>
           <Img fluid={info.frontmatter.image.childImageSharp.fluid} />
         </div>
 
