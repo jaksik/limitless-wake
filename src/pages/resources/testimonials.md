@@ -9,5 +9,7 @@ testimonials:
       Visiting from MI and wanted to extend the season by one more session.
       Chandler was a total pro. Great experience and valuable lessons learned
       that we will take back home for next season!
+  - author: Testing
+    quote: Testing
 ---
 
