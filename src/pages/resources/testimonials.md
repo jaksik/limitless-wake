@@ -11,5 +11,7 @@ testimonials:
       that we will take back home for next season!
   - author: Testing
     quote: Testing
+  - author: testingmore
+    quote: testingmore
 ---
 
