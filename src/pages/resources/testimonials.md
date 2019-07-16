@@ -13,5 +13,7 @@ testimonials:
     quote: Testing
   - author: testingmore
     quote: testingmore
+  - author: testingtesting
+    quote: testingtesting
 ---
 
