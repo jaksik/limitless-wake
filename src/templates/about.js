@@ -23,9 +23,9 @@ export default ({ data }) => {
         <h1 style={{ margin: `50px 0`, textAlign: `center`, padding: `0` }}>{info.frontmatter.title}</h1>
 
         {/* About Page Photo */}
-        <div style={{ maxWidth: (width < 700 ? `85%` : `50%`), margin: `25px auto` }}>
+        {/* <div style={{ maxWidth: (width < 700 ? `85%` : `50%`), margin: `25px auto` }}>
           <Img fluid={info.frontmatter.image.childImageSharp.fluid} />
-        </div>
+        </div> */}
 
         {/* About Page Body Text */}
         <div style={{ textIndent: `50px` }}>
@@ -42,13 +42,6 @@ export const query = graphql`
       html
       frontmatter {
         title  
-        image {
-          childImageSharp {
-            fluid(maxWidth: 786) {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
       }
     }
   }
