@@ -1,7 +1,7 @@
 import React from "react"
 import Layout from "../../components/layout"
 import SEO from "../../components/seo"
-
+import Testform from "../../components/test-form"
 import { Button } from 'reactstrap';
 import waiver from "../../data/waiver.pdf"
 import "../../components/style.css"
@@ -26,16 +26,16 @@ const Contact = () => (
 
       <h4 style={{ color: `white`, textAlign: `center`, paddingBottom: `0px` }}>Lesson Booking Form</h4>
 
-      <input style={{ display: `none` }} type="text" /><br />
+      <input style={{display: `none`}} type="text" /><br />
 
-      <input required className="form-input" name="name" placeholder="  First and Last Name*" type="text" /><br />
+      <input required className="form-input" name="name" placeholder="First and Last Name*" type="text" /><br />
 
-      <input required className="form-input" name="email" placeholder="  Email*" type="email" /><br />
+      <input required className="form-input" name="email" placeholder="Email*" type="email" /><br />
 
-      <input className="form-input" name="phone" placeholder="  Phone Number" type="number" /><br />
+      <input className="form-input" name="phone" placeholder="Phone Number" type="number" /><br />
 
-      <select className="form-input" required name="preffered-lake">
-        <option value="">Select a lake: </option>
+      <select className="form-input" required name="prefered-lake">
+        <option disabled>Prefered lake for lesson</option>
         <option value="Lake-Austin">Lake Austin</option>
         <option value="Lake-Travis">Lake Travis</option>
         <option value="Lake-LBJ">Lake LBJ</option>
@@ -43,17 +43,17 @@ const Contact = () => (
       </select><br />
 
       <select className="form-input" required name="boat">
-        <option value="">What Kind Of Boat?:</option>
+        <option disabled>Boat for lesson</option>
         <option value="Private-Owner">Private Owner</option>
         <option value="Boat-Club">Boat Club</option>
         <option value="Boar-Rental">Boat Rental</option>
       </select><br />
      
       <select className="form-input" required name="experience-level">
-        <option value="">Your experience level: </option>
-        <option value="1. never stood up">1. Have never successfully stood up</option>
-        <option value="2. can stand up, little maneuvering">2. Can stand up, little or basic maneuvering</option>
-        <option value="3. ready for advanced">3. Comfortable manurvering, ready for advanced practice</option>
+        <option disabled>Your experience level</option>
+        <option value="Never stood up">Have never successfully stood up</option>
+        <option value="Can stand up, little maneuvering">Can stand up, little or basic maneuvering</option>
+        <option value="Ready for advanced">Comfortable manurvering, ready for advanced practice</option>
       </select>
 
       <label for="meeting-time">Preferred day and time:</label>
@@ -89,6 +89,8 @@ const Contact = () => (
       <p><strong>Email:</strong> limitlesswaketech@gmail.com</p>
 
     </div>
+
+    <Testform/>
   </Layout>
 )
 

@@ -8,15 +8,18 @@ import "../pages/style.css"
 
 export default ({ data }) => {
   const info = data.markdownRemark
-  console.log("info: ", info)
+  console.log("info: ", data.markdownRemark.frontmatter.tags);
+
+
+
   return (
     <Layout>
-      <SEO title="About Limitless Wake" keywords={[`wakeboard`, `lessons`, `austin`, `texas`, `lake`, `travis`, `limitless`, `wake`, `chandler`, `crouch`]} />
+      <SEO title="About Limitless Wake" keywords={info.frontmatter.tags} />
       <Container className="short-page">
 
         {/* About Page Title */}
         <h1>{info.frontmatter.title}</h1>
-        <p style={{ textAlign: `center`}}>{info.frontmatter.description}</p>
+        <p style={{ textAlign: `center`, fontWeight:`bold`}}>{info.frontmatter.description}</p>
         {/* About Page Photo */}
         {/* <div style={{ maxWidth: `50%`, margin: `25px auto` }}>
           <Img fluid={info.frontmatter.image.childImageSharp.fluid} />
@@ -38,6 +41,7 @@ export const query = graphql`
       frontmatter {
         title  
         description
+        tags
       }
     }
   }

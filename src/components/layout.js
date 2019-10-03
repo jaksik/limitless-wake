@@ -10,6 +10,7 @@ import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
 
 import Navbar from "./navbar"
+import Footer from "./footer"
 import Brand from "../images/limitless-logo.png"
 import "./layout.css"
 
@@ -36,7 +37,7 @@ const Layout = ({ children, ...props }) => (
           <main>{children}</main>
          
         </div>
-        <footer style={{ 
+        {/* <footer style={{ 
                   textAlign: `center`,
                   background: `#343a40`,
                   color: `white`,
@@ -53,7 +54,8 @@ const Layout = ({ children, ...props }) => (
             <a  href="https://connorjaksik.com" target="_blank" rel="noopener noreferrer">Connor Jaksik</a>
          
           </div>
-            </footer>
+            </footer> */}
+            <Footer/>
       </>
     )}
   />
