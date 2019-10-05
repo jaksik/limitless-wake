@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from "react"
 import { graphql, Link } from "gatsby"
-import { Button } from 'reactstrap';
+import { Container, Row, Col, Button } from "reactstrap"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { Container } from "reactstrap"
 import Collapsible from "../components/collapsible"
 import HomeDiv from "../components/home-div"
+import Img from 'gatsby-image';
 
 import info from "../data/info.json"
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -48,6 +48,53 @@ const IndexPage = ({ data }) => {
       <Link to="/contact">
         <Button color="primary" size="lg" style={{ width: `55%`, margin: `0 auto`, zIndex: `1`, top: `10px` }} block id="cover-button">Book A Lesson</Button>
       </Link>
+
+      <div style={{width:`100%`, background:`white`}}>
+      <Container>
+        <div style={{ marginTop: `300px` }}>
+            <h4 style={{fontWeight:`bold`, padding:`50px 0 20px`, textAlign: `center`}}>Limitless Wake</h4>
+            <p style={{maxWidth:`650px`, margin:`30px auto`, textAlign:`center`, textIndent:`0px`}}>Limitless Wake Technologies LLC is dedicated to providing you with the information and training you need to reach your wakeboard/surf goals. Founded by life-long wake enthusiast and Collegiate Champion Chandler Crouch, you know you'll be in good hands when working with Limitless Wake.</p>
+            <Row style={{background:`white`}}>
+                <Col xs="12">
+                    <h5 style={{textAlign:`center`}}>{info[1].title}</h5>
+                </Col>
+                {info[1].data.map((item) => {
+                    return (
+                        <Col xs="12" md="4">
+                            <p style={{textAlign:`center`, fontWeight:`bold`}}>{item.title}</p>
+                            <p className="home-div-item" style={{ textAlign: `center`, textIndent:`0`}}>{item.info}</p>                         
+                        </Col>
+                    )
+                })} 
+                <Button color="info" style={{margin:`10px auto 70px`}}>Learn More</Button>
+            </Row>
+
+            <Row style={{background:`white`}}>
+                <Col xs="12">
+                    <h1 style={{textAlign:`center`, fontWeight:`bold`}}>How It Works</h1>
+                </Col>
+                <Col xs="12" md="4">
+                    <Img fluid={data.paperPencil.childImageSharp.fluid} style={{maxWidth:'70px', margin:`0 auto`}}/>
+                    <h4 style={{textAlign:`center`}}>1. Fill Out the Evaluation Form</h4>
+                    <p className="home-div-item" style={{ textAlign: `center`, textIndent:`0`}}>Tell us a little about yourself as well as your preferred lesson day, time, and location.</p>                         
+                </Col>
+                <Col xs="12" md="4">
+                    <Img fluid={data.paperPencil.childImageSharp.fluid} style={{maxWidth:'70px', margin:`0 auto`}}/>
+                    <h4 style={{textAlign:`center`}}>2. Lesson Confirmation</h4>
+                    <p className="home-div-item" style={{ textAlign: `center`, textIndent:`0`}}>After filling out the evaluation, we'll get in contact with you through phone or email to confirm your lesson.</p>                         
+                </Col>
+                <Col xs="12" md="4">
+                    <Img fluid={data.paperPencil.childImageSharp.fluid} style={{maxWidth:'70px', margin:`0 auto`}}/>
+                    <h4 style={{textAlign:`center`}}>3. We Come To You</h4>
+                    <p className="home-div-item" style={{ textAlign: `center`, textIndent:`0`}}>We'll meet you any where in the Austin, Texas area. If you don't have a boat check out our rental affiliates page for popular rental locations.</p>                         
+                </Col>
+            </Row>
+        </div>
+
+        <div style={{ paddingBottom: `50px` }}>
+        </div>
+      </Container>
+      </div>
 
       <Container>
         <div style={{ marginTop: `300px` }}>
@@ -103,9 +150,9 @@ query {
       }
     }
   }
-  paperPencil: file(relativePath: { eq: "map.png" }) {
+  paperPencil: file(relativePath: { eq: "paper.png" }) {
     childImageSharp {
-      fluid(maxWidth: 200, quality: 80) {
+      fluid(maxWidth: 800, quality: 40) {
         ...GatsbyImageSharpFluid
       }
     }

@@ -8,7 +8,7 @@ const div = (props) => {
     return (
             <Row style={{background:`white`}}>
                 <Col xs="12">
-                    <h2 style={{textAlign:`center`}}>{data.title}</h2>
+                    <h1 style={{textAlign:`center`, fontWeight:`bold`}}>{data.title}</h1>
                 </Col>
                 {data.data.map((item) => {
                     return (
