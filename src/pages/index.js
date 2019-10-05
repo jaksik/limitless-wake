@@ -5,15 +5,11 @@ import Img from 'gatsby-image'
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Carousel from "../components/carousel"
-
-
 import info from "../data/info.json"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./style.css"
-import gallery from "../templates/gallery"
 
 const IndexPage = ({ data }) => {
-  const faqData = data.allMarkdownRemark.edges[0].node.frontmatter.faq;
   const [width, setWidth] = useState(1);
   console.log("data: ", data)
   useEffect(() => 
@@ -26,7 +22,6 @@ const IndexPage = ({ data }) => {
     <Layout>
       <SEO title="Wakeboard Lessons Austin Texas" keywords={[`wakeboard`, `lessons`, `austin`, `texas`, `lake`, `travis`, `limitless`, `wake`, `chandler`, `crouch`]} />
 
-      {/* Cover Video, Commented Out When Under Maintenance */}
       {/* <div className="overlay">
         <div className="video">
           <video id="myVid" autoPlay muted loop poster>
@@ -36,7 +31,6 @@ const IndexPage = ({ data }) => {
         </div>
       </div> */}
 
-      {/* Background Image One */}
       <div id="backgroundOne"></div>
 
       {/* Cover Title and Description*/}
@@ -47,7 +41,7 @@ const IndexPage = ({ data }) => {
 
       {/* Lesson Booking Button */}
       <Link to="/contact">
-        <Button color="primary" size="lg" style={{ width: `55%`, margin: `0 auto`, zIndex: `1`, top: `10px` }} block id="cover-button">Book A Lesson</Button>
+        <Button color="primary" size="lg" style={{ width: `55%`, margin: `0 auto`, zIndex: 16, top: `10px` }} block id="cover-button">Book A Lesson</Button>
       </Link>
 
       <div style={{width:`100%`, background:`white`}}>
@@ -69,6 +63,10 @@ const IndexPage = ({ data }) => {
                 })} 
                 <Button color="info" style={{margin:`10px auto 70px`}}>Learn More</Button>
             </Row>
+
+            <div style={{maxHeight:`400px`, overflow: `hidden`}}>
+        <Carousel/>
+      </div>
 
             <Row style={{background:`white`}}>
                 <Col xs="12">
@@ -94,27 +92,27 @@ const IndexPage = ({ data }) => {
       </Container>
       </div>
 
-      <div id="google-maps" className="google-maps" name="google-maps">
+      <div className="google-maps" name="google-maps">
         <iframe title="lesson locations map" frameborder="100" scrolling="no" src="https://www.google.com/maps/d/embed?mid=1JJfYAg2K--y6U6e0bfiHRSPSH_x6yHg9&hl=en" width="100%" height="360px" className="map-iframe"></iframe>
-      </div>
-
-      <Container>
-        <Row className="justify-content-center">
-          <Carousel/>
-        </Row>
+      </div>        
 
         {/* <Link style={{ display: (width < 700 ? `block` : `none`)}} to="/contact">
           <Button color="primary" size="lg" style={{ width: `80%`, margin: `0 auto` }} block >Book A Lesson</Button>
         </Link> */}
 
-      </Container>
+      
 
-      <div style={{width:`100%`, background:`white`}}>
+      <div style={{width:`100%`, background:`white`, paddingBottom: `40px`}}>
         <Container>
+        <Row className="justify-content-center">
+          
+        </Row>
           <Row>
             <Col xs="12" md="6">
+              <div className="blog-header">
               <h2>The Wake</h2>
               <h5>Official Blog Of Limitless Wake</h5>
+              </div>
             </Col>
 
             {data.allMarkdownRemark.edges.map((blogPost, index) => {

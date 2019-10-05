@@ -4,7 +4,7 @@ import { Row, Col, Button, Form, FormGroup, Label, Input } from 'reactstrap';
 import './footer.css'
 
 const Footer = () => (
-    <div style={{background:`#477ebf`, paddingTop: `50px`, color:`white`}}>
+    <footer style={{background:`#477ebf`, paddingTop: `40px`, color:`white`}}>
 
         {/* Form Row */}
         <Row className="no-gutters">
@@ -79,7 +79,7 @@ const Footer = () => (
             </Col>
         </Row>
         <p style={{textAlign:`center`, padding:`50px`, marginBottom:`0`}}>© 2019 Limitless Wake Technologies LLC All Rights Reserved.</p>
-    </div>
+    </footer>
 )
 
 export default Footer
