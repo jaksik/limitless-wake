@@ -8,14 +8,14 @@ const div = (props) => {
     return (
             <Row style={{background:`white`}}>
                 <Col xs="12">
-                    <h2>{data.title}</h2>
+                    <h2 style={{textAlign:`center`}}>{data.title}</h2>
                 </Col>
                 {data.data.map((item) => {
                     return (
-                        <Col xs="12" sm="4" className="box">
-                            <Img fluid={props.image.childImageSharp.fluid}/>
-                            <h4 style={{ padding: `0px 0px 15px`}}>{item.title}</h4>
-                            <p className="home-div-item" style={{ textAlign: `center`}}>{item.info}</p>
+                        <Col xs="12" md="4">
+                            <Img fluid={props.image.childImageSharp.fluid} style={{maxWidth:'70px', margin:`0 auto`}}/>
+                            <h4 style={{textAlign:`center`}}>{item.title}</h4>
+                            <p className="home-div-item" style={{ textAlign: `center`, textIndent:`0`}}>{item.info}</p>                         
                         </Col>
                     )
                 })}

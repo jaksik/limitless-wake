@@ -103,9 +103,9 @@ query {
       }
     }
   }
-  paperPencil: file(relativePath: { eq: "map-location.png" }) {
+  paperPencil: file(relativePath: { eq: "map.png" }) {
     childImageSharp {
-      fluid(maxWidth: 200, quality: 20) {
+      fluid(maxWidth: 200, quality: 80) {
         ...GatsbyImageSharpFluid
       }
     }
