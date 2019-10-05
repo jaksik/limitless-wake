@@ -62,16 +62,13 @@ const Footer = () => (
             </Col>
 
             <Col xs="11" md="2" className="offset-1 offset-md-0">
-                <p>420 Summit Blvd <br/>
-                    Frisco, CO 80223
-                </p>
+                <p>Austin, Texas</p>
             </Col>
 
             <Col xs="11" md="2" className="offset-1 offset-md-0">
-                <p>777-777-7777</p>
-                <p>info@summitweb.com</p>
+                <p>512-270-1735</p>
+                <p>limitlesswaketech@gmail.com</p>
             </Col>
-
 
             <Col xs="12" md="3">
               <Row className="no-gutters justify-content-center">
@@ -81,7 +78,7 @@ const Footer = () => (
               </Row>
             </Col>
         </Row>
-        <p style={{textAlign:`center`, padding:`50px`, marginBottom:`0`}}>© 2019 Connor Jaksik All Rights (and some wrongs) Reserved. For those of you who are interested here's our Privacy Policy.</p>
+        <p style={{textAlign:`center`, padding:`50px`, marginBottom:`0`}}>© 2019 Limitless Wake Technologies LLC All Rights Reserved.</p>
     </div>
 )
 

@@ -3,7 +3,7 @@ templateKey: blog
 title: Weighting your Boat
 date: 2019-09-14T16:42:17.821Z
 description: Best way to weight your wake and ski boat.
-image: /img/cover-img.jpg
+image: cover-img.jpg
 tags:
   - wakeboard
   - wakesurf
