@@ -11,6 +11,8 @@ tags:
   - wakeboat
   - big wave
 ---
+![](/img/air.jpg)
+
 **“Sacked out”** is the slang term meaning that your ski boat has been loaded down with as much ballast(weight) as you and it can manage. 
 
 Adding additional weight to the boat in the form of water bags called Fat Sacks laid the foundation for creating the biggest and baddest wave for wakeboard and wakesurf. But did you know that all that extra ballast only does you good if you have it placed in the right locations?
