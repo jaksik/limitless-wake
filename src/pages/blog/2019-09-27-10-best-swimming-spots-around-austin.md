@@ -14,7 +14,6 @@ tags:
   - Dates
   - ''
 ---
-# 10 of the Best Places to Swim Around Austin
 
 **INTRO**: Always clean up your trash. Do not leave these areas dirtier than you found them. Bring a trash bag and pick up what you see. Don't let your city become a dump! Value what you have around you and show it respect.
 
