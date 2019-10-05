@@ -6,7 +6,7 @@ import Layout from "../components/layout"
 import { Container } from "reactstrap"
 import SEO from "../components/seo"
 import "../pages/style.css"
-
+import LightBox from "../components/light-box"
 export default ({ data }) => {
   console.log("data: ", data)
   return (
@@ -18,7 +18,7 @@ export default ({ data }) => {
         <h1>{data.markdownRemark.frontmatter.title}</h1>
 
         {/* Mapping Through the Gallery Images */}
-        <Row>
+        {/* <Row>
           {data.galleryImages.edges.map(image => (
             <Col xs="12" sm="6" md="4">
               <div style={{ maxWidth: `300px`, maxHeight: `300px`, margin: `10px`, overflow: `hidden` }}>
@@ -29,8 +29,8 @@ export default ({ data }) => {
               </div>
             </Col>
           ))}
-        </Row>
-
+        </Row> */}
+      <LightBox images={data.allImageSharp.edges}/>
       </Container>
     </Layout>
   )
@@ -44,13 +44,11 @@ export const query = graphql`
         title
       }
     }
-    galleryImages: allFile(filter: {sourceInstanceName: { eq: "gallery" }}) {
+    allImageSharp {
       edges {
         node {
-          childImageSharp {
-            fluid(maxWidth:400) {
-              ...GatsbyImageSharpFluid
-            }
+          sizes(maxWidth: 1800) {
+            ...GatsbyImageSharpSizes
           }
         }
       }

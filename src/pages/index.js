@@ -34,9 +34,12 @@ const IndexPage = ({ data }) => {
       <div id="backgroundOne"></div>
 
       {/* Cover Title and Description*/}
-      <div className="cover-items" style={{ maxWidth: 960, textAlign: `center`, margin: `20px auto` }}>
-        <h1 className="cover-title">Learn<br />To<br />Ride</h1>
+      <div className="cover-items" style={{textAlign: `center`, margin: `20px auto` }}>
+        <Img fluid={data.coverImage.childImageSharp.fluid} style={{position:`absolute`, width: `100%`, zIndex:`1`, height:`100vh`}}/>
+      <div className="cover-stuff">
+      <h1 className="cover-title">Learn<br />To<br />Ride</h1>
         <p className="cover-text">Wakeboard and Wakesuft lessons by Chandler Crouch in Austin, Texas.</p>
+      </div>
       </div>
 
       {/* Lesson Booking Button */}
@@ -188,6 +191,13 @@ query {
     }
   }
   mapLocation: file(relativePath: { eq: "map.png" }) {
+    childImageSharp {
+      fluid(maxWidth: 800, quality: 40) {
+        ...GatsbyImageSharpFluid
+      }
+    }
+  }
+  coverImage: file(relativePath: { eq: "cover-img.jpg" }) {
     childImageSharp {
       fluid(maxWidth: 800, quality: 40) {
         ...GatsbyImageSharpFluid

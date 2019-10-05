@@ -95,6 +95,8 @@ html, body {
   text-align: center;
   color: white;
   margin: 0 auto;
+  position: absolute;
+  z-index: 3;
 }
 
 .cover-title-two {
@@ -103,17 +105,23 @@ html, body {
 
 .cover-text {
   font-size: 25px;
+  position: absolute;
 }
 
 .cover-items {
+  text-align: center;
+  margin: 20px auto;
+  position: relative;
+}
+
+.cover-stuff {
+
   opacity: 0;
   color: white;
+
   animation-delay: 0.05s;
   animation-name: fadeInOut;
   animation-duration: 10000s;
-  max-width: 960px;
-  text-align: center;
-  margin: 20px auto;
 }
 
 /* Background Images */
