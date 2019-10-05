@@ -1,26 +1,25 @@
 import React from "react"
 import {Row, Col } from 'reactstrap';
+import Img from 'gatsby-image';
 
 const div = (props) => {
     const data = props.info
+    console.log("Props: ", props)
     return (
-        <div style={{ zIndex: `0`, backgroundColor: `#343a40`, color: `lightgray`}}>
-            <Row>
+            <Row style={{background:`white`}}>
                 <Col xs="12">
                     <h2>{data.title}</h2>
                 </Col>
-            </Row>
-            <Row>
                 {data.data.map((item) => {
                     return (
                         <Col xs="12" sm="4" className="box">
+                            <Img fluid={props.image.childImageSharp.fluid}/>
                             <h4 style={{ padding: `0px 0px 15px`}}>{item.title}</h4>
                             <p className="home-div-item" style={{ textAlign: `center`}}>{item.info}</p>
                         </Col>
                     )
                 })}
             </Row>
-        </div>
     )
 }
 

@@ -3,7 +3,7 @@ import Img from 'gatsby-image'
 import { graphql } from "gatsby"
 import { Row, Col } from 'reactstrap'
 import Layout from "../components/layout"
-import Container from "../components/container"
+import { Container } from "reactstrap"
 import SEO from "../components/seo"
 import "../pages/style.css"
 

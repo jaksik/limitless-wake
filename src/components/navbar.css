@@ -8,12 +8,16 @@ Link {
 
 .nav-item {
     padding: 0 5px;
-    color: lightgray;
+    color: white;
     text-decoration: none;
 }
 
-a {
-    color: rgba(255,255,255,.5);
+.start-navitem {
+    padding-right: 35px;
+}
+
+.end-navitem {
+    margin-right: 0;
 }
 
 @media only screen and (max-width: 768px) {
@@ -21,3 +25,48 @@ a {
         text-align: center;
     }
 }
+
+@media screen and (min-width: 821px) {
+    .nav-item {
+        padding-right: 13px
+    }
+
+    .navbar-brand {
+        padding-left: 13px
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .nav-item {
+        padding-right: 15px
+    }
+
+    .navbar-brand {
+        padding-left: 15px
+    }
+}
+
+@media screen and (min-width: 991px) {
+   
+    .nav-item {
+        padding-right: 25px
+    }
+
+    .navbar-brand {
+        padding-left: 25px
+    }
+  }
+
+  @media screen and (min-width: 1100px) {
+    .end-navitem {
+        margin-right: 65;
+    }
+   
+    .nav-item {
+        padding-right: 35px
+    }
+
+    .navbar-brand {
+        padding-left: 65px
+    }
+  }

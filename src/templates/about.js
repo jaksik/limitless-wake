@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react"
 import { graphql } from "gatsby"
 import Img from 'gatsby-image';
 import Layout from "../components/layout"
-import Container from "../components/container"
+import { Container } from "reactstrap"
 import SEO from "../components/seo"
 import "../pages/style.css"
 

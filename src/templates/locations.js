@@ -2,7 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 import { Row, Col } from 'reactstrap';
 import Layout from "../components/layout"
-import Container from "../components/container"
+import { Container } from "reactstrap"
 import SEO from "../components/seo"
 import "../pages/style.css"
 
@@ -12,13 +12,7 @@ export default ({ data }) => {
     <Layout>
       <SEO title="Wakeboard Lesson Locations" keywords={[ `locations`, `wakeboard`, `lessons`, `austin`, `texas`, `lake`, `travis`, `limitless`, `wake`, `chandler`, `crouch`]} />
       <Container className="short-page">
-
-        {/* Locations Page Title */}
-        <Row>
-          <Col xs="12">
-            <h1 style={{ textAlign: `center` }}>{data.markdownRemark.frontmatter.title}</h1>
-          </Col>
-        </Row>
+        <h1 className="page-title">{data.markdownRemark.frontmatter.title}</h1>
 
         {/* Mapping Through and Rendering The Locations */}
         <Row>

@@ -1,6 +1,6 @@
 import React from 'react'
 import { graphql, Link } from "gatsby"
-import Container from "../../components/container"
+import {Container} from "reactstrap"
 import Layout from '../../components/layout'
 import "../style.css"
 

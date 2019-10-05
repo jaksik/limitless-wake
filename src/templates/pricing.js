@@ -1,7 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
-import Container from "../components/container"
+import { Container } from "reactstrap"
 import SEO from "../components/seo"
 import "../pages/style.css"
 
@@ -10,9 +10,7 @@ export default ({ data }) => {
   return (
     <Layout>
       <SEO title="Wakeboard Lesson Rates" keywords={[ `rates`, `wakeboard`, `lessons`, `austin`, `texas`, `lake`, `travis`, `limitless`, `wake`, `chandler`, `crouch`]} />
-      <Container className="short-page">
-
-        {/* Pricing Page Title */}
+      <Container>
         <h1>{data.markdownRemark.frontmatter.title}</h1>
 
         {/* Hard Coded Pricing Info */}

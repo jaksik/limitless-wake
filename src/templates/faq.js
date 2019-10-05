@@ -2,7 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import Collapsible from "../components/collapsible"
-import Container from "../components/container"
+import { Container } from "reactstrap"
 import SEO from "../components/seo"
 import "../pages/style.css"
 

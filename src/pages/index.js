@@ -4,7 +4,7 @@ import { Button } from 'reactstrap';
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Container from "../components/container"
+import { Container } from "reactstrap"
 import Collapsible from "../components/collapsible"
 import HomeDiv from "../components/home-div"
 
@@ -15,7 +15,7 @@ import "./style.css"
 const IndexPage = ({ data }) => {
   const faqData = data.allMarkdownRemark.edges[0].node.frontmatter.faq;
   const [width, setWidth] = useState(1);
-
+  console.log("data: ", data)
   useEffect(() => 
   {
     setWidth(window.innerWidth);
@@ -49,28 +49,16 @@ const IndexPage = ({ data }) => {
         <Button color="primary" size="lg" style={{ width: `55%`, margin: `0 auto`, zIndex: `1`, top: `10px` }} block id="cover-button">Book A Lesson</Button>
       </Link>
 
-      {/* A section containing content about the business*/}
-      <div style={{ marginTop: `300px` }}>
-        <Container background="#343a40">
-          <HomeDiv info={info[0]} />
-        </Container>
-      </div>
+      <Container>
+        <div style={{ marginTop: `300px` }}>
+            <HomeDiv info={info[0]} image={data.paperPencil}/>
+        </div>
 
-      {/* Background Image Two*/}
-      <div id="backgroundTwo" className="background">
-        <h2 className="cover-title cover-title-two">Learn<br />On Your Boat<br />With<br />Your Friends</h2>
-      </div>
-
-      {/* A section containing content about the business*/}
-      <Container background="#343a40">
         <div style={{ paddingBottom: `50px` }}>
-          <HomeDiv info={info[1]} />
+          <HomeDiv info={info[1]} image={data.paperPencil}/>
         </div>
       </Container>
 
-
-      {/* Google Map iFrame as Background Image Three */}
-      {/* <div className="disable-scroll"></div> */}
       <div id="google-maps" className="google-maps" name="google-maps">
         <iframe title="lesson locations map" frameborder="100" scrolling="no" src="https://www.google.com/maps/d/embed?mid=1JJfYAg2K--y6U6e0bfiHRSPSH_x6yHg9&hl=en" width="100%" height="360px" className="map-iframe"></iframe>
       </div>
@@ -102,11 +90,7 @@ export default IndexPage
 
 export const query = graphql`
 query {
-  allMarkdownRemark (filter: {
-    frontmatter: {
-      templateKey: {regex: "/faq/"}
-    }
-  }) {
+  allMarkdownRemark (filter: { frontmatter: {templateKey: {regex: "/faq/"}}}) {
     edges {
       node {
         id
@@ -116,6 +100,13 @@ query {
             answer
           }
         }
+      }
+    }
+  }
+  paperPencil: file(relativePath: { eq: "map-location.png" }) {
+    childImageSharp {
+      fluid(maxWidth: 200, quality: 20) {
+        ...GatsbyImageSharpFluid
       }
     }
   }
