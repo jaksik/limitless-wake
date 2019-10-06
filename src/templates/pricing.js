@@ -1,7 +1,8 @@
 import React from "react"
 import { graphql } from "gatsby"
-import Layout from "../components/layout"
 import { Container } from "reactstrap"
+import Layout from "../components/layout"
+import PageHeader from "../components/page-header"
 import SEO from "../components/seo"
 import "../pages/style.css"
 
@@ -10,6 +11,8 @@ export default ({ data }) => {
   return (
     <Layout>
       <SEO title="Wakeboard Lesson Rates" keywords={[ `rates`, `wakeboard`, `lessons`, `austin`, `texas`, `lake`, `travis`, `limitless`, `wake`, `chandler`, `crouch`]} />
+      <PageHeader image={data.airImage.childImageSharp.fluid} title="Pricing"/>
+
       <Container>
         <h1>{data.markdownRemark.frontmatter.title}</h1>
 
@@ -46,6 +49,13 @@ export const query = graphql`
       frontmatter {
         title      
       }
-   }
+    }
+    airImage: file(relativePath: { eq: "air.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000, quality: 100) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
   }
 `

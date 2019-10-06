@@ -31,26 +31,25 @@ const IndexPage = ({ data }) => {
         </div>
       </div> */}
 
-      <div id="backgroundOne"></div>
-
       {/* Cover Title and Description*/}
-      <div className="cover-items" style={{textAlign: `center`, margin: `20px auto` }}>
-        <Img fluid={data.coverImage.childImageSharp.fluid} style={{position:`absolute`, width: `100%`, zIndex:`1`, height:`100vh`}}/>
-      <div className="cover-stuff">
-      <h1 className="cover-title">Learn<br />To<br />Ride</h1>
-        <p className="cover-text">Wakeboard and Wakesuft lessons by Chandler Crouch in Austin, Texas.</p>
-      </div>
+      <div className="cover-wrapper">
+        <Img fluid={data.coverImage.childImageSharp.fluid} style={{position:`absolute`, width: `100%`, height:`100%`, zIndex:`1`}}/>
+        <div className="cover-container">
+          <h1 className="cover-title">Learn<br />To<br />Ride</h1>
+          <p className="cover-subtitle">Wakeboard and Wakesuft lessons by Chandler Crouch in Austin, Texas.</p>
+        </div>
+        <div className="wave"></div>
       </div>
 
       {/* Lesson Booking Button */}
       <Link to="/contact">
-        <Button color="primary" size="lg" style={{ width: `55%`, margin: `0 auto`, zIndex: 16, top: `10px` }} block id="cover-button">Book A Lesson</Button>
-      </Link>
+          <Button color="primary" size="lg" style={{ width: `55%`, margin: `-15vh auto`, zIndex: 16, top: `10px` }} block id="cover-button">Book A Lesson</Button>
+        </Link>
 
       <div style={{width:`100%`, background:`white`}}>
       <Container>
-        <div style={{ marginTop: `300px` }}>
-            <h4 style={{fontWeight:`bold`, padding:`50px 0 20px`, textAlign: `center`}}>Limitless Wake</h4>
+        <div style={{ marginTop: `20vh` }}>
+            <h3 style={{fontWeight:`bold`, padding:`50px 0 20px`, textAlign: `center`}}>Limitless Wake</h3>
             <p style={{maxWidth:`650px`, margin:`30px auto`, textAlign:`center`, textIndent:`0px`}}>Limitless Wake Technologies LLC is dedicated to providing you with the information and training you need to reach your wakeboard/surf goals. Founded by life-long wake enthusiast and Collegiate Champion Chandler Crouch, you know you'll be in good hands when working with Limitless Wake.</p>
             <Row style={{background:`white`}}>
                 <Col xs="12">
@@ -197,7 +196,14 @@ query {
       }
     }
   }
-  coverImage: file(relativePath: { eq: "cover-img.jpg" }) {
+  coverImage: file(relativePath: { eq: "air.jpg" }) {
+    childImageSharp {
+      fluid(maxWidth: 1800, quality: 40) {
+        ...GatsbyImageSharpFluid
+      }
+    }
+  }
+  waveImage: file(relativePath: { eq: "wave.png" }) {
     childImageSharp {
       fluid(maxWidth: 800, quality: 40) {
         ...GatsbyImageSharpFluid

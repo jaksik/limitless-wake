@@ -1,8 +1,8 @@
 import React from "react"
 import { graphql } from "gatsby"
-import { Row, Col } from 'reactstrap';
+import { Container, Row, Col } from 'reactstrap';
 import Layout from "../components/layout"
-import { Container } from "reactstrap"
+import PageHeader from "../components/page-header"
 import SEO from "../components/seo"
 import "../pages/style.css"
 
@@ -11,6 +11,8 @@ export default ({ data }) => {
   return (
     <Layout>
       <SEO title="Wakeboard Lesson Locations" keywords={[ `locations`, `wakeboard`, `lessons`, `austin`, `texas`, `lake`, `travis`, `limitless`, `wake`, `chandler`, `crouch`]} />
+      <PageHeader image={data.sunsetImage.childImageSharp.fluid} title="Locations"/>
+      
       <Container className="short-page">
         <h1 className="page-title">{data.markdownRemark.frontmatter.title}</h1>
 
@@ -47,6 +49,13 @@ export const query = graphql`
           location
         }    
       }
-   }
+    }
+    sunsetImage: file(relativePath: { eq: "sunset.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000, quality: 100) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
   }
 `
