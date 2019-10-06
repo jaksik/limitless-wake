@@ -1,25 +1,46 @@
-import React from 'react'
-import Img from "gatsby-image"
-import './page-header.css'
+import React, { Component } from "react"
+import Img from 'gatsby-image'
+import "./style.css"
 
-const PageCoverImg = ({ image, title, subtitle, description }) => (
-   <>
-      <div style={{position: `relative`, height: `40vh`, overflow:`hidden`}}>
-         <Img fluid={image} style={{position: `absolute`, zIndex:`1`, height: `70vh`, padding: `50vh`, width: `100%`}}/>
-         <div className="header-overlay"></div>
-         <div className="header-title" style={{width: `100%`}}>
-            <h5>{title}</h5>
-            <h2>{subtitle}</h2>
-         </div>
-      </div>
-      <div className="slant">
-         <div className="slant-container">
-            <h4 className="slant-title">{title}</h4>
-            <p className="slant-text">{description}</p>
-         </div>
-      </div>
-   </>
-)
+class ScrollAnimate extends Component {
+    constructor(props) {
+        super(props);
+        this.props = props;
+        this.handleScroll = this.handleScroll.bind(this);
+        this.state = {
+            animate: null,
+        }
+    }
 
-export default PageCoverImg;
+    componentDidMount() {
+        console.log("Scrolling")
 
+        window.addEventListener('scroll', e => this.handleScroll(e));
+    }
+
+    handleScroll = (e) => {
+        this.state.animate = this.refs.animate
+        let xPosition = (String(e.currentTarget.scrollY / 7) + "px")
+        if (this.state.animate) {
+            this.state.animate.style.right = xPosition
+        }
+    }
+
+    render() {
+
+        return (
+            <div style={{ position: `relative` }} >
+                <div className="cover-wrapper">
+                    <Img fluid={this.props.data.coverImage.childImageSharp.fluid} style={{position:`absolute`, width: `100%`, height:`100%`, zIndex:`1`}}/>
+                    <div className="cover-container">
+                    <h1 className="cover-title">Learn<br />To<br />Ride</h1>
+                    <p className="cover-subtitle">Wakeboard and Wakesuft lessons by Chandler Crouch in Austin, Texas.</p>
+                    </div>
+                    <div className="wave animate" ref="animate"></div>
+                </div>
+            </div>
+        )
+    }
+}
+
+export default ScrollAnimate;

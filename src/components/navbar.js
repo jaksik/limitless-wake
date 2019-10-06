@@ -32,7 +32,7 @@ export default class Example extends React.Component {
     }
     render() {
         return (
-                <Navbar color="dark" dark expand="md" id="navbar">
+                <Navbar color="dark" dark expand="md" id="navbar" style={{zIndex:`5`}}>
                     <NavbarBrand className="NavbarBrand start-navitem">
                         <Link to="/"><img src={Brand} width="100%" height="100%" className="navBrand d-inline-block align-top" style={{ maxWidth: `100px`, marginBottom: `0px` }}alt="Limitless Wake Logo" /></Link>
                     </NavbarBrand>

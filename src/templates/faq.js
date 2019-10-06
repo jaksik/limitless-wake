@@ -5,17 +5,14 @@ import Collapsible from "../components/collapsible"
 import { Container } from "reactstrap"
 import SEO from "../components/seo"
 import "../pages/style.css"
+import "./style.css"
 
 export default ({ data }) => {
   return (
     <Layout>
       <SEO title="Frequently Asked Questions" keywords={[`wakeboard`, `lessons`, `austin`, `texas`, `lake`, `travis`, `limitless`, `wake`, `chandler`, `crouch`]} />
-      <Container className="short-page">
-
-        {/* FAQ Page Title */}
-        <h1>{data.markdownRemark.frontmatter.title}</h1>
-
-        {/* Map Through FAQ Entries */}
+      <Container>
+        <h1 className="page-title">{data.markdownRemark.frontmatter.title}</h1>
         <div className="collapse-container"style={{ boxShadow: `0 -1px 4px #343a40` }}>
           {data.markdownRemark.frontmatter.faq.map((faq) => {
             return (

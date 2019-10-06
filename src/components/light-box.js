@@ -59,14 +59,15 @@ class Lightbox extends Component {
 
   render() {
     const { images } = this.props
+    console.log("Images: ", images)
     const { showLightbox, selectedImage } = this.state
     return (
       <Fragment>
         <Gallery>
           {images.map((img, i) => (
-            <GalleryItem key={img.node.sizes.src}>
-              <a href={img.node.sizes.src} alt="Car Image" onClick={e => this.handleClick(e, i)}>
-                <StyledImg sizes={img.node.sizes} />
+            <GalleryItem key={img.node.childImageSharp.fluid.src}>
+              <a href={img.node.childImageSharp.fluid.src} alt="Car Image" onClick={e => this.handleClick(e, i)}>
+                <StyledImg fluid={img.node.childImageSharp.fluid}/>
               </a>
             </GalleryItem>
           ))}
@@ -86,7 +87,7 @@ class Lightbox extends Component {
               </Button>
               <div onClick={this.closeModal}>
 
-              <Img sizes={images[selectedImage].node.sizes} style={{maxHeight:`70vh`, width: `100%`}}/>
+              <Img fluid={images[selectedImage].node.childImageSharp.fluid} style={{maxHeight:`70vh`, width: `100%`}}/>
               </div>
 
           </LightboxContent>
@@ -158,7 +159,7 @@ const Button = styled.button`
 
 const LightboxModal = styled.div`
   position: fixed;
-  z-index: 3;
+  z-index: 5;
   top: 0;
   left: 0;
   bottom: 0;

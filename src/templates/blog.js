@@ -1,10 +1,9 @@
 import React from "react"
 import { graphql } from "gatsby"
-import Img from 'gatsby-image';
+import { Container } from "reactstrap"
 import Layout from "../components/layout"
-import {Container, Row} from "reactstrap"
 import SEO from "../components/seo"
-import "../pages/style.css"
+import "./blog.css"
 
 export default ({ data }) => {
   const info = data.markdownRemark
@@ -17,15 +16,13 @@ export default ({ data }) => {
         {/* <div style={{ maxWidth: `50%`, margin: `25px auto` }}>
           <Img fluid={info.frontmatter.image.childImageSharp.fluid} />
         </div> */}
-
-        {/* About Page Title */}
-       <div style={{ margin: `50px`}}>
-       <h1>{info.frontmatter.title}</h1>
-        <h5>{info.frontmatter.description}</h5>
-       </div>
-      
+    
       <Container>
-          <div dangerouslySetInnerHTML={{ __html: info.html }} />
+        <div style={{maxWidth:`600px`, margin:`0 auto`}}>
+        <h1 style={{margin:`50px 0 30px`}}>{info.frontmatter.title}</h1>
+        <h5 style={{margin:`30px 0 70px`, fontWeight:`bold`}}>{info.frontmatter.description}</h5>
+        <div dangerouslySetInnerHTML={{ __html: info.html }} />
+        </div>
       </Container>
     </Layout>
   )

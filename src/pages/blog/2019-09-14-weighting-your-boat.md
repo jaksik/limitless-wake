@@ -12,7 +12,6 @@ tags:
   - wakeboat
   - big wave
 ---
-![](/img/air.jpg)
 
 **“Sacked out”** is the slang term meaning that your ski boat has been loaded down with as much ballast(weight) as you and it can manage. 
 

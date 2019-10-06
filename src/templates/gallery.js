@@ -1,22 +1,18 @@
 import React from "react"
-import Img from 'gatsby-image'
 import { graphql } from "gatsby"
-import { Row, Col } from 'reactstrap'
-import Layout from "../components/layout"
 import { Container } from "reactstrap"
+import Layout from "../components/layout"
 import SEO from "../components/seo"
-import "../pages/style.css"
 import LightBox from "../components/light-box"
+import "../pages/style.css"
+
 export default ({ data }) => {
   console.log("data: ", data)
   return (
     <Layout>
       <SEO title="Wakeboard Images Lake Travis" keywords={[ `images`, `wakeboard`, `lessons`, `austin`, `texas`, `lake`, `travis`, `limitless`, `wake`, `chandler`, `crouch`]} />
       <Container>
-
-        {/* Gallery Page Title */}
-        <h1>{data.markdownRemark.frontmatter.title}</h1>
-
+        <h1 className="page-title">{data.markdownRemark.frontmatter.title}</h1>
         {/* Mapping Through the Gallery Images */}
         {/* <Row>
           {data.galleryImages.edges.map(image => (
@@ -30,7 +26,7 @@ export default ({ data }) => {
             </Col>
           ))}
         </Row> */}
-      <LightBox images={data.allImageSharp.edges}/>
+      <LightBox images={data.galleryImages.edges}/>
       </Container>
     </Layout>
   )
@@ -44,11 +40,13 @@ export const query = graphql`
         title
       }
     }
-    allImageSharp {
+    galleryImages: allFile(filter: {sourceInstanceName: { eq: "gallery" }}) {
       edges {
         node {
-          sizes(maxWidth: 1800) {
-            ...GatsbyImageSharpSizes
+          childImageSharp {
+            fluid(maxWidth:400) {
+              ...GatsbyImageSharpFluid
+            }
           }
         }
       }

@@ -30,8 +30,9 @@ const Layout = ({ children, ...props }) => (
         <Navbar siteTitle={data.site.siteMetadata.title} />
         <div
           style={{
-            margin: `0 auto`,
+            margin: `0 auto 100px`,
             paddingTop: 0,
+            minHeight: `80vh`,
           }}
         >
           <main>{children}</main>
