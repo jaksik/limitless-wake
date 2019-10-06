@@ -1,85 +1,57 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import { Row, Col, Button, Form, FormGroup, Label, Input } from 'reactstrap';
+import { Row, Col } from 'reactstrap';
 import './footer.css'
+import Brand from "../images/limitless-logo.png"
 
-const Footer = () => (
+const Footer = ({ blogPosts }) => {
+    return (
     <footer style={{background:`#477ebf`, paddingTop: `40px`, color:`white`}}>
-
-        {/* Form Row */}
         <Row className="no-gutters">
-            <Col xs="12" md="3" className="offset-md-1">
-                <h2 style={{textAlign:`center`}}>Go ahead, ask us anything!</h2>
-                <p className="header-text">Anything at all.</p>
-            </Col>
-
-            <Col xs="12" md="8">
-                <Row className="no-gutters">
-                    <Form inline>
-                        <Col xs="12" md="5">
-                            <FormGroup>
-                                <input className="footer-input"  type="text" name="first" id="firstName" placeholder="First Name *" className="footer-input"/>
-                            </FormGroup>
-                        </Col>
-                            {' '}
-                        <Col xs="12" md="5">
-                            <FormGroup>
-                                <input type="text" name="last" id="lastName" placeholder="Last Name *" className="footer-input"/>
-                            </FormGroup>
-                        </Col>
-                            {' '}
-                        <Col xs="12" md="5">
-                            <FormGroup>
-                                <input type="email" name="email" id="exampleEmail" placeholder="Email *" className="footer-input"/>
-                            </FormGroup>
-                        </Col>
-                            {' '}
-                        <Col xs="12" md="10">
-                            <Row className="no-gutters justify-content-center justify-content-xs-start">
-                                <Button color="success" style={{margin:`20px`, width: `150px`}}>Submit</Button>
-                            </Row>
-                        </Col>
-                    </Form>
-                </Row>
-            </Col>
-        </Row>
-
-        <Row className="no-gutters">
-            <div style={{borderBottom:`1px solid white`, width:`80%`, margin:`0 auto 30px`, color:`blue`}}>.</div>
-        </Row>
-
-
-
-        {/* Social Row */}
-        <Row className="no-gutters">
-            <Col xs="12" md="2" className="offset-md-1">
+            <Col xs="12" sm="5" md="4" lg="4" className="offset-sm-1 offset-lg-0">
                 <Row className="no-gutters justify-content-center">
-                    <img style={{maxWidth:`30px`}} src="https://cdn2.iconfinder.com/data/icons/harmonicons-04/64/instagram-512.png"/>
-                    <img style={{maxWidth:`30px`}} src="https://image.flaticon.com/icons/png/512/33/33702.png"/>
-                    <img style={{maxWidth:`30px`}} src="https://cdn2.iconfinder.com/data/icons/harmonicons-04/64/instagram-512.png"/>
-                    <img style={{maxWidth:`30px`}} src="https://image.flaticon.com/icons/png/512/33/33702.png"/>
+                    <p style={{fontWeight:`bold`, color:`#d4dcf1`}}>CONNECT WITH US</p>
+                    <div className="w-100"></div>
+                    <a  href="https://www.instagram.com/limitlesswake/" target="_blank" rel="noopener noreferrer" style={{marginRight:`20px`}}>
+                        <img style={{maxWidth:`30px`}} src="https://cdn2.iconfinder.com/data/icons/harmonicons-04/64/instagram-512.png"/>
+                    </a>      
+                    <a  href="https://www.facebook.com/ATXLakeLessons/" target="_blank" rel="noopener noreferrer">
+                    <img style={{maxWidth:`30px`}} src="https://image.flaticon.com/icons/png/512/33/33702.png"/>                    </a>                      
+                  
+                    <div className="w-100"></div>
+                    <img src={Brand} className="footer-image"/>
                 </Row>
+                
             </Col>
-
-            <Col xs="11" md="2" className="offset-1 offset-md-0">
+            <Col xs="11" sm="5" md="5" lg="4" className="offset-1 offset-md-2 offset-lg-0">
+                <p style={{fontWeight:`bold`, color:`#d4dcf1`}}>LATEST BLOG POSTS</p>
+                    <div className="w-100"></div>  
+                {blogPosts.map((post, index) => (
+                    <>
+                        <div className="w-100"></div>
+                        <Link to={post.node.fields.slug} key={index}>
+                            <p style={{color:`white`}}>{post.node.frontmatter.title}</p>
+                        </Link>
+                    </>
+                ))}
+            </Col>
+            <Col xs="11" sm="5" md="4" lg="4" className="offset-1 offset-sm-2 offset-lg-0">
+                <p style={{fontWeight:`bold`, color:`#d4dcf1`}}>CONTACT US</p>
+                <p>Limitless Wake</p>
                 <p>Austin, Texas</p>
-            </Col>
-
-            <Col xs="11" md="2" className="offset-1 offset-md-0">
                 <p>512-270-1735</p>
                 <p>limitlesswaketech@gmail.com</p>
             </Col>
-
-            <Col xs="12" md="3">
-              <Row className="no-gutters justify-content-center">
-                <Link to="/payments">
-                    <Button>Payments</Button>
-                </Link>
-              </Row>
-            </Col>
         </Row>
-        <p style={{textAlign:`center`, padding:`50px`, marginBottom:`0`}}>© 2019 Limitless Wake Technologies LLC All Rights Reserved.</p>
+        <div style={{textAlign:`center`, color:`#d4dcf1`, padding:`50px`}}>
+            © {new Date().getFullYear()}, Limitless Wake Technologies LLC All Rights Reserved
+            <div style={{ fontSize: `10px`}} >
+            Website Built By
+                {` `}
+                <a  href="https://connorjaksik.com" target="_blank" rel="noopener noreferrer" style={{color: `white`}}>Connor Jaksik</a>
+          </div>
+        </div>
     </footer>
-)
+)}
 
 export default Footer

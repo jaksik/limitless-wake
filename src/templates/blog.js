@@ -21,7 +21,7 @@ export default ({ data }) => {
         <div style={{maxWidth:`600px`, margin:`0 auto`}}>
         <h1 style={{margin:`50px 0 30px`}}>{info.frontmatter.title}</h1>
         <h5 style={{margin:`30px 0 70px`, fontWeight:`bold`}}>{info.frontmatter.description}</h5>
-        <div dangerouslySetInnerHTML={{ __html: info.html }} />
+        <div dangerouslySetInnerHTML={{ __html: info.html }}/>
         </div>
       </Container>
     </Layout>

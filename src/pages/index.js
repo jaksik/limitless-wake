@@ -40,8 +40,8 @@ const IndexPage = ({ data }) => {
       <div style={{width:`100%`, background:`white`}}>
       <Container>
         <div style={{ marginTop: `20vh` }}>
-            <h3 style={{fontWeight:`bold`, padding:`50px 0 20px`, textAlign: `center`}}>Limitless Wake</h3>
-            <p style={{maxWidth:`650px`, margin:`30px auto`, textAlign:`center`, textIndent:`0px`}}>Limitless Wake Technologies LLC is dedicated to providing you with the information and training you need to reach your wakeboard/surf goals. Founded by life-long wake enthusiast and Collegiate Champion Chandler Crouch, you know you'll be in good hands when working with Limitless Wake.</p>
+            <h3 style={{fontWeight:`bold`, padding:`50px 0 0px`, textAlign: `center`}}>Limitless Wake</h3>
+            <p style={{maxWidth:`650px`, margin:`10px auto`, textAlign:`center`, textIndent:`0px`}}>Founded and opperated by life-long wake enthusiast and Collegiate National Champion Chandler Crouch, Limitless Wake is dedicated to providing you with the information and coaching you need to help you reach your wakeboard/surf goals.</p>
             <Row style={{background:`white`}}>
                 <Col xs="12">
                     <h5 style={{textAlign:`center`}}>{info[1].title}</h5>
@@ -53,27 +53,32 @@ const IndexPage = ({ data }) => {
                             <p className="home-div-item" style={{ textAlign: `center`, textIndent:`0`}}>{item.info}</p>                         
                         </Col>
                     )
-                })} 
-                <Button color="info" style={{margin:`10px auto 70px`}}>Learn More</Button>
+                })}
+                
             </Row>
+            <Row className="no-gutters justify-content-center">
+                  <Link to="/about/">
+                    <Button color="info" style={{margin:`10px auto 70px`}}>Learn More</Button>
+                  </Link> 
+                </Row>
             <div style={{maxHeight:`400px`, overflow: `hidden`}}>
               <Carousel/>
             </div>
             <Row style={{background:`white`}}>
                 <Col xs="12">
-                    <h1 style={{margin:`80px auto 40px`, textAlign:`center`, fontWeight:`bold`}}>How It Works</h1>
+                    <h1 style={{margin:`80px auto 0px`, textAlign:`center`, fontWeight:`bold`}}>How It Works</h1>
                 </Col>
-                <Col xs="12" md="4" style={{padding:`30px`}}>
+                <Col xs="12" md="4" style={{padding:`10px 30px`}}>
                     <Img fluid={data.pencil.childImageSharp.fluid} style={{width:'70px', height:`70px`, margin:`20px auto`}}/>
                     <h4 style={{textAlign:`center`}}>1. Fill Out the Evaluation Form</h4>
                     <p className="home-div-item" style={{ textAlign: `center`, textIndent:`0`}}>Tell us a little about yourself as well as your preferred lesson day, time, and location.</p>                         
                 </Col>
-                <Col xs="12" md="4" style={{padding:`30px`}}>
+                <Col xs="12" md="4" style={{padding:`10px 30px`}}>
                     <Img fluid={data.checkBox.childImageSharp.fluid} style={{maxWidth:'70px',  height:`70px`, margin:`20px auto`}}/>
                     <h4 style={{textAlign:`center`}}>2. Lesson Confirmation</h4>
                     <p className="home-div-item" style={{ textAlign: `center`, textIndent:`0`}}>After filling out the evaluation, we'll get in contact with you through phone or email to confirm your lesson.</p>                         
                 </Col>
-                <Col xs="12" md="4" style={{padding:`30px`}}>
+                <Col xs="12" md="4" style={{padding:`10px 30px`}}>
                     <Img fluid={data.mapLocation.childImageSharp.fluid} style={{maxWidth:'70px',  height:`70px`, margin:`20px auto`}}/>
                     <h4 style={{textAlign:`center`}}>3. We Come To You</h4>
                     <p className="home-div-item" style={{ textAlign: `center`, textIndent:`0`}}>We'll meet you any where in the Austin, Texas area. If you don't have a boat check out our rental affiliates page for popular rental locations.</p>                         

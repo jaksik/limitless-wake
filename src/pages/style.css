@@ -209,3 +209,14 @@ img.post-html {
   background-image:
     radial-gradient(circle at 10px 26px, white 20px, transparent 21px);
 }
+
+p {
+  text-indent: 0px;
+}
+
+@media only screen and (max-width: 576px) {
+
+  .cover-wrapper {
+    height: 100vh;
+  }
+}

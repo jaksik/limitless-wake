@@ -68,11 +68,8 @@ const Contact = () => (
 
     </form>
 
-    <br />
    
-        <a style={{ textDecoration: `none` }} href={waiver} download>
-          <Button color="info" size="lg" style={{ margin: `25px auto`, minWidth: `25%`, maxWidth: `80%` }} block outline id="waiver-button">Download The Waiver</Button>
-        </a>
+        
       
     <div style={{ textAlign: `center`, margin: `100px auto` }}>
 
@@ -83,6 +80,14 @@ const Contact = () => (
       <p><strong>Phone: </strong> 512-270-1735</p>
 
       <p><strong>Email:</strong> limitlesswaketech@gmail.com</p>
+
+      <br />
+      <div style={{borderBottom:`1px solid black`, width:`40%`, margin:`50px auto`}}></div>
+      <p>Booked A Lesson?</p>
+      <p>Download the waiver here and bring it with you to your lesson</p>
+      <a style={{ textDecoration: `none` }} href={waiver} download>
+          <Button color="info" size="lg" style={{ margin: `25px auto`, minWidth: `25%`, maxWidth: `80%` }} block outline id="waiver-button">Download The Waiver</Button>
+        </a>
 
     </div>
 

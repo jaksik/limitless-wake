@@ -58,9 +58,7 @@ export const pageQuery = graphql`
         title
       }
     }
-    allMarkdownRemark(
-      filter: { fileAbsolutePath: {regex: "\/blog/"}}
-    ) {
+    allMarkdownRemark(filter: { fileAbsolutePath: {regex: "\/blog/"}}) {
         totalCount
         edges {
             node {
