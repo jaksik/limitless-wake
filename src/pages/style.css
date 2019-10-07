@@ -151,6 +151,7 @@ a {
   box-shadow: 0 -1px 4px #ede7e7;
   height: 100%;
   padding: 15px;
+  margin: 8px;
 }
 
 .post-list:hover {

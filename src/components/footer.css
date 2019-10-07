@@ -1,13 +1,11 @@
-.footer-input {
-    background: none;
-    color: white;
-    margin: 0 auto;
-    width: 100%;
-    padding: 10px;
-    border-style: solid;
-    border-top: none;
-    border-left: none;
-    border-right: none;
+.footer-section {
+    margin: 20px 0
+}
+
+.footer-title {
+    font-weight: bold;
+    color: #d4dcf1;
+    
 }
 
 .footer-image {
@@ -15,6 +13,9 @@
 }
 
 @media only screen and (min-width: 576px) {
+    .footer-section {
+        margin: 0px
+    }
     .footer-image {
         max-width: 175px;
     }

@@ -15,6 +15,13 @@ const Layout = ({ children, ...props }) => (
             title
           }
         }
+        siteLogo: file(relativePath: { eq: "limitless-logo.png" }) {
+          childImageSharp {
+            fluid(maxWidth: 1800, quality: 40) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
         allMarkdownRemark(filter: { fileAbsolutePath: {regex: "\/blog/"}}) {
           edges {
             node {
@@ -41,7 +48,7 @@ const Layout = ({ children, ...props }) => (
         >
           <main>{children}</main>
         </div>
-        <Footer blogPosts={data.allMarkdownRemark.edges}/>
+        <Footer blogPosts={data.allMarkdownRemark.edges} logo={data.siteLogo}/>
       </>
     )}
   />

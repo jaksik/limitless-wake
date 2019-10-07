@@ -3,7 +3,7 @@ templateKey: blog
 title: 10 of the Best Austin Swimming Spots
 date: 2019-09-27T23:42:05.788Z
 description: 'A list of some of the best swimming locations around Austin, Texas.'
-image: nine.jpg
+image: sunset.jpg
 tags:
   - Swimming
   - Water

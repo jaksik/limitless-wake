@@ -62,7 +62,7 @@ const IndexPage = ({ data }) => {
                   </Link> 
                 </Row>
             <div style={{maxHeight:`400px`, overflow: `hidden`}}>
-              <Carousel/>
+              <Carousel data={data.galleryImages}/>
             </div>
             <Row style={{background:`white`}}>
                 <Col xs="12">
@@ -173,7 +173,7 @@ query {
         relativePath
         name
         childImageSharp {
-          fluid(maxWidth:400) {
+          fluid(maxWidth:1200) {
             ...GatsbyImageSharpFluid
           }
         }

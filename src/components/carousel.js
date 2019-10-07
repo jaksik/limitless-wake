@@ -6,30 +6,9 @@ import {
   CarouselIndicators,
   CarouselCaption
 } from 'reactstrap';
-
-import ImgOne from "../../static/img/one.jpg"
-import ImgTwo from "../../static/img/seven.jpg"
-import ImgThree from "../../static/img/ten.jpg"
+import Img from 'gatsby-image'
 
 
-
-const items = [
-  {
-    src: ImgOne,
-    altText: 'Slide 1',
-    caption: 'Slide 1'
-  },
-  {
-    src: ImgThree,
-    altText: 'Slide 2',
-    caption: 'Slide 2'
-  },
-  {
-    src: ImgTwo,
-    altText: 'Slide 3',
-    caption: 'Slide 3'
-  }
-];
 
 class Example extends Component {
   constructor(props) {
@@ -40,6 +19,23 @@ class Example extends Component {
     this.goToIndex = this.goToIndex.bind(this);
     this.onExiting = this.onExiting.bind(this);
     this.onExited = this.onExited.bind(this);
+    this.items = [
+      {
+        src: this.props.data.edges[6].node.childImageSharp.fluid,
+        altText: 'Slide 1',
+        caption: 'Slide 1'
+      },
+      {
+        src: this.props.data.edges[8].node.childImageSharp.fluid,
+        altText: 'Slide 2',
+        caption: 'Slide 2'
+      },
+      {
+        src: this.props.data.edges[9].node.childImageSharp.fluid,
+        altText: 'Slide 3',
+        caption: 'Slide 3'
+      }
+    ];;
   }
 
   onExiting() {
@@ -52,13 +48,13 @@ class Example extends Component {
 
   next() {
     if (this.animating) return;
-    const nextIndex = this.state.activeIndex === items.length - 1 ? 0 : this.state.activeIndex + 1;
+    const nextIndex = this.state.activeIndex === this.items.length - 1 ? 0 : this.state.activeIndex + 1;
     this.setState({ activeIndex: nextIndex });
   }
 
   previous() {
     if (this.animating) return;
-    const nextIndex = this.state.activeIndex === 0 ? items.length - 1 : this.state.activeIndex - 1;
+    const nextIndex = this.state.activeIndex === 0 ? this.items.length - 1 : this.state.activeIndex - 1;
     this.setState({ activeIndex: nextIndex });
   }
 
@@ -69,15 +65,15 @@ class Example extends Component {
 
   render() {
     const { activeIndex } = this.state;
-
-    const slides = items.map((item) => {
+    console.log("this: ", this.props)
+    const slides = this.items.map((item) => {
       return (
         <CarouselItem
           onExiting={this.onExiting}
           onExited={this.onExited}
           key={item.src}
         >
-          <img src={item.src} alt={item.altText} />
+          <Img fluid={item.src} alt={item.altText} />
           <CarouselCaption captionText={item.caption} captionHeader={item.caption} />
         </CarouselItem>
       );
@@ -90,7 +86,7 @@ class Example extends Component {
         previous={this.previous}
         interval={3000}
       >
-        <CarouselIndicators items={items} activeIndex={activeIndex} onClickHandler={this.goToIndex} />
+        <CarouselIndicators items={this.items} activeIndex={activeIndex} onClickHandler={this.goToIndex} />
         {slides}
         <CarouselControl direction="prev" directionText="Previous" onClickHandler={this.previous} />
         <CarouselControl direction="next" directionText="Next" onClickHandler={this.next} />
