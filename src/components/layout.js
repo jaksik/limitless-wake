@@ -17,7 +17,7 @@ const Layout = ({ children, ...props }) => (
         }
         siteLogo: file(relativePath: { eq: "limitless-logo.png" }) {
           childImageSharp {
-            fluid(maxWidth: 1800, quality: 40) {
+            fluid(maxWidth: 400, quality: 80) {
               ...GatsbyImageSharpFluid
             }
           }
