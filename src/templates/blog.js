@@ -1,30 +1,27 @@
 import React from "react"
 import { graphql } from "gatsby"
-import Img from 'gatsby-image';
+import { Container } from "reactstrap"
 import Layout from "../components/layout"
-import Container from "../components/container"
 import SEO from "../components/seo"
-import "../pages/style.css"
+import "./blog.css"
 
 export default ({ data }) => {
   const info = data.markdownRemark
-  console.log("info: ", info)
+  console.log("info: ", data.markdownRemark.frontmatter.tags);
+
   return (
     <Layout>
-      <SEO title="About Limitless Wake" keywords={[`wakeboard`, `lessons`, `austin`, `texas`, `lake`, `travis`, `limitless`, `wake`, `chandler`, `crouch`]} />
-      <Container className="short-page">
-
-        {/* About Page Title */}
-        <h1>{info.frontmatter.title}</h1>
-        <p style={{ textAlign: `center`}}>{info.frontmatter.description}</p>
-        {/* About Page Photo */}
+      <SEO title="About Limitless Wake" keywords={info.frontmatter.tags} />
+      {/* About Page Photo */}
         {/* <div style={{ maxWidth: `50%`, margin: `25px auto` }}>
           <Img fluid={info.frontmatter.image.childImageSharp.fluid} />
         </div> */}
-
-        {/* About Page Body Text */}
-        <div style={{ textIndent: `50px` }}>
-          <div dangerouslySetInnerHTML={{ __html: info.html }} />
+    
+      <Container>
+        <div style={{maxWidth:`600px`, margin:`0 auto`}}>
+        <h1 style={{margin:`50px 0 30px`}}>{info.frontmatter.title}</h1>
+        <h5 style={{margin:`30px 0 70px`, fontWeight:`bold`}}>{info.frontmatter.description}</h5>
+        <div dangerouslySetInnerHTML={{ __html: info.html }}/>
         </div>
       </Container>
     </Layout>
@@ -38,6 +35,7 @@ export const query = graphql`
       frontmatter {
         title  
         description
+        tags
       }
     }
   }

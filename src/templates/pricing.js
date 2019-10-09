@@ -1,21 +1,19 @@
 import React from "react"
 import { graphql } from "gatsby"
+import { Container } from "reactstrap"
 import Layout from "../components/layout"
-import Container from "../components/container"
 import SEO from "../components/seo"
 import "../pages/style.css"
+import "./style.css"
 
 export default ({ data }) => {
 
   return (
     <Layout>
       <SEO title="Wakeboard Lesson Rates" keywords={[ `rates`, `wakeboard`, `lessons`, `austin`, `texas`, `lake`, `travis`, `limitless`, `wake`, `chandler`, `crouch`]} />
-      <Container className="short-page">
+      <Container>
+        <h1 className="page-title">{data.markdownRemark.frontmatter.title}</h1>
 
-        {/* Pricing Page Title */}
-        <h1>{data.markdownRemark.frontmatter.title}</h1>
-
-        {/* Hard Coded Pricing Info */}
         <div style={{ marginTop: `20px`, textAlign: `center` }}>
           <strong>Lessons Start at $100/hour</strong><br />
           <strong>Lessons + Gear Start At $175/hour</strong>
@@ -24,11 +22,8 @@ export default ({ data }) => {
             3 riders? We suggest 1-2 hours<br />
             4 riders? We suggest 2-3 hours<br />
             4+ riders?” We suggest 3+ hours
-        </p>
+          </p>
         </div>
-        <br />
-        <br />
-        <br />
         <br />
         <div style={{ textAlign: `left`, maxWidth: `960px`, padding: `20px`, margin: `0 auto` }}>
           <p>*An hour booked is an hour in the water.</p>
@@ -48,6 +43,13 @@ export const query = graphql`
       frontmatter {
         title      
       }
-   }
+    }
+    airImage: file(relativePath: { eq: "air.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000, quality: 100) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
   }
 `

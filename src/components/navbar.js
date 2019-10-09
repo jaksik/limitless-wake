@@ -32,9 +32,8 @@ export default class Example extends React.Component {
     }
     render() {
         return (
-            <div>
-                <Navbar color="dark" dark expand="md" id="navbar">
-                    <NavbarBrand className="NavbarBrand">
+                <Navbar color="dark" dark expand="md" id="navbar" style={{zIndex:`5`}}>
+                    <NavbarBrand className="NavbarBrand start-navitem">
                         <Link to="/"><img src={Brand} width="100%" height="100%" className="navBrand d-inline-block align-top" style={{ maxWidth: `100px`, marginBottom: `0px` }}alt="Limitless Wake Logo" /></Link>
                     </NavbarBrand>
                     <NavbarToggler onClick={this.toggle} />
@@ -44,7 +43,7 @@ export default class Example extends React.Component {
                                 <NavLink><Link to="/" className="nav-item">Home</Link></NavLink>
                             </NavItem>
                             <UncontrolledDropdown nav inNavbar>
-                                <DropdownToggle nav caret className="nav-item">
+                                <DropdownToggle nav caret className="nav-item text-white">
                                     Resources
                                 </DropdownToggle>
                                 <DropdownMenu>
@@ -85,12 +84,11 @@ export default class Example extends React.Component {
                                 <NavLink><Link to="/about" className="nav-item">About</Link></NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink><Link to="/contact" className="nav-item">Contact</Link></NavLink>
+                                <NavLink><Link to="/contact" className="nav-item end-navitem">Contact</Link></NavLink>
                             </NavItem>
                         </Nav>
                     </Collapse>
                 </Navbar>
-            </div>
         );
     }
 }

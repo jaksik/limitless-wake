@@ -1,10 +1,9 @@
 import React from "react"
-import Img from 'gatsby-image'
 import { graphql } from "gatsby"
-import { Row, Col } from 'reactstrap'
+import { Container } from "reactstrap"
 import Layout from "../components/layout"
-import Container from "../components/container"
 import SEO from "../components/seo"
+import LightBox from "../components/light-box"
 import "../pages/style.css"
 
 export default ({ data }) => {
@@ -13,12 +12,9 @@ export default ({ data }) => {
     <Layout>
       <SEO title="Wakeboard Images Lake Travis" keywords={[ `images`, `wakeboard`, `lessons`, `austin`, `texas`, `lake`, `travis`, `limitless`, `wake`, `chandler`, `crouch`]} />
       <Container>
-
-        {/* Gallery Page Title */}
-        <h1>{data.markdownRemark.frontmatter.title}</h1>
-
+        <h1 className="page-title">{data.markdownRemark.frontmatter.title}</h1>
         {/* Mapping Through the Gallery Images */}
-        <Row>
+        {/* <Row>
           {data.galleryImages.edges.map(image => (
             <Col xs="12" sm="6" md="4">
               <div style={{ maxWidth: `300px`, maxHeight: `300px`, margin: `10px`, overflow: `hidden` }}>
@@ -29,8 +25,8 @@ export default ({ data }) => {
               </div>
             </Col>
           ))}
-        </Row>
-
+        </Row> */}
+      <LightBox images={data.galleryImages.edges}/>
       </Container>
     </Layout>
   )

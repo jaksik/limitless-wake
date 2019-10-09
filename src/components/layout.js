@@ -1,16 +1,9 @@
-/**
- * Layout component that queries for data
- * with Gatsby's StaticQuery component
- *
- * See: https://www.gatsbyjs.org/docs/static-query/
- */
-
 import React from "react"
 import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
 
 import Navbar from "./navbar"
-import Brand from "../images/limitless-logo.png"
+import Footer from "./footer"
 import "./layout.css"
 
 const Layout = ({ children, ...props }) => (
@@ -22,6 +15,25 @@ const Layout = ({ children, ...props }) => (
             title
           }
         }
+        siteLogo: file(relativePath: { eq: "limitless-logo.png" }) {
+          childImageSharp {
+            fluid(maxWidth: 400, quality: 80) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        allMarkdownRemark(filter: { fileAbsolutePath: {regex: "\/blog/"}}) {
+          edges {
+            node {
+              fields {
+                  slug
+              }
+              frontmatter {
+                  title
+              }
+            }
+          }
+        }
       }
     `}
     render={data => (
@@ -29,31 +41,14 @@ const Layout = ({ children, ...props }) => (
         <Navbar siteTitle={data.site.siteMetadata.title} />
         <div
           style={{
-            margin: `0 auto`,
+            margin: `0 auto 100px`,
             paddingTop: 0,
+            minHeight: `80vh`,
           }}
         >
           <main>{children}</main>
-         
         </div>
-        <footer style={{ 
-                  textAlign: `center`,
-                  background: `#343a40`,
-                  color: `white`,
-                  width: `100%`,
-                  padding: `15px`,
-                }}>
-            <a href="/contact" className="facebook social"><i className="fa fa-facebook"></i></a>
-            <a href="/contact" className="instagram social"><i className="fa fa-instagram"></i></a>
-            <img src={Brand} width="100%" height="100%" className="navBrand d-inline-block align-top" style={{ maxWidth: `100px`, marginBottom: `0px` }}alt="Limitless Wake Logo" /> 
-            © {new Date().getFullYear()}, Limitless Wake Technologies LLC
-          <div style={{ fontSize: `10px`}} >
-          Website Built By
-            {` `}
-            <a  href="https://connorjaksik.com" target="_blank" rel="noopener noreferrer">Connor Jaksik</a>
-         
-          </div>
-            </footer>
+        <Footer blogPosts={data.allMarkdownRemark.edges} logo={data.siteLogo}/>
       </>
     )}
   />

@@ -1,0 +1,28 @@
+.footer-section {
+    margin: 20px 0
+}
+
+.footer-title {
+    font-weight: bold;
+    color: #d4dcf1;
+    
+}
+
+.footer-image {
+    max-width: 150px;
+}
+
+@media only screen and (min-width: 576px) {
+    .footer-section {
+        margin: 0px
+    }
+    .footer-image {
+        max-width: 175px;
+    }
+  }
+
+@media only screen and (min-width: 768px) {
+    .footer-image {
+        max-width: 200px;
+    }
+  }

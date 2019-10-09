@@ -1,24 +1,21 @@
 import React from "react"
 import { graphql } from "gatsby"
+import { Container } from "reactstrap"
 import Layout from "../components/layout"
-import Container from "../components/container"
 import SEO from "../components/seo"
 import "../pages/style.css"
+import "./style.css"
 
 export default ({ data }) => {
   console.log(data.markdownRemark.frontmatter.faq)
   return (
     <Layout>
       <SEO title="Limitless Wake Testimonials" keywords={[`wakeboard`, `lessons`, `austin`, `texas`, `lake`, `travis`, `limitless`, `wake`, `chandler`, `crouch`, `testimonials`]} />
-      <Container className="short-page">
-
-        {/* Testimonials Page Title */}
-        <h1>{data.markdownRemark.frontmatter.title}</h1>
-
-        {/* map through FAQ list */}
+      <Container>
+        <h1 className="page-title">{data.markdownRemark.frontmatter.title}</h1>
         {data.markdownRemark.frontmatter.testimonials.map((faq) => {
           return (
-            <div style={{textAlign: `center`}}>
+            <div style={{margin:`30px auto`, textIndent:`50px`, maxWidth:`600px`}}>
               <p>"{faq.quote}"</p>
               <strong>-{faq.author}</strong>
             </div>
