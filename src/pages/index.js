@@ -94,7 +94,7 @@ const IndexPage = ({ data }) => {
 
         {/* <Link style={{ display: (width < 700 ? `block` : `none`)}} to="/contact">
           <Button color="primary" size="lg" style={{ width: `80%`, margin: `0 auto` }} block >Book A Lesson</Button>
-        </Link> */}
+        </Link>  */}
 
       
 
