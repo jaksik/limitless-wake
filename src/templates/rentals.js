@@ -14,13 +14,13 @@ export default ({ data }) => {
       <Container>
         <h1 className="page-title">{data.markdownRemark.frontmatter.title}</h1>
 
-        <div style={{ maxWidth: `700px`, margin: `0 auto`}}>
+        <div style={{ maxWidth: `700px`, margin: `0 auto` }}>
           {data.markdownRemark.frontmatter.affiliate.map((affiliate) => {
             return (
-              <div style={{ borderBottom: `1px solid black`, marginBottom: `15px`}}>
+              <div style={{ borderBottom: `1px solid black`, marginBottom: `15px` }}>
                 <Row>
                   <Col xs="2" className="offset-2 p-0">
-                    <img style={{ marginBottom: `0px` }} className="ml-3" src={affiliate.logourl} alt="Boat rental company logo"/>
+                    <img style={{ marginBottom: `0px` }} className="ml-3" src={affiliate.logourl} alt="Boat rental company logo" />
                   </Col>
                   <Col xs="10" className="offset-2">
                     <p><strong>{affiliate.name}, </strong><a href={affiliate.url} target="_blank" rel="noopener noreferrer">{affiliate.url}</a></p>
@@ -31,8 +31,8 @@ export default ({ data }) => {
                     <p> </p>
                   </Col>
                   <Col xs="10" offset={{ xs: 2 }}>
-                    <p>Boats for rent: <br/>
-                    {affiliate.boats}</p>
+                    <p>Boats for rent: <br />
+                      {affiliate.boats}</p>
                   </Col>
                 </Row>
               </div>

@@ -41,7 +41,7 @@ const Layout = ({ children, ...props }) => (
         <Navbar siteTitle={data.site.siteMetadata.title} />
         <div
           style={{
-            margin: `0 auto 100px`,
+            margin: `0 auto 50px`,
             paddingTop: 0,
             minHeight: `80vh`,
           }}

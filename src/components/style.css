@@ -54,8 +54,12 @@ input[type="date"]:before {
     position: -webkit-sticky;
     position: sticky;
     top: 0;
+    max-width: 1110px;
 }
 
+.form-select {
+    color: grey;
+}
 
 @media only screen and (min-width: 768px) {
 
@@ -65,5 +69,11 @@ input[type="date"]:before {
 
     #waiver-button {
         width: 100px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .cover-container {
+        padding-top: 100px;
     }
 }
