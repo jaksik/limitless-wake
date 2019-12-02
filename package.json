@@ -1,7 +1,7 @@
 {
   "name": "limitless-wake",
   "private": true,
-  "description": "The official website of Limitless Wake Tech LLC, a wakeboard instructor for hire in Austin, Texas.",
+  "description": "The official website of Limitless Wake Tech LLC.",
   "version": "0.1.0",
   "author": "Connor Jaksik <connor.jaksik@gmail.com>",
   "dependencies": {

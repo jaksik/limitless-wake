@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Limitless Wake`,
-    description: `Wake boarding lessons by Chandler Crouch in Austin, Texas.`,
+    description: `Wake boarding lessons in Austin, Texas.`,
     author: `@jaksik`,
   },
   plugins: [
@@ -53,11 +53,11 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `limitless-wake`,
+        short_name: `limitless`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#d4dcf1`,
+        theme_color: `#d4dcf1`,
         display: `minimal-ui`,
         icon: `src/images/limitless-logo.png`, // This path is relative to the root of the site.
       },
@@ -65,7 +65,7 @@ module.exports = {
     'gatsby-plugin-netlify', // make sure to keep it last in the array
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+    `gatsby-plugin-offline`,
   ],
 }
 
