@@ -79,17 +79,7 @@ const IndexPage = ({ data }) => {
 
       <div className="google-maps" name="google-maps">
         <iframe title="lesson locations map" frameborder="100" scrolling="no" src="https://www.google.com/maps/d/embed?mid=1JJfYAg2K--y6U6e0bfiHRSPSH_x6yHg9&hl=en" width="100%" height="360px" className="map-iframe"></iframe>
-<<<<<<< HEAD
-      </div>        
-
-        {/* <Link style={{ display: (width < 700 ? `block` : `none`)}} to="/contact">
-          <Button color="primary" size="lg" style={{ width: `80%`, margin: `0 auto` }} block >Book A Lesson</Button>
-        </Link>  */}
-
-      
-=======
       </div>
->>>>>>> version-three
 
       <div style={{ width: `100%`, background: `white`, paddingBottom: `40px` }}>
         <Container>
