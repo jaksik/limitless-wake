@@ -12,6 +12,10 @@
   }
 }
 
+.landing-container {
+  margin-top: 20vh;
+}
+
 .cover-wrapper {
   position: relative;
   height: 80vh;
@@ -31,13 +35,15 @@
   text-align: center;
   background: rgba(0, 0, 0, 0.445);
 }
+
 .cover-text {
-margin-top: -70vh;
-z-index: 4;
-position: absolute;
-text-align: center;
-color: white;
+  margin-top: -70vh;
+  z-index: 4;
+  position: absolute;
+  text-align: center;
+  color: white;
 }
+
 .cover-title {
   font-size: 5rem;
   font-weight: bold;
@@ -50,12 +56,17 @@ color: white;
   margin: 0 auto;
 }
 
+.carousel {
+  max-height: 600px;
+  overflow: hidden;
+}
+
 .blog-card {
   position: relative;
   z-index: 1;
   overflow: hidden;
   margin: 20px;
-  height: 200px;
+  height: 250px;
 }
 
 .first-card {
@@ -76,38 +87,6 @@ color: white;
   z-index: 3;
   color: white;
   bottom: 5%;
-}
-
-/*===styling the video container===*/
-.video {
-  backface-visibility:hidden;
-  background-size:cover;
-  bottom:0;
-  height:auto;
-  min-height:100%;
-  min-width:100%;
-  perspective:1000;
-  position:fixed;
-  right:0;
-  width:auto;
-  z-index:-1;
-}
-
-/*===Styling the actual video===*/
-#myVid {
-  /* Make video to at least 100% wide and tall */
-  min-width: 100%;
-  min-height: 100%;
-
-  /* Setting width & height to auto prevents the browser from stretching or squishing the video */
-  width: auto;
-  height: auto;
-
-  /* Center the video */
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 
 .disable-scroll {
@@ -219,5 +198,11 @@ p {
 
   .cover-wrapper {
     height: 100vh;
+  }
+}
+
+@media only screen and (min-height: 950px) {
+  .landing-container {
+    margin-top: 25vh;
   }
 }

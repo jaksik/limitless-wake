@@ -31,10 +31,11 @@ class ScrollAnimate extends Component {
         return (
             <div style={{ position: `relative` }} >
                 <div className="cover-wrapper">
-                    <Img fluid={this.props.data.coverImage.childImageSharp.fluid} style={{position:`absolute`, width: `100%`, height:`100%`, zIndex:`1`}}/>
+                    <Img fluid={this.props.data.coverImage.childImageSharp.fluid} style={{ position: `absolute`, width: `100%`, height: `100%`, zIndex: `1` }} />
                     <div className="cover-container">
-                    <h1 className="cover-title">Learn<br />To<br />Ride</h1>
-                    <p className="cover-subtitle">Wakeboard and Wakesuft lessons by Chandler Crouch in Austin, Texas.</p>
+                        <h1 className="cover-title">Learn<br />To<br />Ride</h1>
+                        <br/>
+                        <p className="cover-subtitle">Wakeboard and Wakesuft lessons by Chandler Crouch in Austin, Texas.</p>
                     </div>
                     <div className="wave animate" ref="animate"></div>
                 </div>

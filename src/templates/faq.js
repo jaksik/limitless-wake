@@ -10,7 +10,7 @@ import "./style.css"
 export default ({ data }) => {
   return (
     <Layout>
-      <SEO title="Frequently Asked Questions" keywords={[`wakeboard`, `lessons`, `austin`, `texas`, `lake`, `travis`, `limitless`, `wake`, `chandler`, `crouch`]} />
+      <SEO title="FAQ" keywords={[ `wakeboard`, `lessons`, `austin`, `texas`, `lake`, `travis`, `limitless`, `wake`, `faq` ]} />
       <Container>
         <h1 className="page-title">{data.markdownRemark.frontmatter.title}</h1>
         <div className="collapse-container"style={{ boxShadow: `0 -1px 4px #343a40` }}>
