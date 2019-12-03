@@ -11,11 +11,7 @@ export default ({ data }) => {
 
   return (
     <Layout>
-      <SEO title="About Limitless Wake" keywords={info.frontmatter.tags} />
-      {/* About Page Photo */}
-        {/* <div style={{ maxWidth: `50%`, margin: `25px auto` }}>
-          <Img fluid={info.frontmatter.image.childImageSharp.fluid} />
-        </div> */}
+      <SEO title={info.frontmatter.title} keywords={info.frontmatter.tags} />
     
       <Container>
         <div style={{maxWidth:`600px`, margin:`0 auto`}}>
