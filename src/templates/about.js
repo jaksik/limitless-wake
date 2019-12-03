@@ -10,25 +10,17 @@ export default ({ data }) => {
   const info = data.markdownRemark
   const [width, setWidth] = useState(1);
 
-  useEffect(() => 
-  {
+  useEffect(() => {
     setWidth(window.innerWidth);
   });
   return (
     <Layout>
-      <SEO title="About Limitless Wake" keywords={[`wakeboard`, `lessons`, `austin`, `texas`, `lake`, `travis`, `limitless`, `wake`, `chandler`, `crouch`]} />
+      <SEO title="About" keywords={[ `about`, `limitless`, `wake`, `chandler`, `crouch`]} />
       <Container>
 
-        {/* About Page Title */}
         <h1 className="page-title">{info.frontmatter.title}</h1>
 
-        {/* About Page Photo */}
-        {/* <div style={{ maxWidth: (width < 700 ? `85%` : `50%`), margin: `25px auto` }}>
-          <Img fluid={info.frontmatter.image.childImageSharp.fluid} />
-        </div> */}
-
-        {/* About Page Body Text */}
-        <div style={{ textIndent: `50px`, marginBottom:`150px` }}>
+        <div style={{ textIndent: `50px`, marginBottom: `150px` }}>
           <div dangerouslySetInnerHTML={{ __html: info.html }} />
         </div>
       </Container>

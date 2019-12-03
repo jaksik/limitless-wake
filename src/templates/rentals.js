@@ -10,7 +10,7 @@ export default ({ data }) => {
 
   return (
     <Layout>
-      <SEO title="Wakeboard Boat Rentals" keywords={[`boat`, `rentals`, `wakeboard`, `lessons`, `austin`, `texas`, `lake`, `travis`, `limitless`, `wake`, `chandler`, `crouch`]} />
+      <SEO title="Boat Rentals" keywords={[`boat`, `rentals`, `wakeboard`, `austin`, `texas`, `lake`, `travis`]} />
       <Container>
         <h1 className="page-title">{data.markdownRemark.frontmatter.title}</h1>
 

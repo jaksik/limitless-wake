@@ -8,15 +8,14 @@ import "../../components/style.css"
 const Contact = () => (
   <Layout>
 
-    <SEO title="Book A Lesson" keywords={[`wakeboard`, `lessons`, `austin`, `texas`, `lake`, `travis`, `limitless`, `wake`, `chandler`, `crouch`]} />
-
+    <SEO title="Contact" keywords={[`wakeboard`, `lessons`, `austin`, `texas`, `lake`, `travis`, `limitless`, `contact` ]} />
 
     <form
       name="contact"
       method="post"
       data-netlify="true"
       data-netlify-honeypot="bot-field"
-      style={{ width: `80%`, margin: `50px auto 0px`, border:`3px solid black`, borderRadius:`38px` }}
+      style={{ width: `80%`, margin: `50px auto 0px`, border: `3px solid black`, borderRadius: `38px` }}
     >
 
       <h1 style={{ margin: `20px auto`, textAlign: `center`, padding: `0` }}>Book A Lesson</h1>
@@ -70,16 +69,13 @@ const Contact = () => (
 
     </form>
 
-
-
-
     <div style={{ textAlign: `center`, margin: `100px auto` }}>
       <h5>Have Questions?</h5>
       <p>Always feel free to give us a call or send us an email.</p>
       <p><strong>Phone: </strong> 512-270-1735</p>
       <p><strong>Email:</strong> limitlesswaketech@gmail.com</p>
       <br />
-      <div style={{ borderBottom: `1px solid black`, width: `40%`, margin: `50px auto`, maxWidth:`960px` }}></div>
+      <div style={{ borderBottom: `1px solid black`, width: `40%`, margin: `50px auto`, maxWidth: `960px` }}></div>
       <h5>Booked A Lesson?</h5>
       <p>Download the waiver here and bring it with you to your lesson</p>
       <a style={{ textDecoration: `none` }} href={waiver} download>

@@ -20,7 +20,7 @@ const IndexPage = ({ data }) => {
   console.log("images", galleryImages)
   return (
     <Layout>
-      <SEO title="Wakeboard Lessons Austin Texas" keywords={[`wakeboard`, `lessons`, `austin`, `texas`, `lake`, `travis`, `limitless`, `wake`, `chandler`, `crouch`]} />
+      <SEO title="Home" keywords={[`wakeboard`, `lessons`, `austin`, `texas`, `lake`, `travis`, `limitless`, `wake`, `chandler`, `crouch`]} />
       <PageHeader data={data} />
       <Link to="/contact">
         <Button color="primary" size="lg" style={{ width: `55%`, margin: `-15vh auto`, zIndex: 16, top: `10px` }} block id="cover-button">Book A Lesson</Button>

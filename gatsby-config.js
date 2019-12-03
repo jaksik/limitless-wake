@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Limitless Wake`,
-    description: `Wake boarding lessons in Austin, Texas.`,
+    description: `Official website of Limitless Wake Tech LLC.`,
     author: `@jaksik`,
   },
   plugins: [
