@@ -1,7 +1,7 @@
 ---
 templateKey: locations
 title: Locations
-mapurl: https://www.google.com/maps/d/embed?mid=1JJfYAg2K--y6U6e0bfiHRSPSH_x6yHg9&hl=en
+mapurl: https://www.google.com/maps/d/embed?mid=1j4te0Ps7Gg82sVjOnPPIQeY49yy_2cH_&hl=en
 locations:
   - location: Lake Austin
   - location: Lake Travis

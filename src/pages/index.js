@@ -78,7 +78,7 @@ const IndexPage = ({ data }) => {
       </div>
 
       <div className="google-maps" name="google-maps">
-        <iframe title="lesson locations map" frameborder="100" scrolling="no" src="https://www.google.com/maps/d/embed?mid=1JJfYAg2K--y6U6e0bfiHRSPSH_x6yHg9&hl=en" width="100%" height="360px" className="map-iframe"></iframe>
+        <iframe title="lesson locations map" frameborder="100" scrolling="no" src="https://www.google.com/maps/d/embed?mid=1j4te0Ps7Gg82sVjOnPPIQeY49yy_2cH_&hl=en" width="100%" height="360px" className="map-iframe"></iframe>
       </div>
 
       <div style={{ width: `100%`, background: `white`, paddingBottom: `40px` }}>
