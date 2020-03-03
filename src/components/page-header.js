@@ -35,7 +35,7 @@ class ScrollAnimate extends Component {
                     <div className="cover-container">
                         <h1 className="cover-title">Learn<br />To<br />Ride</h1>
                         <br/>
-                        <p className="cover-subtitle">Wakeboard and Wakesuft lessons by Chandler Crouch in Austin, Texas.</p>
+                        <p className="cover-subtitle">Wakeboard and wakesuft lessons by Chandler Crouch in Austin, Texas.</p>
                     </div>
                     <div className="wave animate" ref="animate"></div>
                 </div>
