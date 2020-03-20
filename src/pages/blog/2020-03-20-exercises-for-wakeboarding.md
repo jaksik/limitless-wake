@@ -27,23 +27,11 @@ Teaching these smaller muscles to find stability while larger muscle groups such
 
 * Walk-Outs: start standing and while keeping your legs straight, walk both hands out and back from the plank position. Do this as a warm up and add push-ups later in the set. 
   Do 3 sets of 10 at light intensity, add push-ups and do 3 more sets
-
-
-
 * Thread the needle: From the elbows plank position, bring one arm at a time, under the body as far as it can reach and back out until it points straight up in the air.
   Do 3 sets of 20 alternating arms
-
-
-
 * Shoulder Taps: From the upright push-up position and feet spread slightly, alternate bringing one hand up and reaching around the alternate shoulder. 
   Do 3 sets of 20 alternating arms
-
-
-
 * Grab the bosu ball and do 3 rounds of 20 body weight squats. The bosu ball forces your knees and hips to find stability while tracking. This will help protect you from awkward landings and transfer the impact safely through the legs.
-
-
-
 * On the Bosu ball, do 3 sets of 10 standing lunges with your front foot on the center of the ball. This requires even more stability in the knee and will strengthen the muscles around the tendons.
 
 Wakeboarding is a dangerous and extreme sport and you must do what you can to protect your body. Even for the best riders in the world, many have 1 or 2 rebuilt tendons. 
