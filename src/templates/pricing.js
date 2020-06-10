@@ -21,15 +21,15 @@ export default ({ data }) => {
           <p style={{ marginTop: `20px` }}>
             3 riders? We suggest 1-2 hours<br />
             4 riders? We suggest 2-3 hours<br />
-            4+ riders?” We suggest 3+ hours
+            5 or more riders? We suggest at least 3 hours
           </p>
         </div>
         <br />
         <div style={{ textAlign: `left`, maxWidth: `960px`, padding: `20px`, margin: `0 auto` }}>
           <p>*An hour booked is an hour in the water.</p>
           <p>*We accept paypal, venmo, and cash at the day of your lesson.</p>
-          <p>*Hours can be sppt between up to 3 riders. For example an hour sppt between 3 riders will give each rider 20 minutes "in the water" lesson time.</p>
-          <p>*Lessons purchased with gear will include wakeboard/wakesurf, rope, and a jacket (1).</p>
+          <p>*Hours can be split between up to 3 riders. For example an hour split between 3 riders will give each rider 20 minutes "in the water" lesson time.</p>
+          <p>*Lessons purchased with gear will include wakeboard/wakesurf, rope, and a jacket.</p>
         </div>
       </Container>
     </Layout>
