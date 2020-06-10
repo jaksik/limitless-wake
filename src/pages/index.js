@@ -30,7 +30,7 @@ const IndexPage = ({ data }) => {
         <Container>
           <div className="landing-container">
             <h3 style={{ fontWeight: `bold`, padding: `50px 0 0px`, textAlign: `center` }}>Limitless Wake</h3>
-            <p style={{ maxWidth: `650px`, margin: `20px auto 60px`, textAlign: `center`, textIndent: `0px` }}>Founded and opperated by life-long wake enthusiast and Collegiate National Champion Chandler Crouch, Limitless Wake is dedicated to providing you with the information and coaching you need to help you reach your wakeboard/surf goals.</p>
+            <p style={{ maxWidth: `650px`, margin: `20px auto 60px`, textAlign: `center`, textIndent: `0px` }}>Founded and operated by life-long wake enthusiast and Collegiate National Champion Chandler Crouch. Limitless Wake is dedicated to providing you with the information and coaching you need to help you reach your wakeboard/surf goals.</p>
             <Row style={{ background: `white` }}>
               <Col xs="12">
                 <h5 style={{ textAlign: `center` }}>{info[1].title}</h5>

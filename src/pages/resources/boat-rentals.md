@@ -1,6 +1,6 @@
 ---
 templateKey: rentals
-title: Local Boat Rentals
+title: Boat Rentals
 affiliate:
   - boats: 'Standard Ski Boat, Premium Ski Boat'
     logourl: >-
