@@ -49,11 +49,7 @@ const Footer = ({ blogPosts, logo }) => {
                 </Row>
                 <div style={{ textAlign: `center`, color: `#d4dcf1`, padding: `20px 0px` }}>
                     © {new Date().getFullYear()}, Limitless Wake Technologies LLC All Rights Reserved
-                <div style={{ fontSize: `10px` }} >
-                        Website Built By
-                {` `}
-                        <a href="https://aspenapps.com" target="_blank" rel="noopener noreferrer" style={{ color: `white` }}>Aspen Applications LLC</a>
-                    </div>
+              
                 </div>
             </Container>
         </footer>

@@ -84,7 +84,7 @@ const IndexPage = ({ data }) => {
       <div style={{ width: `100%`, background: `white`, paddingBottom: `40px` }}>
         <Container>
           <Row>
-            <Col xs="12" md="5">
+            <Col xs="12" md="6">
               <Row className="no-gutters justify-content-center align-items-center" style={{ height: `100%` }}>
                 <div className="row no-gutters justify-content-center">
                   <h6 style={{ fontWeight: `bold`, color: `orange` }}>BLOG</h6>
@@ -102,11 +102,12 @@ const IndexPage = ({ data }) => {
 
             {data.allMarkdownRemark.edges.map((blogPost, index) => {
               const image = galleryImages.find(n => {
-                return n.node.relativePath === blogPost.node.frontmatter.image;
+                return "/img/" + n.node.relativePath === blogPost.node.frontmatter.image;
               });
+              console.log("IMAGE:", blogPost.node.frontmatter.image)
               const imageSizes = image.node.childImageSharp.fluid;
               return (
-                <Col xs="12" sm={(index === 0 ? `12` : `6`)} md={(index === 0 ? `7` : `5`)}>
+                <Col xs="12" sm={(index === 0 ? `12` : `6`)} md={6}>
                   <div className={(index === 0 ? `first-card blog-card` : `blog-card`)}>
                     <Img fluid={imageSizes} style={{ position: `absolute`, width: `100%`, height: `100%` }} />
                     <div className="card-overlay">
