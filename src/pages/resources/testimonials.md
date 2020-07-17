@@ -9,5 +9,11 @@ testimonials:
       Visiting from MI and wanted to extend the season by one more session.
       Chandler was a total pro. Great experience and valuable lessons learned
       that we will take back home for next season!
+  - author: 'Nautical Boat Club, Lakeway'
+    quote: >-
+      We work with Chandler who is the owner of Limitless Wake and highly
+      recommend his services! His knowledge and teaching style is perfect for
+      all skill levels and just a few hours can make a world of difference in
+      your ability and confidence level.
 ---
 
